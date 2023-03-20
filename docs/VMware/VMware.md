@@ -1,0 +1,8 @@
+---
+layout: default
+title: VMware
+nav_order: 5
+has_children: true
+permalink: docs/VMware
+---
+

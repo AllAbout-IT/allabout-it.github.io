@@ -1,9 +1,1416 @@
 {"0": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "LAB-2 Reset Worker-node and rejoining",
+    "content": "{ :no_toc } . | LAB-2 Reset Worker-node and rejoining . | Topology | Full clone Worker-node at VMware | Re configuration in ubuntu CLI | Reset worker-node | Recreate token and hash for rejoin from Master-node | Rejoin with Master-node | Check conditions | . | . ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#lab-2-reset-worker-node-and-rejoining",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#lab-2-reset-worker-node-and-rejoining"
+  },"1": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Topology",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#topology",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#topology"
+  },"2": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Full clone Worker-node at VMware",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#full-clone-worker-node-at-vmware",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#full-clone-worker-node-at-vmware"
+  },"3": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Re configuration in ubuntu CLI",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#re-configuration-in-ubuntu-cli",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#re-configuration-in-ubuntu-cli"
+  },"4": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Reset worker-node",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#reset-worker-node",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#reset-worker-node"
+  },"5": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Recreate token and hash for rejoin from Master-node",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#recreate-token-and-hash-for-rejoin-from-master-node",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#recreate-token-and-hash-for-rejoin-from-master-node"
+  },"6": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Rejoin with Master-node",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#rejoin-with-master-node",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#rejoin-with-master-node"
+  },"7": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "Check conditions",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#check-conditions",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/#check-conditions"
+  },"8": {
+    "doc": "3. LAB-2 Reset Worker-node and rejoining",
+    "title": "3. LAB-2 Reset Worker-node and rejoining",
+    "content": " ",
+    "url": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/",
+    
+    "relUrl": "/docs/KUBERNETES/3.LAB-2-rejoining/3.LAB-2/"
+  },"9": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "4. Kubernates-Architecture",
+    "content": ". | 4. Kubernates-Architecture . | Architecture | Activating Flow | Namespace | Yaml Template | API version | . | . ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#4-kubernates-architecture",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#4-kubernates-architecture"
+  },"10": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "Architecture",
+    "content": " ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#architecture",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#architecture"
+  },"11": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "Activating Flow",
+    "content": " ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#activating-flow",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#activating-flow"
+  },"12": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "Namespace",
+    "content": " ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#namespace",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#namespace"
+  },"13": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "Yaml Template",
+    "content": " ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#yaml-template",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#yaml-template"
+  },"14": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "API version",
+    "content": "## . ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#api-version",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/#api-version"
+  },"15": {
+    "doc": "4. Kubernetes-Architecture",
+    "title": "4. Kubernetes-Architecture",
+    "content": " ",
+    "url": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/",
+    
+    "relUrl": "/docs/KUBERNETES/4.Kubernetes-Architecture/4.Kubernates-Architecture/"
+  },"16": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "5. LAB-3 Kubectl",
+    "content": "{ :no_toc } . | 5. LAB-3 Kubectl . | kubectl . | Check resources | Helping manual | . | Read information . | Read node’s information | Read node’s detail information | Read running container’s information | . | Running Container | Running multi-containers | Assignment-1 | Assignment-2 | . | . ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/"
+  },"17": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "kubectl",
+    "content": "Check resources . Helping manual . ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#kubectl",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#kubectl"
+  },"18": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "Read information",
+    "content": "Read node’s information . Read node’s detail information . Read running container’s information . ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#read-information",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#read-information"
+  },"19": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "Running Container",
+    "content": " ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#running-container",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#running-container"
+  },"20": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "Running multi-containers",
+    "content": " ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#running-multi-containers",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#running-multi-containers"
+  },"21": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "Assignment-1",
+    "content": ". | fix it to show the message “Hello to K8s” when you access the ‘webserver’. | . ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#assignment-1",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#assignment-1"
+  },"22": {
+    "doc": "5. LAB-3 Kubectl",
+    "title": "Assignment-2",
+    "content": ". | Create httpd container as name ‘webserver2’ that has 3 replicas and make it export it to yaml file and name ‘webserver2’. | Modify replicas number to 5 in yaml and then recreate containers. | . ",
+    "url": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#assignment-2",
+    
+    "relUrl": "/docs/KUBERNETES/5.LAB-3-Kubectl/5.LAB-3/#assignment-2"
+  },"23": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "5. LAB-4 Namespace",
+    "content": "{ :no_toc } . | 5. LAB-4 Namespace . | Create namespace . | Check namespace list | Basic Command | Create namespace through YAML . | Check the yaml form through yaml extracted | . | . | Delete namespace | Check pods information in namespace . | Basic Command | Check pods in namespace ‘kube-system’ | . | Create pod in namespace . | Create pod in namespace through YAML | . | Assignment-1 | Assignment-2 | Assignment-3 | Change default namespace name | . | . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#5-lab-4-namespace",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#5-lab-4-namespace"
+  },"24": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Create namespace",
+    "content": "Check namespace list . $ kubectl get namespace . Basic Command . $ kubectl create namespace blud . Create namespace through YAML . Check the yaml form through yaml extracted . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#create-namespace",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#create-namespace"
+  },"25": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Delete namespace",
+    "content": " ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#delete-namespace",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#delete-namespace"
+  },"26": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Check pods information in namespace",
+    "content": "Basic Command . Check pods in namespace ‘kube-system’ . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#check-pods-information-in-namespace",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#check-pods-information-in-namespace"
+  },"27": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Create pod in namespace",
+    "content": "Create pod in namespace through YAML . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#create-pod-in-namespace",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#create-pod-in-namespace"
+  },"28": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Assignment-1",
+    "content": ". | Q. Delete pod ‘webserver’ in namespace blue through kubectl command. | . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#assignment-1",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#assignment-1"
+  },"29": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Assignment-2",
+    "content": ". | Q. Check how is pod’s status will be after deleting namespace orange through kubectl command. | . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#assignment-2",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#assignment-2"
+  },"30": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Assignment-3",
+    "content": ". | Q. Create YAML file for creating a nameserver, and a pod at the same time. The conditions are followed below. | . ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#assignment-3",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#assignment-3"
+  },"31": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "Change default namespace name",
+    "content": " ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#change-default-namespace-name",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/#change-default-namespace-name"
+  },"32": {
+    "doc": "6. LAB-4 Namespace",
+    "title": "6. LAB-4 Namespace",
+    "content": " ",
+    "url": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/",
+    
+    "relUrl": "/docs/KUBERNETES/6.LAB-4-namespace/6.LAB-4/"
+  },"33": {
+    "doc": "2.Architecture AWS with EKS",
+    "title": "2.Architecture AWS with EKS",
+    "content": " ",
+    "url": "/docs/PROJECT/AWS-EKS/AWS-EKS/",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/AWS-EKS/"
+  },"34": {
+    "doc": "AWS",
+    "title": "AWS",
+    "content": " ",
+    "url": "/docs/AWS/",
+    
+    "relUrl": "/docs/AWS/"
+  },"35": {
+    "doc": "Assignment_01",
+    "title": "LAB-01",
+    "content": "Router —— . 문제1. PC1, PC2간에 통신 되도록 구성합니다. | 기본구성사항 . | Router1대, Switch 1대, PC2대 | PC1. 1.1.1.1 255.255.255.0 | PC2. 1.1.1.2 255.255.255.0 | . | 이블 연결 사항 . | PC1 FastEthernet0 —(Copper Straight-Through)— Switch FastEthernet 0/1 | PC2 FastEthernet0 —(Copper Straight-Through)— Switch FastEthernet 0/2 | Switch FastEthernet 0/3 —(Copper Straight-Through)— Router FastEthernet 0/0 | . | STEP.1 PC 설정 - IP, Subnet mask, Gateway를 설정합니다. | PC1 1. PC1를 좌더블클릭 후 설정창을 연다. 2. 상단 메뉴에서 ‘Desktop’선택. 3. 목록에서 ‘IP Configuration’선택 4. ‘IPv4 Address’ 입력창에 ‘1.1.1.1’을 입력 5. ‘Subnet Mask’ 입력창에 ‘255.255.255.0’을 입력 6. 왼쪽 상단의 ‘X’를 눌러 창을 닫는다. | PC2 1. PC2를 좌더블클릭후 설정창을 연다. 2. 상단 메뉴에서 ‘Desktop’선택. 3. 목록에서 ‘IP Configuration’선택 4. ‘IPv4 Address’ 입력창에 ‘1.1.1.2’을 입력 5. ‘Subnet Mask’ 입력창에 ‘255.255.255.0’을 입력 6. 왼쪽 상단의 ‘X’를 눌러 창을 닫는다. | CHECK!! - CMD창에서 ipconfig로 설정을 확인합니다. | . | STEP2. SWITCH 설정 - 현재 구성도에서 SWITCH는 설정이 필요 없습니다. | . 5.STEP3. Router 설정 Fa0/0 1.1.1.254를 설정합니다. Fa0/1 1.1.2.254를 설정합니다. ",
+    "url": "/docs/NETWORK/LAB/Assignment_01/#lab-01",
+    
+    "relUrl": "/docs/NETWORK/LAB/Assignment_01/#lab-01"
+  },"36": {
+    "doc": "Assignment_01",
+    "title": "Assignment_01",
+    "content": " ",
+    "url": "/docs/NETWORK/LAB/Assignment_01/",
+    
+    "relUrl": "/docs/NETWORK/LAB/Assignment_01/"
+  },"37": {
+    "doc": "Assignment_03",
+    "title": "Assignment_03_",
+    "content": " ",
+    "url": "/docs/AWS/Assigment_03/Assignment_03/#assignment_03_",
+    
+    "relUrl": "/docs/AWS/Assigment_03/Assignment_03/#assignment_03_"
+  },"38": {
+    "doc": "Assignment_03",
+    "title": "과제: Virtual Private Cloud 생성",
+    "content": "이 과제에서는 AMAZONE VPC 마법사를 사용하여 단일 가용영역(AZ)에 인터넷 세이트웨이 1개와 서브넷 2개가 있는 VPC를 생성합니다. 인터넷 세이트웨이는 VPC 구성 요소입니다. 참고: 실습 전체에서 동일한 리전을 사용해야 합니다. VPC를 생성한 후 서브넷을 추가할 수 있습니다. 각 서브넷은 하나의 가용 영역 내에 존재하며, 여러 여역에 분산할 수 없습니다. 트래픽이 인터넷 게이트웨이로 라우팅되는 서브넷을 퍼블릭 서브넷이라고 합니다. 서브넷에 인터넷 게이트웨이에 대한 경로가 없는 경우 해당 서브넷을 프라이빗 서브넷이라고 합니다. 또한 마법사는 프라이빗 서브넷의 Amazon EC2 인스턴스에 대한 인터넷 연결을 제공하는 NAT 게이트 웨이를 생성합니다. 마법사를 사용하여 VPC를 프로비저닝하려면 먼저 탄력적 IP 주소를 생성해야 합니다. 탄력적 IP 주소는 동적 클라우드 컴퓨팅을 위해 설계된 라우팅 가능한 고정 퍼블릭 IPv4 주소입니다. 탄력적 IP 주소는 AWS 계정에 할당되며 릴리스할 때까지 할당된 상태로 유지됩니다. 탄력적 IP 주소를 사용하면 주소를 계정의 다른 인스턴스를 가리키도록 도메인에 대한 DNS 레코드에 탄력적 IP 주소를 지정할 수 있습니다. NAT 게이트웨이를 생성하려면 탄력적 IP 주소가 있어야 합니다. VPC 마법사는 VPC를 생성하는 데 이 주소가 필요합니다. 탄력적 IP 주소는 동적 클라우드 컴퓨팅을 위해 설계된 라우팅 가능한 고정 퍼블릭 IPv4 주소입니다. 탄력적 IP 주소는 AWS 계정에 할당되며 릴리스할 때까지 할당된 상태로 유지됩니다. 탄력적 IP주소를 사용하면 주소를 계정의 다른 인스턴스에 신속하게 다시 매핑하여 인스턴스나 소프트웨어의 오류를 마스킹 할 수 있습니다. 또는 도메인이 인스턴스를 가리키도록 도메인에 대한 DNS 레코드에 탄력적 IP 주소를 지정할 수 있습니다. NAT 게이트웨이를 생성하려면 탄력적 IP 주소가 있어야 합니다. VPC 마법사는 VPC를 생성하는데 이 주소가 필요합니다. 탄력적 IP주소를 생성하려면 다음을 수행합니다. | AWS 관리콘솔의 {Service ⋁} 메뉴에서 EC를 검색하여 선택합니다. | 왼쪽 탐색 창에서 Network &amp; Security 섹션을 찾아 Elastic IPs를 선택합니다. | Allocate Elastic IP address 를 선택합니다. | 화면 맨 아래 ‘Allocate’를 선택합니다. 다음으로, VPC 마법사를 사용하여 VPC를 생성합니다. | AWS 관리 콘솔의 Services∨ 메뉴에서 VPC를 검색하여 선택합니다. | Create VPC 를 선택합니다. | VPC workflow 를 생성 하기 위하여, Create VPC 페이지의 VPC setting 세션 아래에 다음의 내용으로 구성합니다. 중요! 다른 필드는 수정하지 마십시요. | Resources to create: VPC, subnets, etc.을 선택합니다. | Name tag auto-generation 아래: ▢ Auto-generate 선택을 취소합니다. | Availability Zones (AZs): 1을 선택합니다. | number of public subnet: 1을 선택합니다. | Number of private subnets: 1을 선택합니다. | ▼Customize subnets CIDR block 을 확장 | Public subnet CIDR block in…: 아래에 10.0.0.0/20 으로 기록된 내용을 10.0.0.0/24로 수정합니다. | Private subnet CIDR block in… : 아래에 10.0.128.0/20 으로 기록된 내용을 10.0.1.0/24으로 수정합니다. | . | . | . ",
+    "url": "/docs/AWS/Assigment_03/Assignment_03/#%EA%B3%BC%EC%A0%9C-virtual-private-cloud-%EC%83%9D%EC%84%B1",
+    
+    "relUrl": "/docs/AWS/Assigment_03/Assignment_03/#과제-virtual-private-cloud-생성"
+  },"39": {
+    "doc": "Assignment_03",
+    "title": "Assignment_03",
+    "content": " ",
+    "url": "/docs/AWS/Assigment_03/Assignment_03/",
+    
+    "relUrl": "/docs/AWS/Assigment_03/Assignment_03/"
+  },"40": {
+    "doc": "BGP",
+    "title": "BGP",
+    "content": ". | BGP . | IGP and EGP | CASE 1 | CASE 2 | CASE 3 | CASE 4 | BGP: Autonomous System | . | . ",
+    "url": "/docs/NETWORK/BGP",
+    
+    "relUrl": "/docs/NETWORK/BGP"
+  },"41": {
+    "doc": "BGP",
+    "title": "IGP and EGP",
+    "content": "IGP and EGP are two types of routing protocols used in computer networking. IGP stands for Interior Gateway Protocol, and EGP stands for Exterior Gateway Protocol. Definition: . IGP: An IGP is a protocol used for routing within an autonomous system (AS), which is a network of routers under a single administrative domain. EGP: An EGP is a protocol used for routing between different autonomous systems. Structure: . IGP: An IGP is a type of intra-domain routing protocol, which means it operates within a single autonomous system. Examples of IGPs include OSPF (Open Shortest Path First), IS-IS (Intermediate System to Intermediate System), and RIP (Routing Information Protocol). EGP: An EGP is a type of inter-domain routing protocol, which means it operates between different autonomous systems. Examples of EGP include BGP (Border Gateway Protocol). Function: . IGP: IGPs are used to determine the best path for routing data within a single autonomous system. These protocols use metrics such as hop count, bandwidth, delay, and reliability to determine the optimal path. EGP: EGPs are used to determine the best path for routing data between different autonomous systems. These protocols use policies and rules to determine the optimal path. Difference: . The main difference between IGP and EGP is the scope of their operation. IGPs operate within a single autonomous system, while EGPs operate between different autonomous systems. IGPs use metrics such as hop count, bandwidth, delay, and reliability to determine the best path, while EGPs use policies and rules to determine the best path. Examples of IGPs include OSPF, IS-IS, and RIP, while examples of EGPs include BGP. In summary, IGPs are used for routing within a single autonomous system, while EGPs are used for routing between different autonomous systems. IGPs use metrics such as hop count, bandwidth, delay, and reliability to determine the best path, while EGPs use policies and rules. ",
+    "url": "/docs/NETWORK/BGP#igp-and-egp",
+    
+    "relUrl": "/docs/NETWORK/BGP#igp-and-egp"
+  },"42": {
+    "doc": "BGP",
+    "title": "CASE 1",
+    "content": " ",
+    "url": "/docs/NETWORK/BGP#case-1",
+    
+    "relUrl": "/docs/NETWORK/BGP#case-1"
+  },"43": {
+    "doc": "BGP",
+    "title": "CASE 2",
+    "content": " ",
+    "url": "/docs/NETWORK/BGP#case-2",
+    
+    "relUrl": "/docs/NETWORK/BGP#case-2"
+  },"44": {
+    "doc": "BGP",
+    "title": "CASE 3",
+    "content": " ",
+    "url": "/docs/NETWORK/BGP#case-3",
+    
+    "relUrl": "/docs/NETWORK/BGP#case-3"
+  },"45": {
+    "doc": "BGP",
+    "title": "CASE 4",
+    "content": " ",
+    "url": "/docs/NETWORK/BGP#case-4",
+    
+    "relUrl": "/docs/NETWORK/BGP#case-4"
+  },"46": {
+    "doc": "BGP",
+    "title": "BGP: Autonomous System",
+    "content": " ",
+    "url": "/docs/NETWORK/BGP#bgp-autonomous-system",
+    
+    "relUrl": "/docs/NETWORK/BGP#bgp-autonomous-system"
+  },"47": {
+    "doc": "01_Basic Commands",
+    "title": "01 Ubuntu Basic Commands",
+    "content": ". | 도움말 보기 (man) $ man &lt;검색할 명령어&gt; - man은 manual의 약어. $ man mv - 명령어 ‘mv’의 manual - 명령어 ‘mv’에 대한 모든 내용을 출력. | 파일 목록 보기 (ls) $ ls &lt;옵션&gt;&lt;파일|디렉토리&gt; 2.1 -a . | 숨김파일까지 출력 $ ls -a - ‘ . (dot)’으로 시작하는 파일명은 숨김파일의 이름이다. | . 2.2 -l . | 파일/디렉토리의 자세한 정보 출력(type, permission, link, size, owner) $ ls -l | . 2.3 -l &lt;Path&gt; . | Path 안에 있는 파일 리스트의 자세한 정보 출력. $ la -l /1 | . 2.4 -R . | 하위 디렉토리까지 모두 출력 $ ls -R | . | 디렉토리 생성 (mkdir) $ mkdir &lt;option&gt; &lt;path&gt; 3.1. &lt;name&gt;(직속 하위 폴더) . | 기본 디렉토리를 생성 $ mkdir 1/tmp ![mkdir](/docs/LINUX/Basic_Command/mkdir.png) \\- 디렉토리를 생성할 부모 폴더는 반드시 만들기 전에 있어야 한다. | . 3.2 -p . | 존재하지 않는 부모 디렉토리도 함께 생성 $ mkdir -p 1/guru/bin - bin의 상위폴더 /guru가 없어도 한번에 생성된것을 확인. | . 3.3 -m . | 디렉토리 생성시 권한부여 가능 $ mkdir -m 777 1/share - 앞서 생성된 다른 폴더들과 다른 권한을 가진 폴더가 생성되었다. | . | 빈 디렉토리 삭제 $ mkdir &lt;option&gt; &lt;path&gt; 4.1 &lt;name&gt;(직속 하위 폴더) . | 기본 빈 디렉토리 삭제 $ rmdir 1/share/ - guru와 tmp 사이에 있던 share폴더가 삭제 되었다. - rmdir은 삭제대상의 폴더가 반드시 비워져 있어야 실행한다. | . 4.2 -p . | 비어있는 부모 디렉토리도 함께 삭제 $ rmdir -p 1/guru/bin - rmdir: failed to remove directory ‘1’: directory not empty - 디렉토리 ‘1’비워 지지 않아서 삭제에 실패 했다고 한다. - 하지만, 검색을 해보면 비워져 있는 /guru/bin 경로가 모두 지워져 있는 것을 확인 할수 있다. | . | 디렉토리 이동 $ cd &lt;path&gt; 5.1. $HOME . | 사용자의 HOME 디렉토리로 이동 $ cd $HOME - 떨어진 곳에 있어도 cd $HOME을 이용해서 한번에 홈폴더로 이동할수 있다. - ‘pwd’는 현재 자신의 path 위치를 알려주는 명령어이다. | . 5.2. - . | 이전 작업 디렉토리로 이동 $ cd - - 거리에 상관 없이 한번에 위치가 움직인다. | . 5.3.. | 상위 디렉토리로 이동 $ cd .. | . | 파일복사하기 (cp) $ cp &lt;option&gt; &lt;원본파일이름&gt; &lt;목적지파일이름&gt; 6.1. cp &lt;path/name&gt; &lt;path/name&gt; . | 기본 파일 복사 $ cp findtest/2/tmp/usr/sample test/1/sample | . 6.2. -i . | 복사할때 overwrite 할 것인지 질문 $ cp -i test/1/sample test/2/tmp/usr/sample - 6.1 번에서 복사를 받았던 곳에 다시 복사를 하였다. | . 6.3. -f . | 복사할때 overwrite 질문 없이 무조건 덮어쓰기 cp -f test/1/sample test/2/tmp/usr/sample | . | 파일 이동하기 &amp; 파일 이름변경 (mv) $ mv &lt;option&gt; &lt;target path/name&gt; &lt;new filename&gt; 7.1. &lt;target path/name&gt; &lt;new path/new filename&gt; . | 기본 이동 $ mv mv test/1/bin/ test/2/bin | 물론 폴더 뿐만 아니라 파일도 가능 $ mv $ mv test/1/sample test/2/bin/sample | . 7.2. -i . | 이름을 바꿀때 overwrite 할 것인지 질문 $ mv -i test/2/bin/sample test/1/table | . | 파일 &amp; 디렉토리 삭제하기 (rm) $ rm &lt;option&gt; &lt;path/filename&gt; 8.1 $ rm &lt;path/filename&gt; . | 지정된 파일 또는 디렉토리가 삭제 - 커맨드 이후 타킷이된 파일이 제자리에 없어진 것을 확인. | . 8.2 -f . | 하위 내용을 포함한 디렉토리 삭제 $ rm -r test/2/bin/ | . | 파일찾기 (find) $ find &lt;경로&gt; &lt;옵션&gt; &lt;조건&gt; &lt;실행종류&gt; 9.1 -name . | 현재 디렉토리에서 ‘big’가 포함되는 파일 찾기 $ find -name \"*big*\" | 현재 디렉토리에서 .txt가 확장자 모두 찾기 $ find . -name \"*.txt\" | . 9.2 -type *.&lt;format type&gt; - 타입별로 검색. | 현재 디렉토리에서 모든 디렉토리 찾기 $ find . -type d . | 현재 디렉토리에서 모든 파일 찾기 $ find . -type f &gt; 하위 폴더 내의 파일 리스트도 출력 &gt; 폴더는 검색되지 않음 . | . 9.3 -size - 특정 크기의 파일을 검색. | 현재 디렉토리에서 1024byte인 파일 검색 $ find . -size 1024c . | 현재 디렉토리에서 +1024c보다 큰 파일 검색 $ find . size +1024c . | 현재 디렉토리에서 1024byte보다 작은 파일 검색 $ find . size -1024c . | . | . ",
+    "url": "/docs/LINUX/Basic_Command/Basic%20Commans/",
+    
+    "relUrl": "/docs/LINUX/Basic_Command/Basic%20Commans/"
+  },"48": {
+    "doc": "01_Basic Commands",
+    "title": "01_Basic Commands",
+    "content": " ",
+    "url": "/docs/LINUX/Basic_Command/Basic%20Commans/",
+    
+    "relUrl": "/docs/LINUX/Basic_Command/Basic%20Commans/"
+  },"49": {
+    "doc": "4. Building Container",
+    "title": "Building Container",
+    "content": "{ :no_toc } . | Building Container . | What to make a container? | Build container image | Deploy container image | . | . ",
+    "url": "/docs/DOCKER/4.Building-Container/Buiding-Container/#building-container",
+    
+    "relUrl": "/docs/DOCKER/4.Building-Container/Buiding-Container/#building-container"
+  },"50": {
+    "doc": "4. Building Container",
+    "title": "What to make a container?",
+    "content": " ",
+    "url": "/docs/DOCKER/4.Building-Container/Buiding-Container/#what-to-make-a-container",
+    
+    "relUrl": "/docs/DOCKER/4.Building-Container/Buiding-Container/#what-to-make-a-container"
+  },"51": {
+    "doc": "4. Building Container",
+    "title": "Build container image",
+    "content": " ",
+    "url": "/docs/DOCKER/4.Building-Container/Buiding-Container/#build-container-image",
+    
+    "relUrl": "/docs/DOCKER/4.Building-Container/Buiding-Container/#build-container-image"
+  },"52": {
+    "doc": "4. Building Container",
+    "title": "Deploy container image",
+    "content": "## . ",
+    "url": "/docs/DOCKER/4.Building-Container/Buiding-Container/#deploy-container-image",
+    
+    "relUrl": "/docs/DOCKER/4.Building-Container/Buiding-Container/#deploy-container-image"
+  },"53": {
+    "doc": "4. Building Container",
+    "title": "4. Building Container",
+    "content": " ",
+    "url": "/docs/DOCKER/4.Building-Container/Buiding-Container/",
+    
+    "relUrl": "/docs/DOCKER/4.Building-Container/Buiding-Container/"
+  },"54": {
+    "doc": "2.Building VPC, EC2 in AWS",
+    "title": "Building VPC, EC2 on Console in AWS",
+    "content": ". | Region | VPC . | Overview | VPCs | Subnets | Internet Gateway | Nat Gateway | Route Table | . | EC2 . | Instance | Installing Gitlab to Instance | AMIs | . | . ",
+    "url": "/docs/PROJECT/Devops/Building-VPC-EC2#building-vpc-ec2-on-console-in-aws",
+    
+    "relUrl": "/docs/PROJECT/Devops/Building-VPC-EC2#building-vpc-ec2-on-console-in-aws"
+  },"55": {
+    "doc": "2.Building VPC, EC2 in AWS",
+    "title": "Region",
+    "content": ". | click national name text right and top of the window . | Select Region name on the list(Ex&gt; Asia Paciffic(Seoul) ap-northeast-2) . | . ",
+    "url": "/docs/PROJECT/Devops/Building-VPC-EC2#region",
+    
+    "relUrl": "/docs/PROJECT/Devops/Building-VPC-EC2#region"
+  },"56": {
+    "doc": "2.Building VPC, EC2 in AWS",
+    "title": "VPC",
+    "content": "Overview . This topology’s concept is HA(high-available). VPC was built as 10.10.0.0/24 on the ap-northeast-2(Seoul) region. And it was divided from 10.10.10.0/24 to 10.10.40.0/24 into 4 subnets. 2 subnets(10.10.10.0, 10.10.20.0) was selected to ‘ap-northeast-2a’ and ‘ap-northeast-2c’ each other as the public subnet. Also, the other 2 subnets were selected to ‘ap-northeast-2a’ and ‘ap-northeast-2c’ each other as the private subnet. the public route includes 2 public subnets with an internet gateway. the private route includes 2 private with a nat gateway. VPCs . | Type ‘VPC’ in Serach blank box. and click ‘VPC’ on the list. | Your VPCs &gt; Create VPC . | Select ‘VPC only’ under ‘Resources to create’ and put VPC’s name you want into blank box under ‘Name tag’(ex&gt; dev-pj-vpc) . | Put IPv4 CIDR as B Class into blank box under ‘IPv4 CIDR’ and let rest of options as defualt, click ‘Creat VPC’ after done. | Check VPC’s name, status, IPv4 CIDR you made on the VPCs list. | . Subnets . | Click ‘Creat subnet’ after clicking ‘Subnets’ on the VPC’s sidebar. | Select VPC you made before by selecting the box under ‘VPC ID’. | Put the subnet name you want into the blank box under the Subnet name; for example, dev-pub-a-sub. | Select the Availability zone where this subnet will reside within the region you selected; for example, ap-northeast-2. | Put the subnet’s IPv4 CIDR block into blank box under ‘IPv4 CIDR block’. block sizes must be between a /16 netmask and /28 netmask; for example, 10.0.0.0/24. | Click ‘Add new subnet’ after done. | Make 3 more subnets following below the list as needed from this project. | Subnet name | Availabilty zone | IPv4 CIDR | . | dev-pub-c-sub | ap-northeast-2c | 10.10.20.0/24 | . | dev-pri-a-sub | ap-northeast-2a | 10.10.30.0/24 | . | dev-pri-c-sub | ap-northeast-2c | 10.10.40.0/24 | . | Click ‘Create subnet’ after done. | Check system message at top of window and Subnets information(Name, Status, IPv4 CIDR)you made on the list. | . Internet Gateway . - An internet gateway is a VPC component that enables communication between your VPC and the internet. To use an internet gateway, attach it to your VPC and specify it as a target in your subnet route table. | Click ‘Creat internet gateway’ in the internat gateway section after clicking ‘Internet gateways on ther VPS’s left sidebar . | Put internet gateway name into blank box under ‘Name tag’;for example, dev-igw. and click ‘create internet gateway’. | Check the message ‘The following internet gateway was created [internet gateway ID, name] you can now attach to a VPC to enable the VPC to communicate withe internet.’ on the top of the window. so, click ‘Attach to a VPC’ on the right of message. | Select VPC you made just before on the box under ‘Available VPCs’ in ‘Atttach to VPC section’ and click ‘Attach Internet gateway’. | Check the message ‘Internet gateway [internet gateway ID] successfully attached to [VPC ID] on the top of the window. | . Nat Gateway . You can use a network address translation (NAT) gateway to enable instances in a private subnet to connect to services outside your VPC but prevent such external services from initiating a connection with those instances. A public NAT gateway enables instances in private subnets to connect to the internet but prevents them from receiving unsolicited inbound connections from the internet. You should associate an elastic IP address with a public NAT gateway and attach an internet gateway to the VPC containing it. | Click ‘Create NAT gateway’ in ‘NAT gateways’ section after clicking ‘NAT gateways’ on the VPC’s sidebar. | Put NAT gateway name into blank box under ‘Name - optional’;for example, dev-ngw. | As you know, NAT gateway have to communicate with out side internet. so, It should be created on public subnet and get public IPv4 address. for this reason, select one of public subnet in the selecting box under ‘Subnet’. | Select ‘Public’ in 2 options under ‘Connectivity’ couse you can recive ‘Elastic’ IP only when you select ‘Public’. and click ‘Allocate Elastic IP’ after done. | Check the message ‘Elastic IP address xxx.xxx.xxx.xxx on the top of the window. and check ‘Elastic IP allocation ID’ that was allocated middle of window. | Click ‘Create NAT gateway’ after done. | Check the message ‘NAT gateway [NAT gateway ID]|[NAT gateway name] was create successfully on the top of the window. and check details information. Make sure keep seeing state until it turn from pedding to available and then, check ‘Primary public IPv4 address’, ‘Primary private IPv4 address’. | . Route Table . A route table refers to a table that consists of a set of rules, called routes, that are used to determine where network traffic is directed. In AWS, each subnet in a Virtual Private Cloud (VPC) is associated with a route table, which controls the traffic routing for the subnet. The routes in a route table determine where traffic is directed, either to an Internet gateway, virtual private gateway, Elastic IP address, a VPC endpoint, or another VPC in the same account. Each VPC has a default route table that controls the traffic routing for all of its subnets. In addition to the default route table, you can create additional custom route tables, which can be associated with one or more subnets in your VPC. This allows you to specify different routing rules for different subnets in your VPC. | Click ‘Create route table’ on the route tables section after clicking ‘Route tables’ on the VPS left sidebar. | Make sure, It needs 2 different route tables in this project. one is a public route table that can communicate with the Internet, and one other is a private route table that It can’t communicate from outside the internet. | First of all, put ‘route table’s name’ for the public route table’s name into the blank box under ‘name - optional’; for example, dev-pub-rt. | Select the VPC you made just before on the box under ‘VPC’. | Click ‘Create route table’ after letting ‘Tags’ as default. | Click ‘Edit routes’ under the detail tab ‘Routes’ after checking the message ‘Route table [route table ID]|[route table name] was created successfully’. | Click ‘Add route’ on the left down at the Edit route section to add rule in this route table. | At New ‘Edit routes’ was expaneded from ‘Edit routes’, put 0.0.0.0/0 into into blank box under destination. that means ‘the target IP or IP range requested from this route table’. | Select ‘Internet gateway’ on the selecting box under ‘Target’. and than, It is writ ‘igw-…’ into box, show igw ID you made just before on the list. | It shows ‘igw-…’ on the box with ‘igw ID’ you made just before on the list. Click your ‘internet gateway ID’ on the list. and then, click ‘save changes’. | Check ‘Edit subnet associations’ in one of Tap; ‘subnet associations’ under ‘Detail’ information box. after checking the message ‘Update for route for [route ID]/[route table name] on the top of the window. | Select 2 public subnets on the ‘Available subnets’ list because this is for the public route table. and then, click ‘Save associations’ after done. | Check the message ‘You have successfully updated subnet associations for [route table ID]/[route table name]’ on the top of the window. so now we made a public route table that any resource on the public subnets in this route table can communicate with outside internet. also, It can connect to public subnets from outside the internet. | Click ‘Create route table’ in ‘Route tables’ section again. from now, you’ll make a private route table. it can request from private subnets to outside internet through NAT gateway but, It can’t connect from Outside internet to private subnets. | Set information in ‘Create table’ section as the following next chart. | . | Create route table |   | . | Name - optional | VPC | . | dev-pri-tb | dev-vpc | . | Edit route |   | . | Destination | Target | . | 0.0.0.0/0 | dev-ngw | . | Edit subnet association |   | . | Available subnets | dev-pri-a-sub | . |   | dev-pri-c-sub | . ",
+    "url": "/docs/PROJECT/Devops/Building-VPC-EC2#vpc",
+    
+    "relUrl": "/docs/PROJECT/Devops/Building-VPC-EC2#vpc"
+  },"57": {
+    "doc": "2.Building VPC, EC2 in AWS",
+    "title": "EC2",
+    "content": "Amazon Elastic Compute Cloud (Amazon EC2) is a web service that provides scalable computing capacity in the Amazon Web Services (AWS) cloud. With this, you can launch and manage virtual servers (called instances) in the AWS cloud. Also, you have complete control over the instances you launch and can configure them to meet your needs. EC2 allows you to scale your computing resources up or down, as needed, by adding or removing instances. Instances are assigned a unique public IP address and can also be assigned a public DNS name, making it easy to connect to them from the Internet. You can use this to run a wide range of applications and services, including web applications, databases, analytics tools, and big data processing pipelines. These also support a variety of operating systems, so you can run the software you need for your application. Instance . Installing Gitlab to Instance . AMIs . ",
+    "url": "/docs/PROJECT/Devops/Building-VPC-EC2#ec2",
+    
+    "relUrl": "/docs/PROJECT/Devops/Building-VPC-EC2#ec2"
+  },"58": {
+    "doc": "2.Building VPC, EC2 in AWS",
+    "title": "2.Building VPC, EC2 in AWS",
+    "content": " ",
+    "url": "/docs/PROJECT/Devops/Building-VPC-EC2",
+    
+    "relUrl": "/docs/PROJECT/Devops/Building-VPC-EC2"
+  },"59": {
+    "doc": "Cluster",
+    "title": "Cluster",
+    "content": ". | Cluster . | Definition | Structure | Function | Strenghts . | Dynamic resource allocation | Load balancing | Automations | High availability | Scalability | . | Weaknesses . | Complexity | Overhead | Cost | Dependency on Center | . | LAB-01. Creating a vCluster . | Preparing for Working | Creating a Cluster | Configuration a Cluster | . | LAB-02. Configuration for HA(High Available) | . | . ",
+    "url": "/docs/VMware/Cluster",
+    
+    "relUrl": "/docs/VMware/Cluster"
+  },"60": {
+    "doc": "Cluster",
+    "title": "Definition",
+    "content": "A DRS (Distributed Resource Scheduler) cluster is a group of virtual machines (VMs) and hosts managed by VMware vSphere’s DRS technology. This cluster allows the vSphere environment to automatically balance VM workloads across the hosts in the cluster, based on resource usage, policies, and requirements. ",
+    "url": "/docs/VMware/Cluster#definition",
+    
+    "relUrl": "/docs/VMware/Cluster#definition"
+  },"61": {
+    "doc": "Cluster",
+    "title": "Structure",
+    "content": "A DRS cluster consists of two or more physical hosts, each running VMware vSphere. These hosts are connected to shared storage, allowing VMs to be moved between hosts without disrupting their storage. The hosts and VMs in the cluster are managed by a single vCenter Server instance, which controls the allocation of resources and the movement of VMs between hosts. Image from VMware . ",
+    "url": "/docs/VMware/Cluster#structure",
+    
+    "relUrl": "/docs/VMware/Cluster#structure"
+  },"62": {
+    "doc": "Cluster",
+    "title": "Function",
+    "content": "DRS technology continuously monitors resource utilization across hosts in the cluster and automatically migrates VMs to other hosts with more available resources as needed, ensuring that VMs have access to the resources they need to run optimally. DRS also optimizes the placement of new VMs, taking into account the requirements of the VM and the resources available on each host. By optimizing VM placement and load balancing, DRS helps to improve performance, reduce downtime, and maximize the utilization of the virtual infrastructure. ",
+    "url": "/docs/VMware/Cluster#function",
+    
+    "relUrl": "/docs/VMware/Cluster#function"
+  },"63": {
+    "doc": "Cluster",
+    "title": "Strenghts",
+    "content": "Dynamic resource allocation . DRS enables dynamic allocation of resources across the cluster, ensuring that VMs have access to the resources they need to run efficiently. Load balancing . DRS continuously balances the load across hosts, preventing resource bottlenecks and improving performance. Automations . DRS automates resource allocation and VM placement, reducing the need for manual intervention and increasing efficiency. High availability . DRS helps to ensure high availability by automatically migrating VMs to other hosts in the event of a host failure or maintenance. Scalability . DRS allows organizations to easily scale their virtual infrastructure as needed, adding new hosts and VMs to the cluster as required. ",
+    "url": "/docs/VMware/Cluster#strenghts",
+    
+    "relUrl": "/docs/VMware/Cluster#strenghts"
+  },"64": {
+    "doc": "Cluster",
+    "title": "Weaknesses",
+    "content": "Complexity . DRS can be complex to set up and configure, requiring a deep understanding of the vSphere environment and DRS technology. Overhead . DRS requires additional resources to operate, including CPU cycles and network bandwidth. Cost . DRS is only available in VMware’s more expensive vSphere editions, which can be a significant cost for smaller organizations or those with limited budgets. Dependency on Center . DRS relies on vCenter Server to function, which can be a single point of failure if not properly configured or maintained. ",
+    "url": "/docs/VMware/Cluster#weaknesses",
+    
+    "relUrl": "/docs/VMware/Cluster#weaknesses"
+  },"65": {
+    "doc": "Cluster",
+    "title": "LAB-01. Creating a vCluster",
+    "content": "Preparing for Working . Creating a Cluster . | . Configuration a Cluster . ",
+    "url": "/docs/VMware/Cluster#lab-01-creating-a-vcluster",
+    
+    "relUrl": "/docs/VMware/Cluster#lab-01-creating-a-vcluster"
+  },"66": {
+    "doc": "Cluster",
+    "title": "LAB-02. Configuration for HA(High Available)",
+    "content": " ",
+    "url": "/docs/VMware/Cluster#lab-02-configuration-for-hahigh-available",
+    
+    "relUrl": "/docs/VMware/Cluster#lab-02-configuration-for-hahigh-available"
+  },"67": {
+    "doc": "Configuration IP in Windows OS",
+    "title": "Configuration IP in Windows OS",
+    "content": " ",
+    "url": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/",
+    
+    "relUrl": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/"
+  },"68": {
+    "doc": "Configuration IP in Windows OS",
+    "title": "Open the Network Connections Tool",
+    "content": ". | Use the Run Command Dialog Box . | Press Win + R to run command dialog box [Windows key] + R | Type ‘ncpa.cpl’ and press Enter to open the Network Connection tool | . | In toolbar . | Click Network Icon In toolbar | Click Network you’re using now. | Click ‘Change adapter options’ at Settings &gt; Ethernet in new pop-up window. | . | in Quick Access Menu . | Press [Windows key] + [Shift] + x | Click ‘Network Connections’ on Quick Access Menu | . | . ",
+    "url": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/#open-the-network-connections-tool",
+    
+    "relUrl": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/#open-the-network-connections-tool"
+  },"69": {
+    "doc": "Configuration IP in Windows OS",
+    "title": "Open Internet Protocol Version 4 (TCP/IPv4) Properties",
+    "content": ". | Click Ethernet0 in Network Connections | Click ‘Properties’ on Ethernet0 Status po-up window | Double click ‘Internet Protocol Version 4(TCP/IPv4)’ on Ethernet0 Properties &gt; Networking &gt; This connection uses the following items: | . ",
+    "url": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/#open-internet-protocol-version-4-tcpipv4-properties",
+    
+    "relUrl": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/#open-internet-protocol-version-4-tcpipv4-properties"
+  },"70": {
+    "doc": "Configuration IP in Windows OS",
+    "title": "Configure IP",
+    "content": ". | Obtain an IP address automatically - It can revice IP address automatically from DHCP | Use the following IP address - you can filled manual version 4 ip information in this section . | IP address: xxx.xxx.xxx.xxx - ex&gt; 192.168.102.10 | Subnet mask : xxx.xxx.xxx.xxx - ex&gt; 255.255.255.0 (/24) | Default Gateway - ex&gt; 192.168.102.254 | . | Obtain DNS server address automatically - It can revice DNS IP address automatically from DHCP | Use the following DNS server addresses - you can filled DNS IP addresses in this section | . ",
+    "url": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/#configure-ip",
+    
+    "relUrl": "/docs/WINDOWS/Configuration_IP_in_Windows_OS/Configuration_IP_in_Windows_OS/#configure-ip"
+  },"71": {
+    "doc": "6.Container Network",
+    "title": "Container Network",
+    "content": "{ :no_toc } . | Container Network . | 1. Container Network structure | 2. Port-Forwading | 3. Adding Container network | 4. Container to Container Networking | . | . ",
+    "url": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#container-network",
+    
+    "relUrl": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#container-network"
+  },"72": {
+    "doc": "6.Container Network",
+    "title": "1. Container Network structure",
+    "content": ". | Virtual ethernet bridge: 172.17.0.0/16. | It’s based on L2 Layer network. | The Veth interface is created when the container is created. | IP within bridge networks are sequential assign while the container running(these will be changed when the container restart). | The veth interface is created for inside connecting between the ‘docker0’bridge and the container. Also, it connects with ‘eht0’ in the container. | ‘docker0’ bonded with the veth interface roled to connect with the eth0 of the host. | . ",
+    "url": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#1-container-network-structure",
+    
+    "relUrl": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#1-container-network-structure"
+  },"73": {
+    "doc": "6.Container Network",
+    "title": "2. Port-Forwading",
+    "content": ". | It is allowed to connect outside by exposing the container port to out. | Port exposes through Ipables rule(automatic) 1. -p &lt;HostPort:ContainerPort&gt; 2. -p &lt;ContainerPort&gt; (Hostport is appointed by random, it can check as ‘docker ps’) 3. -P (Specifying the EXPOSE and Random host port specified in the dockerfile, It can check as ‘docker ps’) | . ",
+    "url": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#2-port-forwading",
+    
+    "relUrl": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#2-port-forwading"
+  },"74": {
+    "doc": "6.Container Network",
+    "title": "3. Adding Container network",
+    "content": ". | The interface network in ‘docker0’ is not allowed to static mode. | It is possible to create a user-defined bridge network like docker0. for connecting between eth0 interface in the host and veth interface in the container. | –driver: You can select network type(bridge, ipvlan, mcvlan, overlay) . | –subnet: You can designate network range(If you skip it, It’ll be applied sequentially from 192.168.100.0) . | –gateway: You can designate gateway IP(If you skip it, It’ll be applied x.x.x.1 ) . | mynet: You can create network name you want. | –net: You can designate network that container can using.(If you skip it, It’ll be ‘docker0’) . | –ip: You can designate IP that the container can have. (If you skip it, It’ll be applied sequentially from x.x.x.1) . | . | . ",
+    "url": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#3-adding-container-network",
+    
+    "relUrl": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#3-adding-container-network"
+  },"75": {
+    "doc": "6.Container Network",
+    "title": "4. Container to Container Networking",
+    "content": ". | Server &amp; Client service operating by using container | Sending data whithin appear in container(wordpress) at front area to container(mysql) . | –link: Container connecting setting in same host network | –link &lt;container name&gt;:&lt;hosts registered name&gt; | When the link’s set up, container information will be registred to ‘hosts’ file automatically. | If Container’s registered IP is changed, hosts information will be modified automatically. | . | . ",
+    "url": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#4-container-to-container-networking",
+    
+    "relUrl": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/#4-container-to-container-networking"
+  },"76": {
+    "doc": "6.Container Network",
+    "title": "6.Container Network",
+    "content": " ",
+    "url": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/",
+    
+    "relUrl": "/docs/DOCKER/6.ContainerNetwork/ContainerNetwork/"
+  },"77": {
+    "doc": "7. Container Network LAB",
+    "title": "Container Network LAB",
+    "content": ". | Container Network LAB . | LAB 1. Docker0 network . | Configure containers and networks like below | Required Satisfaction Conditions . | Buiding Step | IP check | . | Create container with reference to the following conditions . | Building step | . | Q. How to know container web’s IP | . | LAB 2. Port-Forwarding . | O. Run 3 containers by the following below condition. | A. Building Step | . | LAB 3. Creating User-Defined Network . | Q. Create a network for use at containers by following the below conditions | A. Building step | Check | . | . | . ",
+    "url": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#container-network-lab",
+    
+    "relUrl": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#container-network-lab"
+  },"78": {
+    "doc": "7. Container Network LAB",
+    "title": "LAB 1. Docker0 network",
+    "content": "Configure containers and networks like below . Required Satisfaction Conditions . | Container image: busybox:latest | Connet to inside with creating a container | CMD [“sh”] | Check those’s IP | . Buiding Step . | C1 $ docker run –name C1 -d -it –rm busybox:latest | C2 $ docker run –name C2 -d -it –rm busybox:latest | . IP check . | C1 $ docker attach C1 / # ifconfig . | C2 $ docker attach C2 / # ifconfig . | . Create container with reference to the following conditions . | Container name: web | Container image: nginx:latest | Port-forwarding: Port 80 | Background-Activating | . Building step . | $ docker run -d –name web -p 80:80 nginx:latest | -d : background-activating | –name: container name | -p : port-forwarding | . Q. How to know container web’s IP . | $ docker inspect web | You can check docker0’s role as a gateway in the container network. | . ",
+    "url": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#lab-1-docker0-network",
+    
+    "relUrl": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#lab-1-docker0-network"
+  },"79": {
+    "doc": "7. Container Network LAB",
+    "title": "LAB 2. Port-Forwarding",
+    "content": "O. Run 3 containers by the following below condition. | Web1 - Container image: nginx:latest - Container name: web1 - Background-Activating - Insert command : -p 80:80 . | Web2 - Container image: nginx:latest - Container name: web2 - Background-Activating - Insert : -p 80 . | Web3 - Container image: nginx:latest - Container name: web3 - Background-Activating - Insert : -P . | . A. Building Step . | Web1 $ docker run –name web1 -d -p 80:80 nginx:latest | Web2 $ docker run –name web2 -d -p 80 nginx:latest | web3 $ docker run –name web3 -d -P | . ",
+    "url": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#lab-2-port-forwarding",
+    
+    "relUrl": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#lab-2-port-forwarding"
+  },"80": {
+    "doc": "7. Container Network LAB",
+    "title": "LAB 3. Creating User-Defined Network",
+    "content": "Q. Create a network for use at containers by following the below conditions . | subnet: 192.168.1.0/24 | gateway: 192.168.1.254 | network name : cloudnet | . A. Building step . ``` $ docker network create --driver bridge \\ --subnet 192.168.1.0/24 \\ --gateway 192.168.1.254 \\ ``` . Check . ",
+    "url": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#lab-3-creating-user-defined-network",
+    
+    "relUrl": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/#lab-3-creating-user-defined-network"
+  },"81": {
+    "doc": "7. Container Network LAB",
+    "title": "7. Container Network LAB",
+    "content": " ",
+    "url": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/",
+    
+    "relUrl": "/docs/DOCKER/7.ContainerNetworkLab/ContainerNetworkLab/"
+  },"82": {
+    "doc": "DOCKER",
+    "title": "DOCKER",
+    "content": " ",
+    "url": "/docs/DOCKER",
+    
+    "relUrl": "/docs/DOCKER"
+  },"83": {
+    "doc": "VMware Architecture include ESXi, Network, Starage within vCenter",
+    "title": "VMware Architecture include ESXi, Network, Starage within vCenter",
+    "content": " ",
+    "url": "/docs/PROJECT/VMWARE/Devops/",
+    
+    "relUrl": "/docs/PROJECT/VMWARE/Devops/"
+  },"84": {
+    "doc": "1.Architecture AWS with Terraform for Automating",
+    "title": "1.Architecture AWS with Terraform for Automating",
+    "content": " ",
+    "url": "/docs/PROJECT/Devops/Devops/",
+    
+    "relUrl": "/docs/PROJECT/Devops/Devops/"
+  },"85": {
+    "doc": "File Server in WINDOWS",
+    "title": "File Server in Windows",
+    "content": ". | Introduction | Building NFS File Server in Windows Server 2016 . | Preparation for work | Adding physical hard storage in VMware fusion | Registration added hard storage to Windows Server | Installation NFS Server in Server Manager | Configration Server for NFS in Windows Server | Installation NFS Client on Client Computer | Setting up Client for NFS in Client Computer | Testing | . | Building iSCSI File Server in Windows Server 2016 . | Testing | . | . ",
+    "url": "/docs/WINDOWS/File-Server/File-Server-105/#file-server-in-windows",
+    
+    "relUrl": "/docs/WINDOWS/File-Server/File-Server-105/#file-server-in-windows"
+  },"86": {
+    "doc": "File Server in WINDOWS",
+    "title": "Introduction",
+    "content": "### . ",
+    "url": "/docs/WINDOWS/File-Server/File-Server-105/#introduction",
+    
+    "relUrl": "/docs/WINDOWS/File-Server/File-Server-105/#introduction"
+  },"87": {
+    "doc": "File Server in WINDOWS",
+    "title": "Building NFS File Server in Windows Server 2016",
+    "content": "Preparation for work . | File Server - Adding 100G physical storage - OS : Windows Server 2016 - IP : 192.168.111.10 - Turn off all firewall in OS . | Client Server - OS : Windows Enterprise 10 - IP : 192.168.111.20 - Turn off all firewall in OS . | . Adding physical hard storage in VMware fusion . | The machine has to turn off before beginning. | NFS Server &gt; Settings &gt; Added Device . | Select ‘New Hard Disk’ in Settings &gt; Added Device and then, click ‘Add’. | Put ‘100’ into blank box for disk size. and then, click ‘Apply’. | Close window . | . Registration added hard storage to Windows Server . | Turn on The Server machine(Windows Server 2016) in WMware. | Press ‘Window key’ and put ‘Disk management’ or ‘create and format’ and then, press ‘Enter key’ or click the icon on the list for running application. | Select ‘GPT(GUID Partition Table)’ and click ‘OK’ in ‘Initialize Disk’ pop-up window. | Check the new disk drive that was added from Vmware and right-click on the new disk drive section then, click ‘New Simple Volome’. | Click ‘Next’ on the New Simple Volume Wizard pop-up window. | Put disk size you want into blank box on ‘Specify Volume Size’ section and then click ‘Next’ . | In the ‘Assign Drive Letter or Path’ section, select ‘Assign the following drive letter’ and then choose the letter for the new drive volume. You can also choose other options, such as making the volume a folder under an existing volume, or a volume without a name. click ‘Next’ after done selection. | In the ‘Format Partition’, select ‘Format this volume with the following settings’. and put a new ‘Volume label’ name(ex&gt;NFS-Server-Test), and let the rest of them as the default setting. then, click ‘Next’. If you want to know more about ‘Format’. Click here . | Check the all configurations you did in this window. and then, click ‘Finish’. | Close ‘Disk Management’ window. | . Installation NFS Server in Server Manager . | press ‘Window key’ on the keyboard and put ‘Server manager’ then click ‘Server Manager’ on the list for running. | At the Server Manager window click on ‘Manage’. then, click ‘Add Roles and Features’. | At the ‘Add Roles and Features Wizard’on the pop-up window, check the things you need to do before proceeding in the ‘Before you begin’ section, then click ‘Next’. | Select ‘Role-vased or feature-based installation’. and click ‘Next’. | At ‘Select destination server’ Section, Select ‘Select a server from the server pool’. and select the server you want to install roles and features after checking the information (Name, IP Address, Operating System) on the ‘Server Pool’ list. and then, click ‘Next’. | At ‘Remove server roles’, select ‘Server for NFS in ‘File and Storage Services &gt; File and iSCSI Services’ on the Roles list. and then, click blank check box on the left. | Click ‘Next’ after checking the installation information on the new pop-up window. | Click ‘Next’ on the returned window. | Click ‘Next’ at ‘Select features’ - You don’t need any selection here due to you already installed the feature you want in the before step. | Click ‘Install’ at ‘confirm installation selections’ . | Wait for a while for feature installation and click ‘Close’ after succeed it. | Click ‘File and Storage Service’ on sidebar in Server Manager. | You can see the server status on the list. right-click on the server selected. and then, find and click ‘Start Performance counter’ for running. | Ckeck the server status changed to ‘online’. | . Configration Server for NFS in Windows Server . | Press ‘Window Key’ and put ‘server manager’ into blank search box. and then, press ‘Enter key’ or Click ‘Server manager’ icon on the list for running ‘Server Manager’ . | Click ‘File and Storage Services’ on the sidebar. | Select ‘To create a file share, start the New Share Wizard’ after clicking ‘Shares’ on the second sidebar. | Select ‘NFS Share - Quick’ on the ‘File share profile’ list at the ‘Select the profile for this share’ Section in the ‘New Share Wizard’ pop-up window. and click ‘Next’ after done. | . | Check the Server that you want to share and select ‘Share location’ and then, choose The drive you want to share through the NFS Server. Also, you can make a ‘custom path’ through one other option. | Put ‘Shared Name’ you want(ex&gt; NFS-Text) into blank on the box on the most top. | Check box ‘No server authentication(AUTH_SYS)’, ‘Enable unmapped user access’ and select ‘Allow unmapped user access by UID/GID’ at ‘Specify authentication methods’ section. and click ‘Next’ after done. | Click ‘Add’ Specify the share permissions’ section. and it’ll open the ‘Add Permissions new pop-up window. and then, put the client computer’s IP address that you want to connect with the file server into the blank box under ‘Host’. and next, select ‘Read/Write’ under ‘Share permissions’ through a click. click ‘Add’ after done. | Check the information that was configured on the list. and then, click ‘Next. | Check the information about permissions at the ‘Specify permissions to control access’ and then click ‘Next’ after done. | Check the configure information about Server, Client on the window at the ‘Confirm selection’ section. and then, click ‘Create’ after done. | Check the task monitoring information on the list and then, click ‘Close’ after done. | Check the task information that was configurated on the ‘Shares’list. | . Installation NFS Client on Client Computer . | Turn on the client machine(Windows 10 Enterprise) in WMware. | Press [Window Key] + R for running ‘Run’ dialog type application. | Put ‘cmd’ into the blank box and press the ‘Enter key’ or click ‘OK’ to run the ‘CMD’ application. | Put ‘ipconfig’ into the prompt and ‘Enter key’ to show IP configured. and check IP address. | put ‘ping 192.168.111.10’ and ‘Enter key’ for ping test with ‘NFS Server’ - If you did not succeed in the ping test with the right IP configuration. probably, It caused a firewall. check the firewall status again. or If you want work to include running a firewall, click this. this . | close ‘CMD’ Application . | Press [Window Key] and put ‘features on’. If you can see ‘Turn windows features on or off’ click it on the list. | Select ‘Client for NFS’ under ‘Service for NFS’ on the list at the ‘Windows Features’ pop-up window. and click ‘OK’. | wait for a while until appying is done. and then, click ‘Close’ . | . Setting up Client for NFS in Client Computer . | Press ‘Window key’ + E for openning ‘File explorer’ . | Find and click ‘This PC’ on the sidebar. select the ‘Computer’ tab at the top of the window and click the ‘Map network Drive’ icon on the function list. | Choose the letter of the drive, and put ‘\\[server ip][share name]’ into the blank box next to ‘Folder’. and click ‘finish’ after done. - It is configuration without security. you can make more secure configuration through ‘Active Directory’. | If it succeeded in connecting. you can see like below status in ‘File explorer’. | . Testing . | Make any file in NFS Drive on Client’s computer. and then, if it succeeded it. you can check the status like this on Client computer and Server. | . ",
+    "url": "/docs/WINDOWS/File-Server/File-Server-105/#building-nfs-file-server-in-windows-server-2016",
+    
+    "relUrl": "/docs/WINDOWS/File-Server/File-Server-105/#building-nfs-file-server-in-windows-server-2016"
+  },"88": {
+    "doc": "File Server in WINDOWS",
+    "title": "Building iSCSI File Server in Windows Server 2016",
+    "content": "Testing . ",
+    "url": "/docs/WINDOWS/File-Server/File-Server-105/#building-iscsi-file-server-in-windows-server-2016",
+    
+    "relUrl": "/docs/WINDOWS/File-Server/File-Server-105/#building-iscsi-file-server-in-windows-server-2016"
+  },"89": {
+    "doc": "File Server in WINDOWS",
+    "title": "File Server in WINDOWS",
+    "content": " ",
+    "url": "/docs/WINDOWS/File-Server/File-Server-105/",
+    
+    "relUrl": "/docs/WINDOWS/File-Server/File-Server-105/"
+  },"90": {
+    "doc": "GCP",
+    "title": "GCP",
+    "content": " ",
+    "url": "/docs/GCP",
+    
+    "relUrl": "/docs/GCP"
+  },"91": {
+    "doc": "How to change computer's name in Windows OS",
+    "title": "How tp change computer name in Windows OS",
+    "content": " ",
+    "url": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/#how-tp-change-computer-name-in-windows-os",
+    
+    "relUrl": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/#how-tp-change-computer-name-in-windows-os"
+  },"92": {
+    "doc": "How to change computer's name in Windows OS",
+    "title": "Change computer name via Settings",
+    "content": ". | Open Settings - Press the ‘windows key’ then click the Setting icon . | Click the ‘System’ icon . | Click ‘About’ on the sidebar, then find ‘Rename pc’. And Click the button. | Put your new computer’s name in blank dialog box and click ‘Next’ button . | You can choose both. if you choose ‘Restart later’, then it won’t change name before restart. | . ",
+    "url": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/#change-computer-name-via-settings",
+    
+    "relUrl": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/#change-computer-name-via-settings"
+  },"93": {
+    "doc": "How to change computer's name in Windows OS",
+    "title": "Change computer name via Control Panel",
+    "content": ". | Press [Windows key] + r, and filled ‘control panel’ in the ‘Open’ dialog box, and press ‘OK’. | Change into ‘Small item’ after pressing ‘Category’ next to ‘View by’ right upper in the new pop-up control panel window. | Click ‘System’ in the list. | Click ‘Advanced system settings’ on side bar in ‘View basic information about your computer’ window changed. | Click the ‘Change’ button in the right middle of the Computer Name section in the System Properties menu. | Fill the Computer name you want into the ‘computer name’ blank box in the new pop-up window named ‘Computer Name/Domain Changes’. and press ‘OK’ . | Click ‘OK’ Button on the new pop-up window which has ‘You must restart your computer to apply these changes’. | . ",
+    "url": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/#change-computer-name-via-control-panel",
+    
+    "relUrl": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/#change-computer-name-via-control-panel"
+  },"94": {
+    "doc": "How to change computer's name in Windows OS",
+    "title": "How to change computer's name in Windows OS",
+    "content": " ",
+    "url": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/",
+    
+    "relUrl": "/docs/WINDOWS/How_to_change_your_computers_name/How_to_change_your_computers_name/"
+  },"95": {
+    "doc": "LAB Installation vCenter",
+    "title": "LAB. Installation and configuration",
+    "content": ". | LAB. Installation and configuration . | Preparing for Working | . | . ",
+    "url": "/docs/VMware/Installation%20vCenter#lab-installation-and-configuration",
+    
+    "relUrl": "/docs/VMware/Installation vCenter#lab-installation-and-configuration"
+  },"96": {
+    "doc": "LAB Installation vCenter",
+    "title": "Preparing for Working",
+    "content": "## . ",
+    "url": "/docs/VMware/Installation%20vCenter#preparing-for-working",
+    
+    "relUrl": "/docs/VMware/Installation vCenter#preparing-for-working"
+  },"97": {
+    "doc": "LAB Installation vCenter",
+    "title": "LAB Installation vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Installation%20vCenter",
+    
+    "relUrl": "/docs/VMware/Installation vCenter"
+  },"98": {
+    "doc": "KUBERNETES",
+    "title": "KUBERNETES",
+    "content": " ",
+    "url": "/docs/DOCKER",
+    
+    "relUrl": "/docs/DOCKER"
+  },"99": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "Kubernetes &amp; Docker &amp; Container",
+    "content": "{ :no_toc } . | Kubernetes &amp; Docker &amp; Container . | Docker and Container | Docker Architecture | Container Orchestration | History of Kubernetes | What is API(Application Programing Interface) | Use Kubernetes without installing | The advant of containers | . | . ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#kubernetes--docker--container",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#kubernetes--docker--container"
+  },"100": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "Docker and Container",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#docker-and-container",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#docker-and-container"
+  },"101": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "Docker Architecture",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#docker-architecture",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#docker-architecture"
+  },"102": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "Container Orchestration",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#container-orchestration",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#container-orchestration"
+  },"103": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "History of Kubernetes",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#history-of-kubernetes",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#history-of-kubernetes"
+  },"104": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "What is API(Application Programing Interface)",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#what-is-apiapplication-programing-interface",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#what-is-apiapplication-programing-interface"
+  },"105": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "Use Kubernetes without installing",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#use-kubernetes-without-installing",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#use-kubernetes-without-installing"
+  },"106": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "The advant of containers",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#the-advant-of-containers",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/#the-advant-of-containers"
+  },"107": {
+    "doc": "1. Kubernetes & Docker & Container",
+    "title": "1. Kubernetes & Docker & Container",
+    "content": " ",
+    "url": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/",
+    
+    "relUrl": "/docs/KUBERNETES/1.Kubernetes/Kubernetes&Docker&Container/"
+  },"108": {
+    "doc": "LAB",
+    "title": "LAB",
+    "content": " ",
+    "url": "/docs/NETWORK/",
+    
+    "relUrl": "/docs/NETWORK/"
+  },"109": {
+    "doc": "LAB_Build DHCP",
+    "title": "LAB_Build DHCP",
+    "content": ". | 구성목표 윈도우서버에 DHCP 서버를 구축하고 작동을 확인. | 사전설정 . | Vmware DHCP 기능 해제 (MAC용 Vmware Fusion12기준) . | Vmware &gt; Settings . | Network &gt; Custom to my Mac 에서 구축에 사용할 네트워크 선택 . | 설정 섹션에서 구축에 사용할 Network를 확인한뒤 ‘Provide addresses on this network via DHCP’의 체크박스를 해제 . | . | Server and Computers . | Server 1 . | Windows Server 2016(GUI) | Computer name: FIRST 윈도우에서 컴퓨터 이름 지정 | IP: 192.168.102.10(STATIC) 윈도우OS GUI에서 IP확인 및 설정 방법 | . | Client1 . | Windows 10(GUI) | Computer name: Client_1 | Subnet IP: 192.168.102.0(Vmware Network Adapter) | IP: DHCP | . | Client2 . | Windows 10(GUI) | Computer name: Client_2 | Subnet IP: 192.168.102.0(Vmware Network Adapter) | IP: DHCP | . | . | . | 구축 . | STEP1. (First Server에 DHCP구성) . | DHCP 설치 . | Server Manager 구동 . | Manage &gt; Add Role and Features . | 새로운 팝업창에서 Server Selection 클릭 후 Server Role 클릭 - Server Selection을 클릭해야 Server Role 선택 가능 . | Server Role List에서 ‘DHCP Server’체크 . | 새로운 Pop-up 창에서 설치할 서비스를 확인하고 ‘Add Feartures’ 클릭. | NEXT . | Features에서 NET Framework 설치 확인 - 만약 설치가 되어 있지 않다면 NET Framework를 먼저 설치 한 후에 DHCP서버를 설치하자. | NEXT &gt; NEXT &gt; INSTALL . | INSTALL 완료 확인 후 Close 클릭 . | . | DHCP Configuration . | Server manager &gt; Tools &gt; DHCP 클릭 . | DHCP &gt; [Computer Name] &gt; IPv4 에서 우클릭 . | 목록에서 ‘New Scope…’ 선택 . | 새 팝업창에서 작업을 위해 ‘Next’ . | Scope Name 섹션에서 Name에 임의의 이름을 지정 이번 예제에서는 ‘VLAN 102’로 지정 . | IP Address Range에서는 DHCP가 IP를 제공하는 영역을 설정한다. Start IP address에는 영역의 시작 IP를, End IP address에는 영역의 마지막 IP를 입력한다. Propagate에서는 제공되는 network의 범위를 지정한다. 설정을 마치고 ‘NEXT’. | Add Exclusions and Delay는 DHCP를 제공하지 않는 범위를 선택할 수 있다. 없다면, ‘NEXT’ . | ‘Lease Duration’에서는 IP 임대 기간을 설정할수가 있다. 기기의 목적에 따라 임대 시간을 ‘일’, ‘분’, ‘초’ 단위로 적절히 부여할 수 있다. 특별한 설정이 없다면 ‘NEXT’ . | DHCP를 제공하는 클라이언트에게 DNS server IP나 Gateway IP를 제공 여부를 결정할수 있다. 제공을 원하면 ‘Yes’를 체크하고 다음 설정을 위해 ‘NEXT’ 클릭. | DHCP를 제공받는 Clinet에게 함께 제공할 Gateway IP를 선택 할 수 있다. 입력란의 제공할 Gateway IP를 입력하고 ‘ADD’누른후 목록에 IP가 등록이 된것을 확인하자. 설정을 마치면 ‘NEXT’ . | Domain Name and DNS Servers에서는 DNS Server IP를 등록할수 있다. 그리고 Active Directory를 구성했을때 도메인도 등록할수 있다. 관련해서 Active Directory에서 다시 언급하겠다. 특별한 설정이 없다면 ‘NEXT’. | WINS Server 설정 섹션이다. 특별사항이 없다면 ‘NEXT’ . | 설정한 영역을 활성화 하고 싶은지 묻는 창이다. ‘Yes’에 체크하고 ‘NEXT’누르자. | 설정이 성공적으로 됐다는 메세지를 확인하고 ‘Finish’를 클릭. | . | . | . | 작동확인 . | DHCP Server - Server Manager &gt; DHCP 의 ‘Manageability’에 ‘Online - Performance counters not started’라도 되어 있다. 이뜻은 온라인에 연결을 되어 있으나. DHCP기능이 제대로 작동하고 있지 않다는 뜻이다. 제대로 작동 할수 있게 설정이 필요하다. | Server Manager &gt; DHCP 서버 목록에서 작동시킬 서버를 선택하고 우클릭 . | 목록에서 ‘Start Performance Counters’를 찾아 클릭’ . | 서버의 ‘manageability’의 부분이 ‘Online - Performanc counters not started’ 가 ‘Online’으로 바꾸어지는것 확인. | . | Client Computers . | ‘Network Protocol Version 4 (TCP/IPv4) Properties’를 열어 ‘Obtain and IP address automatically’로 설정 되었는지 확인. | [Windows key] + r을 눌러 ‘Run’을 실행하고, 명령어 입력 창에 ‘CMD’입력하고 엔터를 눌러 실행. | Pop-up된 CMD창에 ‘ipconfig’입력후 실행시켜 네트워크 정보 출력. 하고 ping 192.168.102.10를 입력하여 DHCP Server간에 Ping 테스트. | Clinet_2도 3.과 같이 테스트. | DHCP Server로 돌아가서 Server manager &gt; tool &gt; DHCP &gt; [computer name] &gt; IPv4 &gt; Scope[192.168.102.0]VLAN102 &gt; Address Leases에서 DHCP로 IP를 공급받은 Client 리스트 확인 가능하다. | . | . | . ",
+    "url": "/docs/WINDOWS/LAB_DHCP/LAB_DHCP/",
+    
+    "relUrl": "/docs/WINDOWS/LAB_DHCP/LAB_DHCP/"
+  },"110": {
+    "doc": "LAB_Build WEB, FTP, DNS, DHCP",
+    "title": "LAB_Build WEB, FTP, DNS, DHCP",
+    "content": ". | 구성목표 윈도우서버에 WEB, FTP, DNS, DHCP 서버를 구축하고 작동을 확인. | 사전구성 . | Server1 - Windows Server 2016(GUI) - Computer name: FIRST - IP: 192.168.111.10(STATIC) | Server2 - Windows Server 2016(GUI) - Computer name: SECOND - IP: 192.168.111.20(STATIC) | Client1 - Windows 10(GUI) - Computer name: Client_1 - IP: DHCP | Client2 - Windows 10(GUI) - Computer name: Client_2 - IP: DHCP | . | 구축 . | STEP1. (First Server에 DHCP구성) . | DHCP 설치 . | Server Manager 구동 | Manage &gt; Add Role and Features | 새로운 팝업창에서 Server Selection 클릭 후 Server Role 클릭 - Server Selection을 클릭해야 Server Role 선택 가능 | Server Role List에서 ‘DHCP Server’체크 | 새로운 Pop-up 창에서 설치할 서비스를 확인하고 ‘Add Feartures’ 클릭 | NEXT | Features에서 NET Framework 설치 확인 . | 만약 설치가 되어 있지 않다면 NET Framework를 먼저 설치 한 후에 DHCP서버를 설치하자. | . | NEXT &gt; NEXT &gt; INSTALL | INSTALL 완료 확인 후 Close 클릭 | . | DHCP Configuration . | Server manager &gt; Tools &gt; DHCP 클릭 | DHCP &gt; [Computer Name] &gt; IPv4 에서 우클릭 | 목록에서 ‘New Scope…’ 선택 | 새 팝업창에서 작업을 위해 ‘Next’ | Scope Name 섹션에서 Name에 임의의 이름을 지정 이번 예제에서는 ‘VLAN 111’로 지정 | IP Address Range에서는 DHCP가 IP를 제공하는 영역을 설정한다. Start IP address에는 영역의 시작 IP를, End IP address에는 영역의 마지막 IP를 입력한다. Propagate에서는 제공되는 network의 | . | . | . GW : 192.168.111.254 DNS : 192.168.111.100 SECOND Server는 192.168.111.200을 할당받도록 구성합니다. WIN10-1은 임의의 IP를 할당받도록 구성합니다. | . STEP2. (FIRST Server에 DNS구성) - Domain Name: this.com으로 구성합니다. - THIS.COM의 FTP Server는 ftp.this.com으로 구성(192.168.111.200) . STEP3. (SECOND Server를 WEB, FTP구성) - IIS를 구성하고, WEB Service를 구성합니다. WEB 초기 페이지는 “THIS.COM을 SECOND Server입니다.”로 구성합니다. - FTP Service를 구성합니다. FTP를 구성합니다. (익명연결로 구성합니다.) . 확인1. WIN10-1에서 www.this.com으로 접속이 되는 것을 확인합니다. 확인2. WIN10-1에서 ftp를 이용하여, ftp.this.com으로 접속이 되고 파일이 다운로드 되는 것을 확인합니다. ",
+    "url": "/docs/WINDOWS/LAB_WEB_FTP_DNS_DHCP/LAB_WEB_FTP_DNS_DHCP/",
+    
+    "relUrl": "/docs/WINDOWS/LAB_WEB_FTP_DNS_DHCP/LAB_WEB_FTP_DNS_DHCP/"
+  },"111": {
+    "doc": "LINUX",
+    "title": "LINUX",
+    "content": " ",
+    "url": "/docs/LINUX",
+    
+    "relUrl": "/docs/LINUX"
+  },"112": {
+    "doc": "3. LAB-1 Install K8E Master-node and Worker-node",
+    "title": "LAB-1. Install K8E Master-node and Worker-node",
+    "content": "{ :no_toc } . | LAB-1. Install K8E Master-node and Worker-node . | Goal Topology | Preparing before LAB working | . | . ",
+    "url": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/#lab-1-install-k8e-master-node-and-worker-node",
+    
+    "relUrl": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/#lab-1-install-k8e-master-node-and-worker-node"
+  },"113": {
+    "doc": "3. LAB-1 Install K8E Master-node and Worker-node",
+    "title": "Goal Topology",
+    "content": ". ",
+    "url": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/#goal-topology",
+    
+    "relUrl": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/#goal-topology"
+  },"114": {
+    "doc": "3. LAB-1 Install K8E Master-node and Worker-node",
+    "title": "Preparing before LAB working",
+    "content": "## . ",
+    "url": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/#preparing-before-lab-working",
+    
+    "relUrl": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/#preparing-before-lab-working"
+  },"115": {
+    "doc": "3. LAB-1 Install K8E Master-node and Worker-node",
+    "title": "3. LAB-1 Install K8E Master-node and Worker-node",
+    "content": " ",
+    "url": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/",
+    
+    "relUrl": "/docs/KUBERNETES/2.LAB1-Install-K8E-Master-Worker/Lab1-Install-K8E-Master-Worker/"
+  },"116": {
+    "doc": "2.  MA(Monolithic Archtecture) vs MSA(Micro Service Archtecture)",
+    "title": "MA(Monolithic Archtecture) vs MSA(Micro Service Archtecture)",
+    "content": "{ :no_toc } . | MA(Monolithic Archtecture) vs MSA(Micro Service Archtecture) | . ",
+    "url": "/docs/DOCKER/2.MA-vs-MVA/MA-vs-MVA/#mamonolithic-archtecture-vs-msamicro-service-archtecture",
+    
+    "relUrl": "/docs/DOCKER/2.MA-vs-MVA/MA-vs-MVA/#mamonolithic-archtecture-vs-msamicro-service-archtecture"
+  },"117": {
+    "doc": "2.  MA(Monolithic Archtecture) vs MSA(Micro Service Archtecture)",
+    "title": "2.  MA(Monolithic Archtecture) vs MSA(Micro Service Archtecture)",
+    "content": " ",
+    "url": "/docs/DOCKER/2.MA-vs-MVA/MA-vs-MVA/",
+    
+    "relUrl": "/docs/DOCKER/2.MA-vs-MVA/MA-vs-MVA/"
+  },"118": {
+    "doc": "Mgration in vCenter",
+    "title": "Migration in vCenter",
+    "content": ". | Migration in vCenter . | Migration | LAB. Installation Storage Server with True NAS | LAB. Configuration Storage Server in vCenter | LAB | LAB. Mount iSCS Volume in vCenter | LAB Mount NFS Volume in vCenter | . | . ",
+    "url": "/docs/VMware/Migration#migration-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Migration#migration-in-vcenter"
+  },"119": {
+    "doc": "Mgration in vCenter",
+    "title": "Migration",
+    "content": " ",
+    "url": "/docs/VMware/Migration#migration",
+    
+    "relUrl": "/docs/VMware/Migration#migration"
+  },"120": {
+    "doc": "Mgration in vCenter",
+    "title": "LAB. Installation Storage Server with True NAS",
+    "content": " ",
+    "url": "/docs/VMware/Migration#lab-installation-storage-server-with-true-nas",
+    
+    "relUrl": "/docs/VMware/Migration#lab-installation-storage-server-with-true-nas"
+  },"121": {
+    "doc": "Mgration in vCenter",
+    "title": "LAB. Configuration Storage Server in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Migration#lab-configuration-storage-server-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Migration#lab-configuration-storage-server-in-vcenter"
+  },"122": {
+    "doc": "Mgration in vCenter",
+    "title": "LAB",
+    "content": " ",
+    "url": "/docs/VMware/Migration#lab",
+    
+    "relUrl": "/docs/VMware/Migration#lab"
+  },"123": {
+    "doc": "Mgration in vCenter",
+    "title": "LAB. Mount iSCS Volume in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Migration#lab-mount-iscs-volume-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Migration#lab-mount-iscs-volume-in-vcenter"
+  },"124": {
+    "doc": "Mgration in vCenter",
+    "title": "LAB  Mount NFS Volume in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Migration#lab--mount-nfs-volume-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Migration#lab--mount-nfs-volume-in-vcenter"
+  },"125": {
+    "doc": "Mgration in vCenter",
+    "title": "Mgration in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Migration",
+    
+    "relUrl": "/docs/VMware/Migration"
+  },"126": {
+    "doc": "NETWORK",
+    "title": "NETWORK",
+    "content": " ",
+    "url": "/docs/NETWORK",
+    
+    "relUrl": "/docs/NETWORK"
+  },"127": {
+    "doc": "1.Overview",
+    "title": "Architecture AWS with Terraform for Automating",
+    "content": "{ :no_toc } . | Architecture AWS with Terraform for Automating . | OVERVIEW | Building VPC, EC2 in AWS | Buiding Load balancer and ECS | Making boto3 script on python for automating Lamda in AWS | Making terraform script for buiding AWS resources | . | . ",
+    "url": "/docs/PROJECT/Devops/Overview#architecture-aws-with-terraform-for-automating",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview#architecture-aws-with-terraform-for-automating"
+  },"128": {
+    "doc": "1.Overview",
+    "title": "OVERVIEW",
+    "content": "This project is about Architecture AWS, Terraform for Automating. It will be described how to build VPC, EC2, ECS, Lambda, Bridge Event, Cloud Watch at AWS. in addition, It will describe how to write and run about terraform to automate operating AWS and build several tools for it. ",
+    "url": "/docs/PROJECT/Devops/Overview#overview",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview#overview"
+  },"129": {
+    "doc": "1.Overview",
+    "title": "Building VPC, EC2 in AWS",
+    "content": "It will be composed Network, Subnet, Route with Internet Gateway, Nat Gateway in VPC and Instance in EC2. ",
+    "url": "/docs/PROJECT/Devops/Overview#building-vpc-ec2-in-aws",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview#building-vpc-ec2-in-aws"
+  },"130": {
+    "doc": "1.Overview",
+    "title": "Buiding Load balancer and ECS",
+    "content": "This section will be composed of a Load balancer, a Target group for operating ECS and Cluster, Task Definition, Service in ECS. ",
+    "url": "/docs/PROJECT/Devops/Overview#buiding-load-balancer-and-ecs",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview#buiding-load-balancer-and-ecs"
+  },"131": {
+    "doc": "1.Overview",
+    "title": "Making boto3 script on python for automating Lamda in AWS",
+    "content": "This section would be processing making a python script using boto3 for operating AWS resources. also, it could be running with the lambda and the bridge event. and we can check every process through the cloud watch. ",
+    "url": "/docs/PROJECT/Devops/Overview#making-boto3-script-on-python-for-automating-lamda-in-aws",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview#making-boto3-script-on-python-for-automating-lamda-in-aws"
+  },"132": {
+    "doc": "1.Overview",
+    "title": "Making terraform script for buiding AWS resources",
+    "content": "This section would be processing making a Terraform script through Terraform Cloud. First of all, the environment that was built can support syncing the local, cloud, private sources in AWS. It can sync to GitLab in EC2 Instance. and This script resources can provide AWS resources. ",
+    "url": "/docs/PROJECT/Devops/Overview#making-terraform-script-for-buiding-aws-resources",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview#making-terraform-script-for-buiding-aws-resources"
+  },"133": {
+    "doc": "1.Overview",
+    "title": "1.Overview",
+    "content": " ",
+    "url": "/docs/PROJECT/Devops/Overview",
+    
+    "relUrl": "/docs/PROJECT/Devops/Overview"
+  },"134": {
+    "doc": "1.Overview",
+    "title": "Architecture AWS with EKS",
+    "content": "{ :no_toc } . | Architecture AWS with EKS . | OVERVIEW | Basic resourcese in AWS | EKS and Nginx | EFK(Elastic Search, Fluentd, Kibana) Stack | Cloudwatch with Slack | . | . ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview#architecture-aws-with-eks",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview#architecture-aws-with-eks"
+  },"135": {
+    "doc": "1.Overview",
+    "title": "OVERVIEW",
+    "content": ". ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview#overview",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview#overview"
+  },"136": {
+    "doc": "1.Overview",
+    "title": "Basic resourcese in AWS",
+    "content": ". ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview#basic-resourcese-in-aws",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview#basic-resourcese-in-aws"
+  },"137": {
+    "doc": "1.Overview",
+    "title": "EKS and Nginx",
+    "content": " ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview#eks-and-nginx",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview#eks-and-nginx"
+  },"138": {
+    "doc": "1.Overview",
+    "title": "EFK(Elastic Search, Fluentd, Kibana) Stack",
+    "content": " ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview#efkelastic-search-fluentd-kibana-stack",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview#efkelastic-search-fluentd-kibana-stack"
+  },"139": {
+    "doc": "1.Overview",
+    "title": "Cloudwatch with Slack",
+    "content": " ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview#cloudwatch-with-slack",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview#cloudwatch-with-slack"
+  },"140": {
+    "doc": "1.Overview",
+    "title": "1.Overview",
+    "content": " ",
+    "url": "/docs/PROJECT/AWS-EKS/Overview",
+    
+    "relUrl": "/docs/PROJECT/AWS-EKS/Overview"
+  },"141": {
+    "doc": "PROJECT",
+    "title": "PROJECT",
+    "content": " ",
+    "url": "/docs/PROJECT",
+    
+    "relUrl": "/docs/PROJECT"
+  },"142": {
+    "doc": "RAID",
+    "title": "RAID",
+    "content": " ",
+    "url": "/docs/WINDOWS/RAID/RAID-106/",
+    
+    "relUrl": "/docs/WINDOWS/RAID/RAID-106/"
+  },"143": {
+    "doc": "SWITCH",
+    "title": "SWITCH",
+    "content": ". In Cisco networking, a switch is a networking device used to connect devices together and facilitate communication between them. Cisco switches operate at the data link layer of the OSI model, which is responsible for the physical transmission of data. Physical Structure: Cisco switches come in a variety of physical sizes and configurations, from small desktop models with a few ports to large chassis-based switches that can accommodate hundreds or thousands of ports. Most Cisco switches have a rectangular box design with multiple ports on the front or back panel. These ports can be connected to other network devices using Ethernet cables. Functions: The primary function of a Cisco switch is to direct traffic between devices on the network. When a device sends data to another device, it first sends the data to the switch. The switch then examines the destination MAC address of the data and determines which port the data should be forwarded to, sending it out on that port. This process is known as switching. Cisco switches also support advanced features such as VLANs, Link Aggregation Control Protocol (LACP), and Quality of Service (QoS). VLANs allow a single switch to be divided into multiple virtual switches, each with its own set of ports and security policies. LACP allows multiple physical links to be combined into a single logical link, providing higher bandwidth and redundancy. QoS allows the switch to prioritize certain types of traffic, such as real-time audio or video, to ensure that they are delivered with minimal delay or loss. Advantages: Some advantages of using Cisco switches include: . High performance and reliability: Cisco switches are designed to handle high traffic volumes and provide high levels of uptime and availability. Advanced features: Cisco switches support a wide range of advanced features, making them suitable for a variety of network configurations. Scalability: Cisco switches can be easily scaled up or down as the needs of the network change. Disadvantages: Some potential disadvantages of using Cisco switches include: . Cost: Cisco switches can be more expensive than switches from other manufacturers, especially for larger or more advanced models. Complexity: Some of the advanced features of Cisco switches can be complex to configure and manage, requiring specialized knowledge and expertise. Vendor lock-in: Because Cisco switches are proprietary, they can create a vendor lock-in situation, making it difficult to switch to another vendor’s products. Overall, Cisco switches are a critical component of many modern networks, providing high-speed, low-latency connectivity between devices and supporting a range of advanced features. While they may be more expensive and complex than switches from other vendors, their performance, reliability, and scalability make them a popular choice for many organizations. | SWITCH란? . | NETWORK에서 말하는 SWITCH란? NETWORK의 확장성을 위해 사용 되는 장비 입니다. BRIDGE도 이와 같은 기능을 하는 모델이지만 하나의 Collison Domain이 인한 확장성의 한계의 대체안으로 나온것이 SWITCH입니다. 가장 큰 차이점은 한개의 Collision Domain을 가지고 있는 Bridge에 반해 Switch은 Port당 Collision Domaind을 가지고 있어 고성능 네트워크에 사용되고 있습니다. 자세한 Bridge에 관한 내용은 따로 자세하게 다루겠습니다. | . | SWITCH와 BRIDGE의 차이점? . | SWITCH와 BRIDGE의 차이점이란 사용할수 있는 Collision의 수, 이름, 선호도 정도 입니다. 사람들이 장비를 구매할떄 많이 혼동하는 이유이기도 합니다. 하지만, 이 둘은 기술적으로는 아주 중요한 차이를 가지고 있습니다. | 첫번째는 Bridge는 소프트웨어즉 논리적으로 프레임 정보를 처리하지만 Swtich는 bridge의 처리 방식을 하드웨어(ASIC-Application-Specific-Intergrated-Circuit)로 하기때문에 처리속도가 상대적으로 훨씬 더 빠릅니다. | 두번째 bridge는 모든 포트들이 같은 속도를 가지지만 Switch는 속도가 다른 포트를 서로 연결할수 있게 합니다. | 세번째 확장성의 범위의 차이입니다. Bridge는 2 ~ 3개의 port들만 있는 반면 Switch는 기본적으로는 수십개 부터 모델에 따라서 많개는 몇백개 까지 연결이 가능합니다. | 네번째, Switch는 Cut-through, 또는 Store-and-forwad 방식을 사용하는 데 비해서 Bridge 는 오직 Store-and-forwad 방법만을 사용합니다. | Store-and-foward는 입력되는 프레임을 먼저 받은 뒤 요청받은 정보를 처리하는 방식입니다. | Cut-through는 프레임의 목적지 주소만 본 후 바로 전송 처리를 시작하는 방식입니다. 앞선 언급한 Store-and-foward보다 처리속도는 빠르지만 오류의 해결에는 약점을 가지고 있습니다. | . | . | SWITCH의 기능 2.1 Switch는 Bridge와 기능이 같습니다. | . ",
+    "url": "/docs/NETWORK/SWITCH/SWITCH/#switch",
+    
+    "relUrl": "/docs/NETWORK/SWITCH/SWITCH/#switch"
+  },"144": {
+    "doc": "SWITCH",
+    "title": "SWITCH",
+    "content": ". ",
+    "url": "/docs/NETWORK/SWITCH/SWITCH/",
+    
+    "relUrl": "/docs/NETWORK/SWITCH/SWITCH/"
+  },"145": {
+    "doc": "Storage in VMware",
+    "title": "Storage in VMware",
+    "content": ". | Storage in VMware . | Storage Virtualization | LAB. Installation Storage Server with True NAS | LAB. Configuration Storage Server in vCenter | LAB | LAB. Mount iSCS Volume in vCenter | LAB Mount NFS Volume in vCenter | . | . ",
+    "url": "/docs/VMware/Storage",
+    
+    "relUrl": "/docs/VMware/Storage"
+  },"146": {
+    "doc": "Storage in VMware",
+    "title": "Storage Virtualization",
+    "content": " ",
+    "url": "/docs/VMware/Storage#storage-virtualization",
+    
+    "relUrl": "/docs/VMware/Storage#storage-virtualization"
+  },"147": {
+    "doc": "Storage in VMware",
+    "title": "LAB. Installation Storage Server with True NAS",
+    "content": " ",
+    "url": "/docs/VMware/Storage#lab-installation-storage-server-with-true-nas",
+    
+    "relUrl": "/docs/VMware/Storage#lab-installation-storage-server-with-true-nas"
+  },"148": {
+    "doc": "Storage in VMware",
+    "title": "LAB. Configuration Storage Server in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Storage#lab-configuration-storage-server-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Storage#lab-configuration-storage-server-in-vcenter"
+  },"149": {
+    "doc": "Storage in VMware",
+    "title": "LAB",
+    "content": " ",
+    "url": "/docs/VMware/Storage#lab",
+    
+    "relUrl": "/docs/VMware/Storage#lab"
+  },"150": {
+    "doc": "Storage in VMware",
+    "title": "LAB. Mount iSCS Volume in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Storage#lab-mount-iscs-volume-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Storage#lab-mount-iscs-volume-in-vcenter"
+  },"151": {
+    "doc": "Storage in VMware",
+    "title": "LAB  Mount NFS Volume in vCenter",
+    "content": " ",
+    "url": "/docs/VMware/Storage#lab--mount-nfs-volume-in-vcenter",
+    
+    "relUrl": "/docs/VMware/Storage#lab--mount-nfs-volume-in-vcenter"
+  },"152": {
+    "doc": "5. Using Container",
+    "title": "Using Container",
+    "content": "{ :no_toc } . | Using Container . | 1. Manage container image . | Search images | Download images | Print out images downloaded list | View the image downloaded details | . | 2. Operate container . | Creating downloaded images as a container | . | . | . ",
+    "url": "/docs/DOCKER/5.Using-Container/Using-Container/#using-container",
+    
+    "relUrl": "/docs/DOCKER/5.Using-Container/Using-Container/#using-container"
+  },"153": {
+    "doc": "5. Using Container",
+    "title": "1. Manage container image",
+    "content": "Search images . Download images . Print out images downloaded list . View the image downloaded details . ",
+    "url": "/docs/DOCKER/5.Using-Container/Using-Container/#1-manage-container-image",
+    
+    "relUrl": "/docs/DOCKER/5.Using-Container/Using-Container/#1-manage-container-image"
+  },"154": {
+    "doc": "5. Using Container",
+    "title": "2. Operate container",
+    "content": "Creating downloaded images as a container . ",
+    "url": "/docs/DOCKER/5.Using-Container/Using-Container/#2-operate-container",
+    
+    "relUrl": "/docs/DOCKER/5.Using-Container/Using-Container/#2-operate-container"
+  },"155": {
+    "doc": "5. Using Container",
+    "title": "5. Using Container",
+    "content": " ",
+    "url": "/docs/DOCKER/5.Using-Container/Using-Container/",
+    
+    "relUrl": "/docs/DOCKER/5.Using-Container/Using-Container/"
+  },"156": {
+    "doc": "VMware",
+    "title": "VMware",
+    "content": " ",
+    "url": "/docs/VMware",
+    
+    "relUrl": "/docs/VMware"
+  },"157": {
+    "doc": "What is VPC in AWS?",
+    "title": "VPC is..",
+    "content": "Amazon Virtual Private Cloud (Amazon VPC) enables you to launch Amazon Web Services (AWS) resources into a virtual network that you’ve defined. This virtual network closely resembles a traditional network that you’d operate in your own data center, with the benefits of using the scalable infrastructure of AWS. With Amazon VPC, you can: . | Control your network’s IP address range | Choose your own subnets and configure security settings | Launch Amazon EC2 instances and other AWS resources into your VPC | Connect your VPC to the Internet or to your own data center | Implement Network Access Control Lists (ACLs) and security groups to control network traffic | . Amazon VPC makes it easier to secure your infrastructure and gives you complete control over your network, including your selection of IP address range, creation of subnets, and configuration of route tables and network gateways. ",
+    "url": "/docs/AWS/#vpc-is",
+    
+    "relUrl": "/docs/AWS/#vpc-is"
+  },"158": {
+    "doc": "What is VPC in AWS?",
+    "title": "Functions",
+    "content": "The main function of Amazon Virtual Private Cloud (VPC) in AWS is to provide an isolated virtual network for your AWS resources, separate from the public Internet. This allows you to have more control over the security and configuration of your resources, as well as to connect them to your own data center or other networks if needed. Some of the key functions of Amazon VPC include: . | Isolation: Amazon VPC provides a logically isolated network environment for your AWS resources, so you can launch instances and other resources in a virtual network that you define. | Custom IP Addressing: Amazon VPC allows you to define a custom IP address range for your virtual network and create subnets within that range. | Security: Amazon VPC provides security features such as network ACLs and security groups that allow you to control inbound and outbound network traffic to and from your instances. | Connectivity: Amazon VPC supports both Internet-facing and private instances, and provides various connectivity options, such as VPC peering, VPN connectivity, and Direct Connect. | Scalability: Amazon VPC allows you to scale your network resources as needed, and supports launching multiple Amazon EC2 instances, Amazon RDS databases, and other AWS services in your virtual network. | . Overall, Amazon VPC provides a flexible and scalable virtual network environment for your AWS resources, giving you more control and security for your workloads in the cloud. ",
+    "url": "/docs/AWS/#functions",
+    
+    "relUrl": "/docs/AWS/#functions"
+  },"159": {
+    "doc": "What is VPC in AWS?",
+    "title": "What is VPC in AWS?",
+    "content": " ",
+    "url": "/docs/AWS/",
+    
+    "relUrl": "/docs/AWS/"
+  },"160": {
+    "doc": "Virtualization",
+    "title": "Virtualization",
+    "content": ". | Virtualization . | Definition | Benefits of Using Virtualization . | Increased efficiency | Flexibility | Scalability | Disaster recovery and business continuity | Improved security | Virtual machine encapsulation | . | Types of virtualization . | CPU virtualization | Server virtualization | Storage virtualization | Network virtualization | Desktop virtualization | . | The difference between a Physical Machine and a Virtual Machine . | Physical machine | Virtual machine | Resource allocation | Portability | Maintenance | Cost | . | . | . ",
+    "url": "/docs/VMware/Virtualization",
+    
+    "relUrl": "/docs/VMware/Virtualization"
+  },"161": {
+    "doc": "Virtualization",
+    "title": "Definition",
+    "content": "Virtualization is a technology that enables the creation of virtual versions of physical resources such as servers, storage devices, and networks. In IT, virtualization has revolutionized the way organizations operate their IT infrastructure by providing numerous benefits such as increased efficiency, flexibility, scalability, and cost savings. ",
+    "url": "/docs/VMware/Virtualization#definition",
+    
+    "relUrl": "/docs/VMware/Virtualization#definition"
+  },"162": {
+    "doc": "Virtualization",
+    "title": "Benefits of Using Virtualization",
+    "content": "Increased efficiency . By running multiple virtual machines on a single physical server, virtualization increases server utilization and reduces hardware costs. Flexibility . Virtualization enables organizations to easily allocate and reallocate resources, such as storage and processing power, as needed. Scalability . Virtualization allows organizations to quickly and easily scale their IT infrastructure to meet changing demands. Disaster recovery and business continuity . Virtualization enables organizations to quickly restore operations in the event of a disaster, as virtual machines can be easily moved to another location. Improved security . Virtualization allows organizations to isolate applications and data, reducing the risk of a security breach. Virtual machine encapsulation . It is a key concept in VMware virtualization technology. It is achieved through a hypervisor, a piece of software that runs on the physical server and manages the virtual machines. The hypervisor provides a virtualized environment for each virtual machine, allocating resources and ensuring that each virtual machine has the resources it needs to run effectively. Virtual machine encapsulation also provides a layer of security, as each virtual machine is isolated from the others and from the underlying physical hardware. This helps to prevent potential security breaches and protect sensitive data. ",
+    "url": "/docs/VMware/Virtualization#benefits-of-using-virtualization",
+    
+    "relUrl": "/docs/VMware/Virtualization#benefits-of-using-virtualization"
+  },"163": {
+    "doc": "Virtualization",
+    "title": "Types of virtualization",
+    "content": "CPU virtualization . It’s a critical component of VMware’s virtualization technology, providing the foundation for running multiple virtual machines on a single physical server. It enables organizations to better utilize their hardware resources, reduce costs, and improve the efficiency of their IT infrastructure. Server virtualization . This involves creating virtual servers on a single physical server, allowing multiple operating systems to run on the same hardware. This increases server utilization and reduces hardware costs. Storage virtualization . This technology abstracts physical storage from the servers that access it, allowing administrators to manage storage as a single pool of resources. Network virtualization . This involves creating virtual networks on top of a physical network infrastructure. This allows for the creation of isolated network environments for different applications and departments. Desktop virtualization . This involves creating virtual desktops that users can access from anywhere, on any device. This enables organizations to centralize desktop management and provides users with a consistent experience, regardless of the device they use. ",
+    "url": "/docs/VMware/Virtualization#types-of-virtualization",
+    
+    "relUrl": "/docs/VMware/Virtualization#types-of-virtualization"
+  },"164": {
+    "doc": "Virtualization",
+    "title": "The difference between a Physical Machine and a Virtual Machine",
+    "content": "Physical machine . | A physical machine is a physical computer that runs on physical hardware. | It has its own operating system, storage, and other hardware components. | Those are typically dedicated to running a single application or operating system. | . Virtual machine . | This is a software-based emulation of a physical machine. | It runs on top of a host operating system and has its own virtualized operating system, storage, and hardware components. | Multiple virtual machines can run on a single physical machine, sharing the physical resources of the host machine. | . Resource allocation . | In a physical machine, the hardware resources are dedicated to the machine and cannot be shared with other physical machines. | In a virtual machine, the virtualized hardware resources are dynamically allocated by the virtualization software, allowing multiple virtual machines to share the resources of a single physical machine. | . Portability . | Physical machines are tied to the physical hardware on which they run and cannot easily be moved from one machine to another. | Virtual machines, on the other hand, can be easily moved between physical machines or stored as files for later use. | . Maintenance . | Physical machines require regular maintenance and upgrades to keep them running smoothly. | Virtual machines can be maintained and upgraded more easily, as the virtualization software can take care of many of these tasks automatically. | . Cost . | Physical machines can be more expensive to purchase and maintain than virtual machines, as they require dedicated hardware and software components. | Virtual machines are typically less expensive, as they can run on less expensive hardware and share resources with other virtual machines. | . ",
+    "url": "/docs/VMware/Virtualization#the-difference-between-a-physical-machine-and-a-virtual-machine",
+    
+    "relUrl": "/docs/VMware/Virtualization#the-difference-between-a-physical-machine-and-a-virtual-machine"
+  },"165": {
+    "doc": "WINDOWS",
+    "title": "WINDOWS",
+    "content": " ",
+    "url": "/docs/WINDOWS",
+    
+    "relUrl": "/docs/WINDOWS"
+  },"166": {
+    "doc": "1. What is Docker",
+    "title": "What is Docker",
+    "content": "{ :no_toc } . | What is Docker . | Docker | VM and Docker Container | The reason why we should start Docker | Application Structure | The reason why we should start Container | The reason why we should ues Linux | The difference between the usual application and Container | Container image | ‘Container’ motion method | . | . ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#what-is-docker",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#what-is-docker"
+  },"167": {
+    "doc": "1. What is Docker",
+    "title": "Docker",
+    "content": ". | ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#docker",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#docker"
+  },"168": {
+    "doc": "1. What is Docker",
+    "title": "VM and Docker Container",
+    "content": "| . ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#vm-and-docker-container",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#vm-and-docker-container"
+  },"169": {
+    "doc": "1. What is Docker",
+    "title": "The reason why we should start Docker",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-reason-why-we-should-start-docker",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-reason-why-we-should-start-docker"
+  },"170": {
+    "doc": "1. What is Docker",
+    "title": "Application Structure",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#application-structure",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#application-structure"
+  },"171": {
+    "doc": "1. What is Docker",
+    "title": "The reason why we should start Container",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-reason-why-we-should-start-container",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-reason-why-we-should-start-container"
+  },"172": {
+    "doc": "1. What is Docker",
+    "title": "The reason why we should ues Linux",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-reason-why-we-should-ues-linux",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-reason-why-we-should-ues-linux"
+  },"173": {
+    "doc": "1. What is Docker",
+    "title": "The difference between the usual application and Container",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-difference-between-the-usual-application-and-container",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#the-difference-between-the-usual-application-and-container"
+  },"174": {
+    "doc": "1. What is Docker",
+    "title": "Container image",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#container-image",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#container-image"
+  },"175": {
+    "doc": "1. What is Docker",
+    "title": "‘Container’ motion method",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#container-motion-method",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/#container-motion-method"
+  },"176": {
+    "doc": "1. What is Docker",
+    "title": "1. What is Docker",
+    "content": " ",
+    "url": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/",
+    
+    "relUrl": "/docs/DOCKER/1.WhatisDocker/WhatisDocker/"
+  },"177": {
+    "doc": "Installation Ubuntu in VMware",
+    "title": "Installation Ubuntu in VMware",
+    "content": "{ :no_toc } . | Installation Ubuntu in VMware | . ## . ",
+    "url": "/docs/LINUX/Installation%20Ununtu/WhatisDocker/",
+    
+    "relUrl": "/docs/LINUX/Installation%20Ununtu/WhatisDocker/"
+  },"178": {
     "doc": "AllAbout-IT",
     "title": "AllAbout-IT",
     "content": " ",
     "url": "/",
     
     "relUrl": "/"
+  },"179": {
+    "doc": "Install Docker Engine on Ubuntu",
+    "title": "Install Docker Engine on Ubuntu",
+    "content": "{ :no_toc } . | Install Docker Engine on Ubuntu . | TOPOLOGY | Confugure goal | Network Configure in VMware | Install Ubuntu 20.04 on VMware | . | . | This script is written as of March 6, 23 | If you want to know more about installation docker engine in ubuntu, click below. docs.docker.com | . ",
+    "url": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/",
+    
+    "relUrl": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/"
+  },"180": {
+    "doc": "Install Docker Engine on Ubuntu",
+    "title": "TOPOLOGY",
+    "content": ". ",
+    "url": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#topology",
+    
+    "relUrl": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#topology"
+  },"181": {
+    "doc": "Install Docker Engine on Ubuntu",
+    "title": "Confugure goal",
+    "content": ". | Common - CPU: 2 proccessor - RAM: 4GB - Storage: 20GB - Demon: openssh-server, curl, vim, docker - Default.target: GUI &gt; TUI - Hosts: master 10.13.0.101 node1 10.13.0.102 node2 10.13.0.103 . | K8S-Master - OS: Ubuntu 20.04 - Machine Name: K8E-master - User: student/ Password: Vmware1! - Hostname: master - Network: Manual/ K8E-Master/ 10.13.0.101 - DNS: Manual/ 8.8.8.8 . | K8S-Node1 - OS: Ubuntu 22.04 - Machine Name: K8E-Node1 - User: student/ Password: Vmware1! - Hostname: node1 - Network: Manual/ K8E-Master/ 10.13.0.102 - DNS: Manual/ 8.8.8.8 . | K8E-Node2 - OS: Ubuntu 22.04 - Machine Name: K8E-Node2 - User: student/ Password: Vmware1! - Hostname: node2 - Network: Manual/ K8E-Master/ 10.13.0.103 - DNS: Manual/ 8.8.8.8 . | . ",
+    "url": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#confugure-goal",
+    
+    "relUrl": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#confugure-goal"
+  },"182": {
+    "doc": "Install Docker Engine on Ubuntu",
+    "title": "Network Configure in VMware",
+    "content": ". | VMware &gt; Settings &gt; Network . | Click the lock to make changes and put ‘+’ box for adding custom network . | When a new ‘vmnet’ appear on the list, change the name to ‘K8E-Master’ after left double click. and set up the detail option like next. | Close pop-up window . | . ",
+    "url": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#network-configure-in-vmware",
+    
+    "relUrl": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#network-configure-in-vmware"
+  },"183": {
+    "doc": "Install Docker Engine on Ubuntu",
+    "title": "Install Ubuntu 20.04 on VMware",
+    "content": ". | Download Ubuntu ISO iamge for installing at here . | VMware &gt; NEW or Virtual Machine . | Double left-click on the box that writes ‘install from disc of image’ on top of the window. | You can drag iso image you want into window or select it after clicking the box that writes ‘Use another disc image’ bottom of the window. and then, click ‘Go back’ after done. | If the image you want loads on the window, click the image block so that you can click ‘Continue’ right bottom of the window. | uncheck to ‘Easy to install’ and then, click ‘Continue’. | Check ‘Specify the boot firmware’ option that selected to ‘Legacy BIOS’. and then click ‘Continue’ . | | . ",
+    "url": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#install-ubuntu-2004-on-vmware",
+    
+    "relUrl": "/docs/DOCKER/3.Install-0n-Linux/install-on-Linux/#install-ubuntu-2004-on-vmware"
+  },"184": {
+    "doc": "LAB-1. Installation and configuration",
+    "title": "LAB-1. Installation and configuration",
+    "content": ". | LAB-1. Installation and configuration | . ",
+    "url": "/docs/VMware/LAB-1",
+    
+    "relUrl": "/docs/VMware/LAB-1"
+  },"185": {
+    "doc": "Virtualization Distribute Switch(vDS)",
+    "title": "Virtualization Distribute Switch(vDS)",
+    "content": ". | Virtualization Distribute Switch(vDS) . | Definitions | Function . | Centralized management | Consistent networking configurations | Advanced networking features | . | LAB-1 Mitration from MGMT(Management) PG(Port Group) to vDW(Virtualzation Distribute Switch) . | Preparing for Working | Making vDS | Adding Hosts to vDS | Checking Status | . | LAB-2 Making vDS for Private Network . | Preparing for Working | . | . | . ",
+    "url": "/docs/VMware/vDS",
+    
+    "relUrl": "/docs/VMware/vDS"
+  },"186": {
+    "doc": "Virtualization Distribute Switch(vDS)",
+    "title": "Definitions",
+    "content": "A distributed switch (vDS) is a virtual switch that allows network administrators to manage networking configurations for multiple hosts or virtual machines from a centralized location in a VMware environment. It is a logical switch that spans multiple ESXi hosts and provides advanced networking features that are not available with standard vSwitches. The vDS allows for configuration of networking policies such as traffic shaping, load balancing, and VLANs at the port group level, which are then applied to all connected hosts and virtual machines. ",
+    "url": "/docs/VMware/vDS#definitions",
+    
+    "relUrl": "/docs/VMware/vDS#definitions"
+  },"187": {
+    "doc": "Virtualization Distribute Switch(vDS)",
+    "title": "Function",
+    "content": "Centralized management . | The vDS provides a central point of management for all vDS features, allowing administrators to configure the switch itself, create and manage port groups, and monitor network traffic. | . Consistent networking configurations . | A vDS allows for the creation of consistent networking configurations across multiple hosts and VMs, making it easier to manage and troubleshoot network issues. | . Advanced networking features . | vDSs provide advanced networking features that are not available with standard vSwitches, such as Network I/O Control (NIOC), which allows for the allocation of network bandwidth to specific traffic types, and support for Link Aggregation Control Protocol (LACP), which provides link aggregation and failover capabilities. | . ",
+    "url": "/docs/VMware/vDS#function",
+    
+    "relUrl": "/docs/VMware/vDS#function"
+  },"188": {
+    "doc": "Virtualization Distribute Switch(vDS)",
+    "title": "LAB-1 Mitration from MGMT(Management) PG(Port Group) to vDW(Virtualzation Distribute Switch)",
+    "content": "Preparing for Working . Making vDS . | Click New ‘Disburite Switch’ in ‘Distribute Switch’ after clicking ‘Data Center’ under FQDN. New Distributed Switch . | Let it be ‘DSwith’ as name in ‘Name and location’ Section. and check ‘Data Center’ as Location, and then, click ‘NEXT’. | Select ‘6.6.0 - ESXi 6.7 and later’ as default in ‘Select verion’ section. and then, click ‘NEXT’. | Put ‘2’ into ‘Number of uplinks’ value box. and select ‘Enabled’ on the list after clicking ‘V’ next to ‘Network I/O Contro’ and Check on the box next to ‘Create a default port group’. Put ‘DPortGroup’ into ‘Port group name’ value box. and then, click ‘NEXT’. | Check the information configured before in the ‘Ready to complete’ section. And then, click ‘FINISH’ . | Click ‘DSwitch’ in ‘Networking’ on the left sidebar. and then, Check the topology made from this working after clicking ‘Topology’ in ‘Configure’. | . Adding Hosts to vDS . | Click ‘Add and Manage Hosts’ after right clicking on ‘DSwitch’ in Network on the left sidebar. DSwitch - Add and Manage Hosts . | Select ‘Add hosts’ in ‘Select task’ section. And then, click ‘NEXT’. | Click ‘New hosts’ in ‘Select hosts’ section. and then, Click all hosts on the list after appearing new pop-up window ‘Select Hosts’. And click ‘OK’ after done. | Check hosts that are added to the list in ‘Select hosts’ section after the disappearing pop-up window. And click ‘NEXT’ after that. | Select ‘vmnic1’ connected to ‘vSwitch’ that was made in this work. And then, click ‘Assign uplink’ above the list. | Select ‘uplink 1’ on the list in ‘Select uplink’ pop-up window appeared. And then, click ‘OK’ after that. | Assign ‘vmnic1’ connected to ‘ESXi-2(192.168.200.102’ to ‘Uplink2’, as you assigned ‘vmnic1’ connected to ‘ESXi-1(192.168.200.102’ to ‘Uplink1’, which was worked according to Working Steps 5 through 6. | . Checking Status . ",
+    "url": "/docs/VMware/vDS#lab-1-mitration-from-mgmtmanagement-pgport-group-to-vdwvirtualzation-distribute-switch",
+    
+    "relUrl": "/docs/VMware/vDS#lab-1-mitration-from-mgmtmanagement-pgport-group-to-vdwvirtualzation-distribute-switch"
+  },"189": {
+    "doc": "Virtualization Distribute Switch(vDS)",
+    "title": "LAB-2 Making vDS for Private Network",
+    "content": "Preparing for Working . ### . ",
+    "url": "/docs/VMware/vDS#lab-2-making-vds-for-private-network",
+    
+    "relUrl": "/docs/VMware/vDS#lab-2-making-vds-for-private-network"
+  },"190": {
+    "doc": "vSphere DRS",
+    "title": "DRS Cluster",
+    "content": ". | DRS Cluster . | Definition | Structure | Function | Strenghts . | Dynamic resource allocation | Load balancing | Automations | High availability | Scalability | . | Weaknesses . | Complexity | Overhead | Cost | Dependency on Center | . | LAB-01. Creating a DRS Cluster . | Preparing for Working | Creating a Cluster | Configuration a Cluster | . | LAB-02. Configuration for HA(High Available) | LAB-03. Configuration for DRS | LAB-04. | . | . ",
+    "url": "/docs/VMware/vSphare_DRS#drs-cluster",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#drs-cluster"
+  },"191": {
+    "doc": "vSphere DRS",
+    "title": "Definition",
+    "content": "A DRS (Distributed Resource Scheduler) cluster is a group of virtual machines (VMs) and hosts managed by VMware vSphere’s DRS technology. This cluster allows the vSphere environment to automatically balance VM workloads across the hosts in the cluster, based on resource usage, policies, and requirements. ",
+    "url": "/docs/VMware/vSphare_DRS#definition",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#definition"
+  },"192": {
+    "doc": "vSphere DRS",
+    "title": "Structure",
+    "content": "A DRS cluster consists of two or more physical hosts, each running VMware vSphere. These hosts are connected to shared storage, allowing VMs to be moved between hosts without disrupting their storage. The hosts and VMs in the cluster are managed by a single vCenter Server instance, which controls the allocation of resources and the movement of VMs between hosts. Image from VMware . ",
+    "url": "/docs/VMware/vSphare_DRS#structure",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#structure"
+  },"193": {
+    "doc": "vSphere DRS",
+    "title": "Function",
+    "content": "DRS technology continuously monitors resource utilization across hosts in the cluster and automatically migrates VMs to other hosts with more available resources as needed, ensuring that VMs have access to the resources they need to run optimally. DRS also optimizes the placement of new VMs, taking into account the requirements of the VM and the resources available on each host. By optimizing VM placement and load balancing, DRS helps to improve performance, reduce downtime, and maximize the utilization of the virtual infrastructure. ",
+    "url": "/docs/VMware/vSphare_DRS#function",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#function"
+  },"194": {
+    "doc": "vSphere DRS",
+    "title": "Strenghts",
+    "content": "Dynamic resource allocation . DRS enables dynamic allocation of resources across the cluster, ensuring that VMs have access to the resources they need to run efficiently. Load balancing . DRS continuously balances the load across hosts, preventing resource bottlenecks and improving performance. Automations . DRS automates resource allocation and VM placement, reducing the need for manual intervention and increasing efficiency. High availability . DRS helps to ensure high availability by automatically migrating VMs to other hosts in the event of a host failure or maintenance. Scalability . DRS allows organizations to easily scale their virtual infrastructure as needed, adding new hosts and VMs to the cluster as required. ",
+    "url": "/docs/VMware/vSphare_DRS#strenghts",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#strenghts"
+  },"195": {
+    "doc": "vSphere DRS",
+    "title": "Weaknesses",
+    "content": "Complexity . DRS can be complex to set up and configure, requiring a deep understanding of the vSphere environment and DRS technology. Overhead . DRS requires additional resources to operate, including CPU cycles and network bandwidth. Cost . DRS is only available in VMware’s more expensive vSphere editions, which can be a significant cost for smaller organizations or those with limited budgets. Dependency on Center . DRS relies on vCenter Server to function, which can be a single point of failure if not properly configured or maintained. ",
+    "url": "/docs/VMware/vSphare_DRS#weaknesses",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#weaknesses"
+  },"196": {
+    "doc": "vSphere DRS",
+    "title": "LAB-01. Creating a DRS Cluster",
+    "content": "Preparing for Working . Creating a Cluster . | . Configuration a Cluster . ",
+    "url": "/docs/VMware/vSphare_DRS#lab-01-creating-a-drs-cluster",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#lab-01-creating-a-drs-cluster"
+  },"197": {
+    "doc": "vSphere DRS",
+    "title": "LAB-02. Configuration for HA(High Available)",
+    "content": " ",
+    "url": "/docs/VMware/vSphare_DRS#lab-02-configuration-for-hahigh-available",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#lab-02-configuration-for-hahigh-available"
+  },"198": {
+    "doc": "vSphere DRS",
+    "title": "LAB-03. Configuration for DRS",
+    "content": " ",
+    "url": "/docs/VMware/vSphare_DRS#lab-03-configuration-for-drs",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#lab-03-configuration-for-drs"
+  },"199": {
+    "doc": "vSphere DRS",
+    "title": "LAB-04.",
+    "content": " ",
+    "url": "/docs/VMware/vSphare_DRS#lab-04",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS#lab-04"
+  },"200": {
+    "doc": "vSphere DRS",
+    "title": "vSphere DRS",
+    "content": " ",
+    "url": "/docs/VMware/vSphare_DRS",
+    
+    "relUrl": "/docs/VMware/vSphare_DRS"
+  },"201": {
+    "doc": "정보처리기사",
+    "title": "정보처리기사",
+    "content": " ",
+    "url": "/docs/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/",
+    
+    "relUrl": "/docs/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC/"
   }
 }
