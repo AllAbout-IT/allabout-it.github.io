@@ -48,10 +48,10 @@ nav_order: 1006
 
 * Come out from the container after checking the above operating and check nginx-container's log, what errors happened from that
 
-    ```bash data-prevent-copy
+    ```bash data-prevent-copy  
     $ kubectl logs [pod name] -c [container name]
     ```  
- 
+
     ```bash data-prevent-copy
     kubectl logs [pod name] -c [container name]
     ```  
