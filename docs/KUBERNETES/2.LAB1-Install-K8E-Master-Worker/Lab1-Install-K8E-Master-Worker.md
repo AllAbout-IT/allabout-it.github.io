@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  3. LAB-1 Install K8E Master-node and Worker-node
+title:  2. LAB-1 Install K8E Master-node and Worker-node
 parent: KUBERNETES
 has_children: true
 nav_order: 1002
