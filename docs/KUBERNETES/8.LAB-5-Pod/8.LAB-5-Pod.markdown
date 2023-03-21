@@ -1,0 +1,66 @@
+---
+layout: default
+title:  8. LAB-5 Pod
+parent: KUBERNETES
+has_children: true
+nav_order: 1005
+# permalink: /docs/PROJECT
+---
+
+# 8. LAB-5 Pod(Single container pod & Multi container pod)
+
+{ :no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Create Pod
+
+### Creating Pod through CLI
+
+* kubectl run \<type>
+
+## Assignment-1  
+
+* Q. Create a 'web2' pod through a 'web1' pod's yaml results as follow below conditions  
+
+## Create multi-container  
+
+## Check multi-container  
+
+## Assignment-2
+
+* Check how is operating in 'centos-container' inside when you command like below. and think about the reason  
+
+    ```sh  
+    /$ curl localhost:80 or curl localhost
+    ```
+
+    ```sh  
+    /$ curl localhost:80 or curl localhost
+    ```
+
+* Come out from the container after checking the above operating and check nginx-container's log, what errors happened from that
+
+    ```sh  
+    \$ kubectl logs [pod name] [container name]
+    ```
+
+    ```sh  
+    $ kubectl logs [pod name] -c [container name]
+    ```
+
+    ```bash data-prevent-copy
+    $ kubectl logs [pod name] -c [container name]
+    ```
+
+    ```bash data-prevent-copy
+    kubectl logs [pod name] -c [container name]
+    ```
+
