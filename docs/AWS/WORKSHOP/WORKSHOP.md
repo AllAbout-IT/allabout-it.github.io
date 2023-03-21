@@ -1,6 +1,6 @@
 ---
 layout: default
-title: WORKSHOP
+title: Workshop
 parent: AWS
 has_children: true
 nav_order: 101
