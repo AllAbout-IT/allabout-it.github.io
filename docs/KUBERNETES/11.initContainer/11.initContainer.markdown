@@ -1,0 +1,31 @@
+---
+layout: default
+title:  11. Various types of Container in POD
+parent: KUBERNETES
+has_children: true
+nav_order: 1011
+# permalink: /docs/PROJECT
+---
+
+# 11. Various types of Container in POD
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Init Container
+
+## Init containers in use at YAML
+
+## Infra container(pause)
+
+## Static container  
+
+### It is POD operated by kubelet daemon  

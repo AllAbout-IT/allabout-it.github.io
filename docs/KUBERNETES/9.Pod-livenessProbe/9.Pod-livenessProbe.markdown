@@ -1,0 +1,51 @@
+---
+layout: default
+title:  9. Pod - Liveness Probe
+parent: KUBERNETES
+has_children: true
+nav_order: 1006
+# permalink: /docs/PROJECT
+---
+
+# 9. Pod - Liveness Probe
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Creating self-healing Pod  
+
+<https://kubernetes.io/docs/concepts/workloads/controllers/replic>
+ationcontroller/#how-a-replicationcontroller-works
+
+## Liveness Probe
+
+* It gives a guarantee for the pod continues can operate  
+
+* It is defined in the pod's spec
+
+## Mechanism
+
+### httpGet
+
+### tcpSocket
+
+### exec
+
+## Parameters  
+
+* periodSeconds: health check term(sec.)
+* initialDelaySeconds
+* timeoutSeconds: The waiting time for an answer after a health check
+* successThreshold: Number of times one has to succeed after failure
+* failureThreshold: Number of continued failure
+
+### Check the parameters configured in describe  
+
+## Example  

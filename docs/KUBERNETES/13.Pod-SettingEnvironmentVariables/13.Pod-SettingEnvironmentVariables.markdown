@@ -1,0 +1,26 @@
+---
+layout: default
+title:  13. Pod - Setting environment variables
+parent: KUBERNETES
+has_children: true
+nav_order: 1012
+# permalink: /docs/PROJECT
+---
+
+# 13. Pod - Setting environment variables  
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Environment variables  
+
+## Define an environment variable for a container  
+
+##

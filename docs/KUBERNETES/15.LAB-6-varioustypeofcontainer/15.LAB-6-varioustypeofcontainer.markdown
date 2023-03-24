@@ -1,0 +1,131 @@
+---
+layout: default
+title:  15.LAB.6 Various type of Container
+parent: KUBERNETES
+has_children: true
+nav_order: 1015
+# permalink: /docs/PROJECT
+---
+
+# 15.LAB.6 Various type of Container
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Init Container  
+
+### Create and operate Pod including init containers at YAML  
+
+* Create init-container-exam.yaml
+
+``` bash
+$ vim init-container-exam.yaml
+```  
+
+![1](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/1.png)  
+
+* Write yaml script for running pod including init containers
+
+```yml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app: myapp
+spec: 
+  containers:
+  - name: myapp-container
+    image: busybox:1.28
+    command: ['sh', '-c', 'echo The app is running! && sleep 3600']
+  initContainers:
+  - name: init-myservice
+    image: busybox:1.28
+    command: ['sh', '-c', "until nslookup myservice.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for myservice; sleep 2; done"]
+  - name: init-mydb
+    image: busybox:1.28
+    command: ['sh', '-c', "until nslookup mydb.$(cat /var/run/secrets/kubernetes.io/serviceaccount/namespace).svc.cluster.local; do echo waiting for mydb; sleep 2; done"]
+```  
+
+![2](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/2.png)  
+
+* enforce init-container-exam.yaml  
+
+```bash
+$ kubectl create -f init-container-exam.yaml
+```
+
+![3](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/3.png)
+
+### Check the status
+
+* Check 'myapp-pod' status  
+
+```bash
+$ kubectl get pods -o wide --watch
+```
+
+![4](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/4.png)
+
+```bash
+$ kubectl events pod/myapp-pod --watch
+```
+
+![5](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/5.png)
+![6](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/6.png)
+![7](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/7.png)
+
+### Create and enforce init-container-exam-svc.yaml for fixing init-myservice  
+
+```bash
+$ vim init-container-exam-svc.yaml
+```
+
+![8](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/8.png)
+
+```yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: myservice
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 9376
+```
+![12](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/12.png)
+
+### Check init-myservice containers  
+
+```bash
+$ kubectl get pods -o wide
+```
+
+![9](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/9.png)
+
+```bash
+$ kubectl events pods pod/myapp-pod --watch
+```
+
+![10](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/10.png)  
+
+```bash
+$ kubectl describe pods myapp-pod
+```
+
+![11](/docs/KUBERNETES/15.LAB-6-varioustypeofcontainer/11.png)  
+
+It was made kubernetes service named 'myservice' for opening TCP 80 port and connecting it to 9376 port designated as targetPort
+
+### Create and enforce init-container-exam-db.yaml for fixed init-db
+
+* Create init-container-exam-db.yaml  

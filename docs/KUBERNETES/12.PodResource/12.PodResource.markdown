@@ -1,0 +1,43 @@
+---
+layout: default
+title:  12. Resource management for Pods and Containers
+parent: KUBERNETES
+has_children: true
+nav_order: 1012
+# permalink: /docs/PROJECT
+---
+
+# 12. Pod resource
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Resource  
+
+## Request & Limits
+
+### Request  
+
+### Limits
+
+* Memory  
+  * Mib  
+  * KiB
+
+*
+
+### Resource Request & Limits  
+
+* Memory
+  * Mib
+  * KiB
+
+* CP
