@@ -1,0 +1,200 @@
+---
+layout: default
+title:  16. Replication Controller
+parent: KUBERNETES
+has_children: true
+nav_order: 1016
+# permalink: /docs/PROJECT
+---
+
+# 16. Replication Controller
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+A replication controller in Kubernetes is a resource object that helps ensure a specified number of pod replicas are running at all times. It monitors the state of the pods and automatically replaces any that have failed or been terminated, thus maintaining the desired number of replicas. It also allows for scaling up or down the number of replicas as needed to handle changes in application demand.
+
+## Basic Configuration
+
+* selector: It defines pods in the replication controller range  
+
+* replicas: It defines the desired number of pods that would run.  
+
+* 
+
+## Principle of Replication Controller operation
+
+## Replication Controller definition
+
+```yml
+apiVersion: v1
+kind: ReplicationController        
+metadata:
+  name: rc-nginx
+spec:
+  replicas: 3            # Desired number of pods
+  selector:
+    app: webui           #
+  template: 
+    metadata:
+      name: nginx-pod
+      labels:
+        app: webui       #
+  spec:
+    containers:
+      - name: nginx-container
+        image: nginx:1.14
+```
+
+## Example  
+
+### Basic
+
+1. Enforce replication controller yaml  
+
+    ```bash
+    $ kubectl create -f re-nginx.yaml  
+    ```
+
+    ![1](/docs/KUBERNETES/16.Controller-ReplicationController/pics/1.png)
+
+2. Check pods status
+
+    ```bash
+    $ kubectl get pods -o wide  
+    ```  
+
+    ![2](/docs/KUBERNETES/16.Controller-ReplicationController/pics/2.png)
+
+    ```bash
+    $ kubectl get pods --show-labes
+    ```
+
+    ![5](/docs/KUBERNETES/16.Controller-ReplicationController/pics/5.png)
+    ![8](/docs/KUBERNETES/16.Controller-ReplicationController/pics/8.png)
+
+3. Check the replicationcontrollers status
+
+    ```bash
+    $ kubectl get replicationcontrollers
+    ```  
+
+    ![3](/docs/KUBERNETES/16.Controller-ReplicationController/pics/3.png)
+    ![7](/docs/KUBERNETES/16.Controller-ReplicationController/pics/7.png)
+
+    ```bash
+    $ kubectl get rc -o wide
+    ```
+
+    ![4](/docs/KUBERNETES/16.Controller-ReplicationController/pics/4.png)
+
+4. Check the describe information  
+
+    ```bash
+    $ kubectl describe rc rc-nginx
+    ```
+
+    ![6](/docs/KUBERNETES/16.Controller-ReplicationController/pics/6.png)
+
+### Change replicas number  
+
+1. open rc-nginx template for modifying  
+
+    ```bash
+    $ kubectl edit re re-nginx
+    ```
+
+    ![10](/docs/KUBERNETES/16.Controller-ReplicationController/pics/10.png)
+    ![9](/docs/KUBERNETES/16.Controller-ReplicationController/pics/9.png)
+
+2. Change replicas number as 5
+
+    ```yml
+    ...
+    spec:
+      replicas: 5  # Change 3 to 5
+    ...
+    ```
+
+    ![11](/docs/KUBERNETES/16.Controller-ReplicationController/pics/11.png)
+
+3. Check the pods status  
+
+    ```bash
+    $ kubectl get pods -o wide  
+    ```
+
+    ![12](/docs/KUBERNETES/16.Controller-ReplicationController/pics/12.png)
+
+    ```bash
+    $ kubectl get pods --show-labels
+    ```
+
+    ![13](/docs/KUBERNETES/16.Controller-ReplicationController/pics/13.png)
+
+    ```bash
+    $ kubectl describe rc rc-nginx
+    ```
+
+   ![14](/docs/KUBERNETES/16.Controller-ReplicationController/pics/14.png)
+
+### Modify configuration by CLI command  
+
+1. Change replicas number to 2 by CLI command
+
+    ```bash
+    $ kubectl scale re re-nginx --replicas=2
+    ```  
+
+    ![15](/docs/KUBERNETES/16.Controller-ReplicationController/pics/15.png)
+
+2. Chech the pods status
+
+    ```bash
+    $ kubectl get pods -o wide
+    ```
+
+    ![16](/docs/KUBERNETES/16.Controller-ReplicationController/pics/16.png)
+
+3. Change replicas number to 4 by CLI command again
+
+    ```bash
+    $ kubectl scale re re-nginx --replicas=4
+    ```  
+
+    ![17](/docs/KUBERNETES/16.Controller-ReplicationController/pics/17.png)
+
+4. Chech the pods status again
+
+    ```bash
+    $ kubectl get pods -o wide
+    ```
+
+    ![18](/docs/KUBERNETES/16.Controller-ReplicationController/pics/18.png)
+
+### Delete pods made by replication controller  
+
+1. Delete pods
+    ```bash
+    $ kubectl delete re rc-nginx
+      ```
+
+    ![19](/docs/KUBERNETES/16.Controller-ReplicationController/pics/19.png)
+
+2. Check pods
+
+    ```bash
+    $ kubectl get pods
+    ```
+
+    ![19](/docs/KUBERNETES/16.Controller-ReplicationController/pics/19.png)
