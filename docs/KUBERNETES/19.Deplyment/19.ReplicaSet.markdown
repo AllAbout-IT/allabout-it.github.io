@@ -126,7 +126,7 @@ spec:
 
 {% highlight bash %}  
 kubetctl get pods -o wide  
-{% endinghghlight%}
+{% endinghghlight %}
 
 ```bash
 {% highlight bash %}  
