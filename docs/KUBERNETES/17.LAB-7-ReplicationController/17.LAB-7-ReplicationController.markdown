@@ -1,0 +1,51 @@
+---
+layout: default
+title:  17. LAB.7 Replication Controller
+parent: KUBERNETES
+has_children: true
+nav_order: 1017
+# permalink: /docs/PROJECT
+---
+
+# 17. LAB.7 Replication Controller
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Assignment-1  
+
+### Q. Create and enforce rc-lab.yaml follows the below conditions  
+
+* 2 pods  
+* labels(name: appach, app:main, rel:stable)
+* image: httpd2.2
+* rc name: rc-mainui
+* container: httpd:2.2 
+
+### A.
+
+* 
+* rc-lab.yaml script  
+
+```yml
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: rc-mainui
+spec:
+  replicas: 2
+  template:
+    metadata:
+      name: appach
+      labels:
+        app: main
+        
+```

@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  16. Replication Controller
+title:  16. Controller - Replication Controller
 parent: KUBERNETES
 has_children: true
 nav_order: 1016
 # permalink: /docs/PROJECT
 ---
 
-# 16. Replication Controller
+# 16. Controller - Replication Controller
 
 {:no_toc }
 
@@ -198,3 +198,4 @@ spec:
     ```
 
     ![19](/docs/KUBERNETES/16.Controller-ReplicationController/pics/19.png)
+

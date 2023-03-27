@@ -1,0 +1,32 @@
+---
+layout: default
+title:  18. Controller - Replica Set
+parent: KUBERNETES
+has_children: true
+nav_order: 1018
+# permalink: /docs/PROJECT
+---
+
+# 18. Controller - Replica Set
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+A ReplicaSet in Kubernetes performs a similar function to a Replication Controller, but with some key differences. ReplicaSets can specify label selectors in a more granular way and can perform upgrades by specifying new selectors, making them more flexible. Additionally, ReplicaSets are better suited for managing versioned pod deployments and can be combined with Deployment resources to automate rolling upgrades and rollbacks.
+
+## MatchExpression
+
+## ReplicaSet definition
+
+## ReplicaSet example  
+

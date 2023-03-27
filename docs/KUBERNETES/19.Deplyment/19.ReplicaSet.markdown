@@ -23,18 +23,18 @@ nav_order: 1019
 ## Summary  
 
 * It is a Kubernetes resource that manages the deployment and upgrade of containerized applications.  
-![2](/docs/KUBERNETES/19.Deplyment/pics/2|19.Deployment.png)
+![2](/docs/KUBERNETES/19.Deplyment/pics/2-19.Deployment.png)
 
 * Deployment manages ReplicaSets, which in turn manage multiple replicas of the same pod.
-![1](/docs/KUBERNETES/19.Deplyment/pics/1|19.Deployment.png)
+![1](/docs/KUBERNETES/19.Deplyment/pics/1-19.Deployment.png)
 
 * During an upgrade, Deployment starts a new ReplicaSet for the new version of the application while keeping the previous version's ReplicaSet running, allowing for rolling upgrades.  
-![3](/docs/KUBERNETES/19.Deplyment/pics/3|19.Deployment.png)
+![3](/docs/KUBERNETES/19.Deplyment/pics/3-19.Deployment.png)
 
 * This ensures high availability of the application while performing stable deployment.
 
 * Deployment also supports rollbacks, allowing users to easily revert to a previous version.
-![4](/docs/KUBERNETES/19.Deplyment/pics/4|19.Deployment.png)
+![4](/docs/KUBERNETES/19.Deplyment/pics/4-19.Deployment.png)
 
 * These features make application deployment and management more efficient for Kubernetes users.
 
@@ -42,18 +42,18 @@ nav_order: 1019
 
 <table>
   <tr>
-    <td>
+    <td>ReplicaSet
       <pre>
         <code class="language-yaml">
-        apiVersion: apps/v1
-        kind: ReplicaSet
-        metadata:
-          name: rs-nginx
+        apiVersion: apps/v1     #rc apiVersion
+        kind: ReplicaSet        #rc kind
+        metadata:               
+          name: rs-nginx        #rc name
         spec:
-          replicas: 3
+          replicas: 3           # Min. Pods Numb.
           selector:
             matchLabels:
-              app: webui
+              app: webui        #no meaning
           template:
             metadata:
               name: nginx-pod
@@ -61,18 +61,18 @@ nav_order: 1019
                 app: webui
             spec:
             containers:
-            - name: nginx-container
-                    image: nginx:1.14
+            - name: nginx-container     #container name
+                    image: nginx:1.14   #container image
         </code>
       </pre>
     </td>
-    <td>
+    <td>Deployment
       <pre>
         <code class="language-yaml">
-        apiVersion: apps/v1   # deployment apiVersion
-        kind: Deployment      # deployment kine
+        apiVersion: apps/v1     # deployment apiVersion
+        kind: Deployment        # deployment kine
         metadata:
-          name: deploy-nginx  # deployment name
+          name: deploy-nginx    # deployment name
         spec:
           replicas: 3
           selector:
@@ -84,8 +84,8 @@ nav_order: 1019
                 app: webui
             spec:
               containers:
-              - name: nginx-container
-                image: nginx:1.14
+              - name: nginx-container #container name
+                image: nginx:1.14     #contianer image
         </code>
       </pre>
     </td>
