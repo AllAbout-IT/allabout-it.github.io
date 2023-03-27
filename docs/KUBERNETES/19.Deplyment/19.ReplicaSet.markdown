@@ -123,7 +123,7 @@ spec:
 ```
 
 ### Check deployment status
-![]
+![7](/docs/KUBERNETES/19.Deplyment/pics/7-19.Deployment.png)
 
 ```bash
 \ kubetctl get pods -o wide</span>
