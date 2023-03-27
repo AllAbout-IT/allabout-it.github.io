@@ -45,47 +45,47 @@ nav_order: 1019
     <td>ReplicaSet
       <pre>
         <code class="language-yaml">
-        apiVersion: apps/v1     #rc apiVersion
-        kind: ReplicaSet        #rc kind
-        metadata:               
-          name: rs-nginx        #rc name
-        spec:
-          replicas: 3           # Min. Pods Numb.
-          selector:
-            matchLabels:
-              app: webui        #no meaning
-          template:
-            metadata:
-              name: nginx-pod
-              labels:
-                app: webui
-            spec:
-            containers:
-            - name: nginx-container     #container name
-                    image: nginx:1.14   #container image
+apiVersion: apps/v1     #rc apiVersion
+kind: ReplicaSet        #rc kind
+metadata:
+  name: rs-nginx        #rc name
+spec:
+  replicas: 3           # Min. Pods Numb.
+  selector:
+    matchLabels:
+      app: webui        #no meaning
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: webui
+    spec:
+    containers:
+    - name: nginx-container     #container name
+            image: nginx:1.14   #container image
         </code>
       </pre>
     </td>
     <td>Deployment
       <pre>
         <code class="language-yaml">
-        apiVersion: apps/v1     # deployment apiVersion
-        kind: Deployment        # deployment kine
-        metadata:
-          name: deploy-nginx    # deployment name
-        spec:
-          replicas: 3
-          selector:
-            matchLabels:
-              app: webui
-        template: metadata:
-              name: nginx-pod
-              labels:
-                app: webui
-            spec:
-              containers:
-              - name: nginx-container #container name
-                image: nginx:1.14     #contianer image
+apiVersion: apps/v1     # deployment apiVersion
+kind: Deployment        # deployment kine
+metadata:
+  name: deploy-nginx    # deployment name
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webui
+template: metadata:
+      name: nginx-pod
+      labels:
+        app: webui
+    spec:
+      containers:
+      - name: nginx-container #container name
+        image: nginx:1.14     #contianer image
         </code>
       </pre>
     </td>
@@ -97,7 +97,27 @@ nav_order: 1019
 ### Define deployment in yaml
 
 ```bash
-\cat deploy-nginx.yaml
+\$ vim deploy-nginx.yaml
+```
+
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rs-nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webui
+template: metadata:
+      name: nginx-pod
+      labels:
+        app: webui
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx:1.14
 ```
 
 ## Deployment rolling update & rolling back  
