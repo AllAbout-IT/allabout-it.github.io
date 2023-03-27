@@ -94,6 +94,13 @@ nav_order: 1019
 
 ## Deployment example
 
+### Define deployment in yaml
+
+```bash
+/$ cat deploy-nginx.yaml
+```
+```
+
 ## Deployment rolling update & rolling back  
 
 ### Rolling Update
