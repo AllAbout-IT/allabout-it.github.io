@@ -121,8 +121,11 @@ template: metadata:
 ```
 
 ### Check deployment status
+
 ```bash
-\$ 
+&#36; kubetctl get pods -o wide 
+```
+
 ## Deployment rolling update & rolling back  
 
 ### Rolling Update
