@@ -105,7 +105,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: rs-nginx
+  name: deploy-nginx
 spec:
   replicas: 3
   selector:
@@ -123,12 +123,11 @@ spec:
 ```
 
 ### Check deployment status
+![]
 
 ```bash
-<span>&#36; kubetctl get pods -o wide</span>
+\ kubetctl get pods -o wide</span>
 ```
-
-<span>&#36; kubetctl get pods -o wide</span>
 
 ## Deployment rolling update & rolling back  
 
