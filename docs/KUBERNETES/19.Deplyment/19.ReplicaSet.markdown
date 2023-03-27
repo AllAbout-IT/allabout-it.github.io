@@ -124,15 +124,11 @@ spec:
 
 ### Check deployment status
 
-{% highlight bash %}  
-kubetctl get pods -o wide  
-{% endhighlight %}
-
 ```bash
-{% highlight bash %}  
-kubetctl get pods -o wide  
-{% endhighlight %}
+<span>&#36; kubetctl get pods -o wide</span>
 ```
+
+<span>&#36; kubetctl get pods -o wide</span>
 
 ## Deployment rolling update & rolling back  
 
