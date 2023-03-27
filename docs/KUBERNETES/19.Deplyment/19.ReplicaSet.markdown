@@ -120,6 +120,9 @@ template: metadata:
         image: nginx:1.14
 ```
 
+### Check deployment status
+```bash
+\$ 
 ## Deployment rolling update & rolling back  
 
 ### Rolling Update
