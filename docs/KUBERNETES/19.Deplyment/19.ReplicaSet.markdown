@@ -78,7 +78,8 @@ spec:
   selector:
     matchLabels:
       app: webui
-template: metadata:
+  template: 
+    metadata:
       name: nginx-pod
       labels:
         app: webui
@@ -110,7 +111,8 @@ spec:
   selector:
     matchLabels:
       app: webui
-template: metadata:
+  template: 
+    metadata:
       name: nginx-pod
       labels:
         app: webui
@@ -122,8 +124,14 @@ template: metadata:
 
 ### Check deployment status
 
+{% highlight bash %}  
+kubetctl get pods -o wide  
+{% endinghghlight%}
+
 ```bash
-&#36; kubetctl get pods -o wide 
+{% highlight bash %}  
+kubetctl get pods -o wide  
+{% endinghghlight%}
 ```
 
 ## Deployment rolling update & rolling back  
