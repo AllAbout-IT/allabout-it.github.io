@@ -1,0 +1,121 @@
+---
+layout: default
+title:  19. Controller - Deployment
+parent: KUBERNETES
+has_children: true
+nav_order: 1019
+# permalink: /docs/PROJECT
+---
+
+# 19. Controller - Deployment
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+* It is a Kubernetes resource that manages the deployment and upgrade of containerized applications.  
+![2](/docs/KUBERNETES/19.Deplyment/pics/2|19.Deployment.png)
+
+* Deployment manages ReplicaSets, which in turn manage multiple replicas of the same pod.
+![1](/docs/KUBERNETES/19.Deplyment/pics/1|19.Deployment.png)
+
+* During an upgrade, Deployment starts a new ReplicaSet for the new version of the application while keeping the previous version's ReplicaSet running, allowing for rolling upgrades.  
+![3](/docs/KUBERNETES/19.Deplyment/pics/3|19.Deployment.png)
+
+* This ensures high availability of the application while performing stable deployment.
+
+* Deployment also supports rollbacks, allowing users to easily revert to a previous version.
+![4](/docs/KUBERNETES/19.Deplyment/pics/4|19.Deployment.png)
+
+* These features make application deployment and management more efficient for Kubernetes users.
+
+## Deployment definition  
+
+<table>
+  <tr>
+    <td>
+      <pre>
+        <code class="language-yaml">
+        apiVersion: apps/v1
+        kind: ReplicaSet
+        metadata:
+          name: rs-nginx
+        spec:
+          replicas: 3
+          selector:
+            matchLabels:
+              app: webui
+          template:
+            metadata:
+              name: nginx-pod
+              labels:
+                app: webui
+            spec:
+            containers:
+            - name: nginx-container
+                    image: nginx:1.14
+        </code>
+      </pre>
+    </td>
+    <td>
+      <pre>
+        <code class="language-yaml">
+        apiVersion: apps/v1   # deployment apiVersion
+        kind: Deployment      # deployment kine
+        metadata:
+          name: deploy-nginx  # deployment name
+        spec:
+          replicas: 3
+          selector:
+            matchLabels:
+              app: webui
+        template: metadata:
+              name: nginx-pod
+              labels:
+                app: webui
+            spec:
+              containers:
+              - name: nginx-container
+                image: nginx:1.14
+        </code>
+      </pre>
+    </td>
+  </tr>
+</table>
+
+## Deployment example
+
+## Deployment rolling update & rolling back  
+
+### Rolling Update
+
+* Rolling update is a feature that enables Kubernetes Deployment to upgrade the running application to a new version while ensuring zero downtime.
+
+* When a new version of the application is ready, Deployment creates a new ReplicaSet and gradually replaces the old pods with the new ones.
+
+* By default, Deployment updates one pod at a time, which allows the application to remain available to users throughout the update process.
+
+* Users can specify the update strategy by defining the maximum number of unavailable pods and maximum number of pods that can be created above the desired number of pods during the update.
+
+### Rolling update example  
+
+### Rolling Back
+
+* Rolling back is the process of reverting the Deployment to the previous version in case of a failed or faulty update.
+
+* If the update fails, users can use the kubectl rollout undo command to revert the Deployment to the previous version.
+
+* Kubernetes Deployment maintains the previous ReplicaSet, which can be easily switched back to by running the rollback command.
+
+* Users can also roll back to a specific revision of the Deployment by using the kubectl rollout undo [DEPLOYMENT_NAME] --to-revision=[REVISION_NUMBER] command.
+
+### Rolling back example  
