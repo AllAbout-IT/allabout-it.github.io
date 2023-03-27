@@ -126,12 +126,12 @@ spec:
 
 {% highlight bash %}  
 kubetctl get pods -o wide  
-{% endinghghlight %}
+{% endhighlight %}
 
 ```bash
 {% highlight bash %}  
 kubetctl get pods -o wide  
-{% endinghghlight%}
+{% endhighlight %}
 ```
 
 ## Deployment rolling update & rolling back  
