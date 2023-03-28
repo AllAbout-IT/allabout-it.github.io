@@ -253,4 +253,6 @@ spec:
 
 ## DaemonSet example-3: Rolling Rollback  
 
-* Downgrade container image nginx before current
+* Downgrade container image nginx to before current
+
+  
