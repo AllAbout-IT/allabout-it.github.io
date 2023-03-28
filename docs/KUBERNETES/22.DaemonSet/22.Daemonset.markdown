@@ -232,12 +232,7 @@ spec:
   ...
   ```
 
-  {% include youtube.html id="dFSNPm7xC6Y" %}
-
-  <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/dFSNPm7xC6Y" frameborder="0" allowfullscreen></iframe>
-  </div>
-
+  {% include youtubeå.html id="dFSNPm7xC6Y" %}
 
 ### Check the pods event
 
@@ -268,3 +263,5 @@ spec:
   )
 * Downgrade container image nginx to before current
 
+  ```bash
+  kubectl rollout undo daemonset daemons
