@@ -232,7 +232,7 @@ spec:
   ...
   ```
 
-{% include youtube.html id=https://youtu.be/dFSNPm7xC6Y %}
+{% include youtube.html id="dFSNPm7xC6Y" %}
 
 ### Check the pods event
 
@@ -251,3 +251,6 @@ spec:
   ...
   ![20](/docs/KUBERNETES/22.DaemonSet/pics/20.png)
 
+## DaemonSet example-3: Rolling Rollback  
+
+* Downgrade container image nginx before current
