@@ -232,7 +232,12 @@ spec:
   ...
   ```
 
-{% include youtube.html id="dFSNPm7xC6Y" %}
+  {% include youtube.html id="dFSNPm7xC6Y" %}
+
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/dFSNPm7xC6Y" frameborder="0" allowfullscreen></iframe>
+  </div>
+
 
 ### Check the pods event
 
@@ -253,6 +258,13 @@ spec:
 
 ## DaemonSet example-3: Rolling Rollback  
 
+* Check the image version check within pod's container  
+
+  ```bash
+  kubectl get daemonset.apps -o wide
+  ```
+
+  ![21](/docs/KUBERNETES/22.DaemonSet/pics/21.png
+  )
 * Downgrade container image nginx to before current
 
-  
