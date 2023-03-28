@@ -1,0 +1,21 @@
+---
+layout: default
+title:  20. LAB-8 Replicaset
+parent: KUBERNETES
+has_children: true
+nav_order: 1020
+# permalink: /docs/PROJECT
+---
+
+# 20. LAB-8 Replicaset
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>

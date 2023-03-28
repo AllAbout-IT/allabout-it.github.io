@@ -1,0 +1,42 @@
+---
+layout: default
+title:  23. Controller - StatefulSet
+parent: KUBERNETES
+has_children: true
+nav_order: 1023
+# permalink: /docs/PROJECT
+---
+
+# 23. Controller - StatefulSet
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+StatefulSets are a type of controller that manages the deployment and scaling of stateful applications, such as databases or other distributed systems, in a Kubernetes cluster. Here are some key points about StatefulSets, including how they differ from other replication controllers:
+
+* StatefulSets are designed to manage stateful applications, which require unique network identifiers and stable storage.
+
+* StatefulSets maintain a unique identity for each pod in the set, enabling them to be addressed individually and providing reliable stateful services.
+
+* StatefulSets create pods in a predictable, sequential order, and each pod has a stable hostname and network identity.
+
+* When scaling up or down, StatefulSets create or delete pods one at a time, preserving the stable network identity of the remaining pods.
+
+* StatefulSets ensure that any stateful data is persisted when pods are rescheduled or deleted.
+
+* Unlike other replication controllers, StatefulSets guarantee that the order in which pods are created is maintained, and each pod has a unique identity.
+
+* While similar to other controllers like ReplicationController, ReplicaSet, Deployment, and DaemonSet, StatefulSets have unique properties that make them better suited for managing stateful applications in a Kubernetes cluster.
+
+
+  

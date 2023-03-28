@@ -1,0 +1,253 @@
+---
+layout: default
+title:  22. Controller - DaemonSet
+parent: KUBERNETES
+has_children: true
+nav_order: 1022
+# permalink: /docs/PROJECT
+---
+
+# 22. Controller - DaemonSet
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+* A DaemonSet is a controller that deploys pods to all nodes or a specific node group in a cluster.
+
+* Unlike other replication controllers, DaemonSets cannot be scheduled for failure - they must always run on every node.
+
+* When new nodes are added, DaemonSets automatically deploy pods to those nodes.
+
+* When nodes are removed, DaemonSets automatically delete the pods running on those nodes.
+
+* DaemonSets are commonly used for deploying system processes such as log collectors or monitoring agents, which need to run on every node in the cluster.
+
+## DaemonSet definition
+
+<table>
+  <tr>
+    <td>ReplicaSet
+      <pre>
+        <code class="language-yaml">
+apiVersion: apps/v1     #rc apiVersion
+kind: ReplicaSet        #rc kind
+metadata:
+  name: rs-nginx        #rc name
+spec:
+  replicas: 3           # Min. Pods Numb.
+  selector:
+    matchLabels:
+      app: webui        #no meaning
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: webui
+    spec:
+    containers:
+    - name: nginx-container     #container name
+            image: nginx:1.14   #container image
+        </code>
+      </pre>
+    </td>
+    <td>Deployment
+      <pre>
+        <code class="language-yaml">
+apiVersion: apps/v1                # DaemonSet apiVersion
+kind: DaemonSet                    # DaemonSet kind option
+metadata:
+  name: daemonset-nginx
+spec:
+  selector:                        # no replicas option
+    matchLabels:
+      app: webui
+  template:
+    metadata:
+      name: nginx-pod
+      labels:
+        app: webui
+    spec:
+      containers:
+      - name: nginx-container
+        image: nginx:1.14
+        </code>
+      </pre>
+    </td>
+  </tr>
+</table>
+
+## DaemonSet example-1
+
+### Prepare test
+
+* Create DaemonSet by yaml  
+
+  ```bash
+  vim daemonset-exam.yaml
+  ```
+
+  ```yaml
+  apiVersion: apps/v1
+  kind: DaemonSet
+  metadata:
+    name: daemonset-nginx
+  spec:
+    selector:
+      matchLabels:
+        app: webui
+    template:
+      metadata:
+        name: nginx-pod 
+        labels:
+          app: webui
+      spec:
+        containers:
+        - name: nginx-container
+          image: nginx:1.14
+  ```
+
+* Turn on the watch mode for pods(T1)  
+
+  ```bash
+  watch kubectl get pods -o wide
+  ```
+
+  ![6](/docs/KUBERNETES/22.DaemonSet/pics/6.png)
+
+* Delete node3
+
+  ```bash
+  kubectl delete nodes node3
+  ```
+
+  ![1](/docs/KUBERNETES/22.DaemonSet/pics/1.png)
+
+* enforce daemonset-exam.yaml
+
+  ```bash
+  kubectl create -f daemonset-exam.yaml
+  ```
+
+  ![2](/docs/KUBERNETES/22.DaemonSet/pics/2.png)
+
+* Check the daemonset status again
+
+  ```bash
+  kubectl get daemonset
+  ```  
+
+  ![7](/docs/KUBERNETES/22.DaemonSet/pics/7.png)
+
+* Check the T1 watch again
+
+  ![8](/docs/KUBERNETES/22.DaemonSet/pics/8.png)
+
+### test
+
+* Check the token list at Master
+
+  ```bash
+  sudo kubeadm token list
+  ```
+
+* Get a new token reissued.
+
+  ```bash
+  sudo kubeadm token create --ttl 1h
+  ```
+
+  ![9](/docs/KUBERNETES/22.DaemonSet/pics/9.png)
+
+* Get a new hash code
+
+  ```bash
+  sudo openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | openssl dgst -sha256 -hex | sed 's/^.* //'
+  ```
+
+  ![10](/docs/KUBERNETES/22.DaemonSet/pics/10.png)
+  
+* Node3 re-register to Master  
+
+  ```bash
+  sudo kubeadm join (Master Ip Address):6443 --token (Token value) --discovery-token-ca-cert-hash sha256:
+  (Token hash code)
+  ```
+
+  ![11](/docs/KUBERNETES/22.DaemonSet/pics/11.png)
+
+### Check the DaemonSet status at Master  
+
+* T1(watch kubectl get pods -o wide)
+  ![8](/docs/KUBERNETES/22.DaemonSet/pics/8.png)
+  ![4](/docs/KUBERNETES/22.DaemonSet/pics/4.png)
+  ![5](/docs/KUBERNETES/22.DaemonSet/pics/5.png)
+
+* deamonset status  
+
+  ```bash
+  kubectl get daemonset.apps
+  ```
+
+  ![7](/docs/KUBERNETES/22.DaemonSet/pics/7.png)
+  ![12](/docs/KUBERNETES/22.DaemonSet/pics/12.png)
+
+## DaemonSet example-2: Rolling update & Rollback  
+
+### Check the pods and daemonset status
+
+* Turn on watching mode to pods  
+  ![13](/docs/KUBERNETES/22.DaemonSet/pics/13.png)
+
+* Turn on watching mode to daemonset
+  ![14](/docs/KUBERNETES/22.DaemonSet/pics/14.png)
+
+### Test  
+
+* Change Nginx version to 1.15 in edit mode
+
+  ```bash
+  kubectl edit daemonsets.app daemonset-nginx
+  ```
+
+  ```yml
+  ...
+        spec:
+          containers:
+          - image: nginx:1.14     # Change to nginx:1.15
+            imagePullPolicy: IfNotPresent
+          name: nginx-container
+          resources: {}
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+  ...
+  ```
+
+{% include youtube.html id=https://youtu.be/dFSNPm7xC6Y %}
+
+### Check the pods event
+
+* Pod in node3  
+  ![16](/docs/KUBERNETES/22.DaemonSet/pics/16.png)
+  ...
+  ![15](/docs/KUBERNETES/22.DaemonSet/pics/15.png)
+
+* Pod in node2
+  ![17](/docs/KUBERNETES/22.DaemonSet/pics/17.png)
+  ...
+  ![18](/docs/KUBERNETES/22.DaemonSet/pics/18.png)
+
+* Pod in node3
+  ![19](/docs/KUBERNETES/22.DaemonSet/pics/19.png)
+  ...
+  ![20](/docs/KUBERNETES/22.DaemonSet/pics/20.png)
+

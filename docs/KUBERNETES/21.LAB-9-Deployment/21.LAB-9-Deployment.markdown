@@ -1,0 +1,25 @@
+---
+layout: default
+title:  21. LAB-9 Deploment
+parent: KUBERNETES
+has_children: true
+nav_order: 1021
+# permalink: /docs/PROJECT
+---
+
+# 21. LAB-9 Deploment
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Assignment-1
+
+* Create dep-lab.yaml file using deployment following below conditions and enforce it by 'apply' command

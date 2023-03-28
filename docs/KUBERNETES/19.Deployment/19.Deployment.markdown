@@ -23,18 +23,18 @@ nav_order: 1019
 ## Summary  
 
 * It is a Kubernetes resource that manages the deployment and upgrade of containerized applications.  
-![2](/docs/KUBERNETES/19.Deplyment/pics/2-19.Deployment.png)
+![2](/docs/KUBERNETES/19.Deployment/pics/2-19.Deployment.png)
 
 * Deployment manages ReplicaSets, which in turn manage multiple replicas of the same pod.
-![1](/docs/KUBERNETES/19.Deplyment/pics/1-19.Deployment.png)
+![1](/docs/KUBERNETES/19.Deployment/pics/1-19.Deployment.png)
 
 * During an upgrade, Deployment starts a new ReplicaSet for the new version of the application while keeping the previous version's ReplicaSet running, allowing for rolling upgrades.  
-![3](/docs/KUBERNETES/19.Deplyment/pics/3-19.Deployment.png)
+![3](/docs/KUBERNETES/19.Deployment/pics/3-19.Deployment.png)
 
 * This ensures high availability of the application while performing stable deployment.
 
 * Deployment also supports rollbacks, allowing users to easily revert to a previous version.
-![4](/docs/KUBERNETES/19.Deplyment/pics/4-19.Deployment.png)
+![4](/docs/KUBERNETES/19.Deployment/pics/4-19.Deployment.png)
 
 * These features make application deployment and management more efficient for Kubernetes users.
 
@@ -98,7 +98,7 @@ spec:
 ### Define deployment in yaml
 
 ```bash
-\$ vim deploy-nginx.yaml
+vim deploy-nginx.yaml
 ```
 
 ```yml
@@ -123,10 +123,15 @@ spec:
 ```
 
 ### Check deployment status
-![7](/docs/KUBERNETES/19.Deplyment/pics/7-19.Deployment.png)
+![7](/docs/KUBERNETES/19.Deployment/pics/7-19.Deployment.png)
 
 ```bash
-\ kubetctl get pods -o wide</span>
+kubetctl create -f deploy-nginx.yaml
+```
+![5](/docs/KUBERNETES/19.Deployment/pics/5-19.Deployment.png)
+
+```bash
+kubetctl get pods -o wide
 ```
 
 ## Deployment rolling update & rolling back  
