@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 title: 1. AWS Cloud WAN
 grand_parent: AWS
@@ -94,4 +94,4 @@ Routing domains that by default only allow communication within a segment, consi
 
 ### LAB-1  
 
-### LAB-2  
+### LAB-2   -->
