@@ -1,0 +1,24 @@
+---
+layout: default
+title:  24. Service
+parent: KUBERNETES
+has_children: true
+nav_order: 1023
+# permalink: /docs/PROJECT
+---
+
+# 24. Service
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
