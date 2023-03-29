@@ -1,0 +1,14 @@
+{% if page.layout == "default" %}
+  {% include_relative head_custom.html %}
+  {% include head/title.html %}
+  {% include head/favicon.html %}
+  {% include head/meta.html %}
+  {% include head/css.html %}
+  {% include head/js.html %}
+  {% include head/google-analytics.html %}
+  {% include head/search.html %}
+  {% include head/rss.html %}
+  {% include head/twitter-card.html %}
+
+  {%- include custom/youtube.html -%}
+{% endif %}
