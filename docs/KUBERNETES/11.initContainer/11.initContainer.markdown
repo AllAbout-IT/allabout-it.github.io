@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: default
 title:  11. Various types of Container in POD
 parent: KUBERNETES
@@ -28,4 +28,4 @@ nav_order: 1011
 
 ## Static container  
 
-### It is POD operated by kubelet daemon   -->
+### It is POD operated by kubelet daemon  

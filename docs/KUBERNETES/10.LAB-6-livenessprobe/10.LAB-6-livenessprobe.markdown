@@ -1,0 +1,20 @@
+---
+layout: default
+title:  10. LAB-6 Livenessprobe
+parent: KUBERNETES
+has_children: true
+nav_order: 1006
+# permalink: /docs/PROJECT
+---
+
+# 9. Pod - Liveness Probe
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
