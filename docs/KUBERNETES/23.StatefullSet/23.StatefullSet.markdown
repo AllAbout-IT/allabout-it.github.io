@@ -38,5 +38,3 @@ StatefulSets are a type of controller that manages the deployment and scaling of
 
 * While similar to other controllers like ReplicationController, ReplicaSet, Deployment, and DaemonSet, StatefulSets have unique properties that make them better suited for managing stateful applications in a Kubernetes cluster.
 
-
-  

@@ -232,11 +232,11 @@ spec:
   ...
   ```
 
-  {% include youtube.html id="dFSNPm7xC6Y" %}
+  <!-- {% include youtube.html id="dFSNPm7xC6Y" %}
 
   <div class="video-container embed-responsive embed-responsive-16by9">
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-  </div>
+  </div> -->
 
 ### Check the pods event
 
