@@ -3,7 +3,7 @@ layout: default
 title:  24. Service
 parent: KUBERNETES
 has_children: true
-nav_order: 1023
+nav_order: 1024
 # permalink: /docs/PROJECT
 ---
 
@@ -22,3 +22,81 @@ nav_order: 1023
 
 ## Summary  
 
+Service is a fundamental resource that provides an abstraction layer to expose a set of Pods as a network service. Here are some key points about Kubernetes Service:
+
+* A Kubernetes Service is assigned a unique IP address and hostname that are used to communicate with the Service.
+
+* Services use selectors to dynamically match a set of Pods based on labels.
+
+* Services can be used to provide load balancing, automatic service discovery, and failover for Pods.
+
+* There are four types of Kubernetes Services: ClusterIP, NodePort, LoadBalancer, and ExternalName. Each type provides different levels of accessibility and functionality for accessing the Service.
+
+* Services can be exposed internally within a cluster or externally to the public internet depending on the Service type.
+
+* Services can be used by other Kubernetes resources such as Deployments, StatefulSets, and DaemonSets to access and manage Pods.
+
+## Service definition
+
+<table>
+  <tr>
+    <th>Deployment</th>
+    <th>Service</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      <pre>
+        <code class="language-yaml">
+<span style="color:red">apiVersion: apps/v1
+kind: Deployment</span>
+metadata:
+  name: deploy-nginx
+spec:
+  <span style="color:red">replicas: 3
+  selector:
+    matchLabels:
+      app: webui</span>
+  template:
+    metadata:
+      name: nginx-pod
+      <span style="color:red">labels:
+        app: webui</span>     ## It will be target of Service's selector
+    spec:
+    containers:
+    - name: nginx-container
+      image: nginx:1.14
+        </code>
+      </pre>
+    </td>
+    <td valign="top">
+      <pre>
+        <code class="language-yaml">
+<span style="color:red">apiVersion: v1
+kind: Service</span>
+metadata:
+  name: webui-svc
+spec:
+<span style="color:red">clusterIP: 10.96.100.100
+  selector:
+    app: webui</span>
+ports:
+- protocol: TCP
+    port: 80
+    targetPort: 80
+        </code>
+      </pre>
+    </td>
+  </tr>
+</table>
+
+## ClusterIP
+
+A ClusterIP Service provides a virtual IP address that is only accessible within the cluster. This virtual IP is associated with a set of Pods, and any traffic sent to the virtual IP will be load balanced to the Pods. Some key points about ClusterIP Services include:
+
+* ClusterIP Services are the default type of Service in Kubernetes.
+
+* They are used for internal communication between Pods within the cluster.
+
+* ClusterIP Services are not accessible from outside the cluster.
+
+* They can be used in conjunction with other types of Services (such as NodePort or LoadBalancer) to provide different levels of access to applications running in the cluster.
