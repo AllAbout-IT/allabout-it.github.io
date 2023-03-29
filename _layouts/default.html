@@ -79,7 +79,8 @@ layout: table_wrappers
     {% include components/search_footer.html %}
     {% endif %}
     {% if page.layout == "default" %}
-    {% include head_custom.html %}
+    <!-- {% include head_custom.html %} -->
+    {% include_relative head_custom.html %}
     {% include head/title.html %}
     {% include head/favicon.html %}
     {% include head/meta.html %}
