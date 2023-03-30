@@ -1,0 +1,61 @@
+---
+layout: default
+title:  26.Ingress
+parent: KUBERNETES
+has_children: true
+nav_order: 1026
+# permalink: /docs/PROJECT
+---
+
+# 26.Ingress
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+Kubernetes Ingress is an API object that acts as a configurable entry point for managing external access to services in a Kubernetes cluster. It enables the exposure of these services via HTTP and HTTPS, allowing for the routing and load balancing of incoming traffic based on factors such as hostnames and paths.
+
+* It provides a way to route incoming traffic to different services within a cluster based on the incoming request's host or path.
+
+* It supports multiple load-balancing algorithms, enabling the distribution of traffic across multiple backend services.
+
+* It can be configured with SSL/TLS termination to provide secure access to services.
+
+* It supports virtual hosting, allowing multiple hostnames to be mapped to a single IP address, simplifying management and reducing the number of public IPs required.
+
+* It can be integrated with external load balancers and ingress controllers, providing additional functionality and flexibility for managing external access to services.
+
+## Ingress activating placement  
+
+In general, the Ingress Controller is deployed within the Kubernetes cluster. In this case, the Ingress Controller is deployed on nodes within the cluster, allowing for processing of Ingress rules on all nodes within the cluster. This method ensures the stability and performance of the Ingress Controller.
+
+Additionally, the Ingress Controller can be integrated with load balancers provided by cloud service providers. In this case, the Ingress Controller uses the cloud service provider's load balancer to process Ingress rules. This method allows the cloud service provider to manage the load balancer, relieving the cluster administrator of the need to manage it, and providing faster processing of Ingress rules.
+
+There are various ways to deploy the Ingress Controller, including using deployment methods such as DaemonSet, Deployment, and StatefulSet provided by Kubernetes. Since the Ingress Controller must be used with other Kubernetes components, Kubernetes resources such as Services and ConfigMaps must be deployed together.
+
+Other services and features that can be used with the Ingress Controller include:
+
+* Service: forwards requests to backend services specified in Ingress rules. Services must be used with Ingress rules.
+
+* ConfigMap: contains configuration information for the Ingress Controller, used to configure proxy settings, load balancers, and TLS settings used by the Ingress Controller.
+
+* Secret: used to securely store sensitive information such as TLS certificates. Secrets can be used to store the certificate and private key when using HTTPS in Ingress rules.
+
+Since the Ingress Controller must be run stably within the Kubernetes cluster, it is important to consider stability and performance when deploying it, choosing the appropriate location and configuring Kubernetes resources appropriately.
+
+![1](/docs/KUBERNETES/26.Ingress/pics/1.png)
+
+## Ingress example  
+
+## Practice installing one of the Ingress application service
+
+## Ingress test example
