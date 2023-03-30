@@ -1,0 +1,265 @@
+---
+layout: default
+title:  25.Kube-proxy
+parent: KUBERNETES
+has_children: true
+nav_order: 1024
+# permalink: /docs/PROJECT
+---
+
+# 24. Service
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Summary  
+
+Service is a fundamental resource that provides an abstraction layer to expose a set of Pods as a network service. Here are some key points about Kubernetes Service:
+
+* A Kubernetes Service is assigned a unique IP address and hostname that are used to communicate with the Service.
+
+* Services use selectors to dynamically match a set of Pods based on labels.
+
+* Services can be used to provide load balancing, automatic service discovery, and failover for Pods.
+
+* There are four types of Kubernetes Services: ClusterIP, NodePort, LoadBalancer, and ExternalName. Each type provides different levels of accessibility and functionality for accessing the Service.
+
+* Services can be exposed internally within a cluster or externally to the public internet depending on the Service type.
+
+* Services can be used by other Kubernetes resources such as Deployments, StatefulSets, and DaemonSets to access and manage Pods.
+
+## Service definition
+
+<table>
+  <tr>
+    <th>Deployment</th>
+    <th>Service</th>
+  </tr>
+  <tr>
+    <td valign="top">
+      <pre>
+        <code class="language-yaml">
+<span style="color:red">apiVersion: apps/v1
+kind: Deployment</span>
+metadata:
+  name: deploy-nginx
+spec:
+  <span style="color:red">replicas: 3
+  selector:
+    matchLabels:
+      app: webui</span>
+  template:
+    metadata:
+      name: nginx-pod
+      <span style="color:red">labels:
+        app: webui</span>     ## It will be target of Service's selector
+    spec:
+    containers:
+    - name: nginx-container
+      image: nginx:1.14
+        </code>
+      </pre>
+    </td>
+    <td valign="top">
+      <pre>
+        <code class="language-yaml">
+<span style="color:red">apiVersion: v1
+kind: Service</span>
+metadata:
+  name: webui-svc
+spec:
+<span style="color:red">clusterIP: 10.96.100.100
+  selector:
+    app: webui</span>
+ports:
+- protocol: TCP
+    port: 80
+    targetPort: 80
+        </code>
+      </pre>
+    </td>
+  </tr>
+</table>
+
+## ClusterIP
+
+A ClusterIP Service provides a virtual IP address that is only accessible within the cluster. This virtual IP is associated with a set of Pods, and any traffic sent to the virtual IP will be load balanced to the Pods. Some key points about ClusterIP Services include:
+
+* ClusterIP Services are the default type of Service in Kubernetes.
+
+* They are used for internal communication between Pods within the cluster.
+
+* ClusterIP Services are not accessible from outside the cluster.
+
+* They can be used in conjunction with other types of Services (such as NodePort or LoadBalancer) to provide different levels of access to applications running in the cluster.
+
+![1](/docs/KUBERNETES/24./pics/1.png)
+
+## Cluster IP example
+
+### ClusterIP definition in yaml
+
+<pre>
+  <code class="language-yaml">
+apiVersion: v1
+<span style="color:red">kind: Service</span>
+metadata:
+  name: clusterip-service
+spec:
+  <span style="color:red">type: ClusterIP
+  clusterIP: 10.100.100.100</span>
+  selector:
+    app: webui
+  ports:
+  - protocol: TCP
+    port: 80          #clusterIP port
+    targetPort: 80    #Pod port
+  </code>
+</pre>
+
+### Preparing before work
+
+* Create service pods by deploy-nginx.yaml
+
+  ```sh
+  kubectl create -f deploy-nginx.yaml
+  ```
+
+  ![6](/docs/KUBERNETES/24./pics/6.png)
+
+* Check the deply-nginx.yaml's pods and deployment
+
+  ```sh
+  watch kubectl get pods -o wide
+  ```
+
+  ![5](/docs/KUBERNETES/24./pics/5.png)
+
+  ```sh
+  kubectl get deployments.apps deploy-nginx -o wide
+  ```
+
+  ![7](/docs/KUBERNETES/24./pics/7.png)
+
+### Test Cluster IP
+
+* Create ClusterIP in yaml
+
+  ```sh
+  vim clusterip-nginx.yaml
+  ```
+
+  ```yml
+  apiVersion: v1
+  kind: Service
+  metadata:
+    name: clusterip-service
+  spec:
+    type: ClusterIP
+    clusterIP: 10.100.100.100</span>
+    selector:
+      app: webui
+    ports:
+    - protocol: TCP
+      port: 80          
+      targetPort: 80    
+  ```
+
+* Enforce service ClusterIP by yaml
+
+  ```sh
+  kubectl create -f clusterip-nginx.yaml
+  ```
+
+  ![8](/docs/KUBERNETES/24./pics/8.png)
+
+### Check status
+
+* Check service status
+
+  ```sh
+  kubectl get service -o wide
+  ```
+  
+  ![9](/docs/KUBERNETES/24./pics/9.png)
+
+* Check curl
+
+  ```sh
+  curl 10.100.100.100
+  ```
+
+  ![10](/docs/KUBERNETES/24./pics/10.png)
+
+* Check pods
+
+  ```sh
+  kubectl logs deploy-nginx-xxxxxxxxxx-xxxxx
+  ```
+
+  ![12](/docs/KUBERNETES/24./pics/12.png)
+
+* Check service slusterip-service by describe
+
+  ```sh
+  kubectl describe service clustertip-service
+  ```
+
+  ![11](/docs/KUBERNETES/24./pics/11.png)
+
+* 
+
+## NodePort  
+
+A NodePort is a Kubernetes service that exposes an application running on a set of pods to the outside world by mapping a specific port of each node in the cluster to the target port of the service.
+
+* NodePort provides a static, externally-accessible IP address that can be used to access the service from outside the cluster.
+
+* The NodePort range for a cluster is 30000-32767 by default, but it can be configured to use a different range.
+
+* It does booking NodePort after automatically creating ClusterIP
+
+* When a client sends a request to the NodePort, the request is forwarded to one of the pods that belong to the service using kube-proxy.
+
+* NodePort is not recommended for production use because it exposes the service to the entire internet and can result in security risks. It's typically used for testing or for access from within the cluster.
+
+![2](/docs/KUBERNETES/24./pics/2.png)
+
+## LoadBalancer  
+
+A LoadBalancer is a Kubernetes service that provides external access to an application running on a set of pods by distributing incoming network traffic across multiple nodes in the cluster.
+
+* LoadBalancer allocates an external IP address for the service, which can be accessed from outside the cluster.
+
+* It requests configuration to the LoadBalancer machine after automatically creating ClusterIP, NodePort.
+
+* When a client sends a request to the LoadBalancer, the traffic is distributed across multiple nodes using a load balancing algorithm, which ensures that the traffic is evenly distributed and no single node is overwhelmed.
+
+* LoadBalancer is typically used for production environments, where high availability and scalability are important.
+
+* Cloud providers such as AWS, GCP, and Azure offer load balancer services that can be integrated with Kubernetes to provide external access to a service.
+
+![3](/docs/KUBERNETES/24./pics/3.png)
+
+## External Name  
+
+ExternalName is a Kubernetes service type that provides a way to access an external service by mapping the service name to a DNS name.
+
+* ExternalName does not create any endpoints or selectors, and instead maps the service name to a DNS name.
+
+* When a client sends a request to the ExternalName service, the DNS resolution is performed to resolve the service name to the external DNS name.
+
+* ExternalName is typically used to expose an external service that is running outside the cluster, such as a database or third-party API.
+
+* ExternalName cannot be used to load balance traffic between multiple endpoints or to provide high availability, as it only provides a DNS mapping to the external service name.
+
+![4](/docs/KUBERNETES/24./pics/4.png)
+
