@@ -1,7 +1,7 @@
 ---
 layout: default
-title:  26.Ingress
-parent: KUBERNETES
+title:  CISCO
+parent: NETWORK
 has_children: true
 nav_order: 2001
 # permalink: /docs/PROJECT

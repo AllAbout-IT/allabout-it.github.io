@@ -38,39 +38,94 @@ The following can be found in more detail on cisco's home page. [Chapter: Config
 
 * vPC provides multiple availability features and is used in large-scale data centers to build highly reliable networks.
 
-Virtual Routing and Forwarding (VRF):
-Enables creation of multiple virtual routing tables within a single physical router or switch.
-Each VRF can maintain its own routing information.
+## vPC Peer-Keepalive Link
+
+* This link provides the physical connectivity between the two switches that are paired in a vPC.
+
+* The vPC Peer-Keepalive Link is used to detect and maintain the state between the paired switches.
+
+* Typically, this link is configured on different physical interfaces.
+
+* The availability of the vPC Peer-Keepalive Link is critical and takes higher priority over any other technology used on other links.
+
+* By using the vPC Peer-Keepalive Link to detect and maintain the state between the two switches, it can prevent various problems that can occur in a vPC topology.
+One of these problems is the "split-brain" issue.
+
+* The vPC Peer-Keepalive Link continuously monitors the connectivity between the two switches and synchronizes the state information between the two switches in case of a disconnection to ensure consistent behavior.
+
+## vPC Peer Link
+
+## vPC Control-Plan
+
+* vPC Control-Plan is a virtual interface used for transmitting control traffic between two switches in a vPC pairing.
+
+* It carries protocols like vPC Keepalive and vPC Control to ensure proper functioning of vPC.
+
+* The virtual interface can be configured using 10G or 40G physical interfaces.
+
+* Port channels can be used to further increase the bandwidth of vPC Control-Plan.
+
+* vPC Control-Plan is a critical technology for vPC that allows the creation of a virtual single switch across multiple physical switches.
+
+## 
+
+## Virtual Routing and Forwarding (VRF)
+
+* Enables creation of multiple virtual routing tables within a single physical router or switch.
+
+* Each VRF can maintain its own routing information.
 Multiple VRFs can coexist on the same device without interfering with each other.
-Provides additional security and segmentation.
+
+* Provides additional security and segmentation.
 Can be used to provide separation of traffic between different tenants or departments within an organization.
-Fabric Extender Technology (FEX):
+
+## Fabric Extender Technology (FEX)
+
 Extends the capabilities of a parent switch to a remote device known as a "fabric extender."
 Simplifies network design and reduces cabling requirements.
 Allows the parent switch to control the fabric extender as if it were a locally attached device.
 Allows network administrators to centrally manage and configure the fabric extender.
 Reduces the complexity of the network infrastructure.
-Overlay Transport Virtualization (OTV):
+
+## Overlay Transport Virtualization (OTV)
+
 Provides Layer 2 connectivity between geographically dispersed data centers.
 Encapsulates Layer 2 Ethernet frames within IP packets.
 Allows for the seamless migration of virtual machines between data centers.
 Provides built-in traffic engineering and load balancing capabilities.
 Ensures optimal performance between data centers.
-Network Positioning System (NPS):
+
+## Network Positioning System (NPS)
+
 Enables network administrators to locate and track the physical location of network devices within a data center.
 Uses sensors placed throughout the data center to detect the presence of network devices and determine their location.
 Stores location information in a centralized database.
 Provides guidance on where to place network devices.
 Helps network administrators manage network devices more efficiently and respond more quickly to outages.
-Virtual Port Channels (vPC):
+
+## Virtual Port Channels (vPC)
+
 Logical port channeling technology used in Cisco Nexus switches.
 Allows two Nexus switches to be combined into a single logical switch.
 Provides higher availability and scalability.
 Removes the possibility of a single point of failure in the switches.
 Allows multiple connections to a single logical device, improving availability and providing higher bandwidth.
-Cisco Data Center Network Manager (DCNM):
+
+## Cisco Data Center Network Manager (DCNM)
+
 Integrated solution for managing Cisco Nexus switches and other data center devices.
 Can manage networks, storage, and computing infrastructure.
 Provides an easier way to configure, monitor, and manage switches, routers, servers, and storage devices.
 Provides visualization tools to understand relationships between network components and identify problems.
 Provides automation capabilities to minimize configuration errors and handle network deployment more efficiently.
+
+## Configuration  
+
+### 1. Configure the vPC Domain
+
+#### Role Priority
+
+### 2. Configure the vPC Peer-Keepalive Link
+
+### 3. Configure the vPC Peer-Link
+
