@@ -1,0 +1,20 @@
+---
+layout: default
+title:  1. NEXUS
+parent: CISCO
+has_children: true
+nav_order: 3001
+# permalink: /docs/PROJECT
+---
+# NEXUS
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>

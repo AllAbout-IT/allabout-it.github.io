@@ -1,0 +1,76 @@
+---
+layout: default
+title:  4. NS-OS-vPC
+parent: CISCO
+has_children: true
+nav_order: 3003
+# permalink: /docs/PROJECT
+---
+# 4. NS-OS-vPC
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+{: .notification }
+The following can be found in more detail on cisco's home page. [Chapter: Configuring vPCs](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus9000/sw/6-x/interfaces/configuration/guide/b_Cisco_Nexus_9000_Series_NX-OS_Interfaces_Configuration_Guide/b_Cisco_Nexus_9000_Series_NX-OS_Interfaces_Configuration_Guide_chapter_0111.html?dtid=osscdc000283#topic_D4D9938C6B254A4DB9A74FFAFC74C63F)
+
+## Definition
+
+* vPC (Virtual Port Channel) is a logical port channeling technology used in Cisco Nexus switches.
+
+* It combines two Nexus switches into a single logical switch, providing high availability and scalability.
+
+* It eliminates the possibility of a single point of failure in the switches.
+
+* vPC allows multiple connections to a single logical device, improving availability and providing higher bandwidth.
+
+* If one switch fails, devices connected via vPC can still operate without interruption through the other switch.
+
+* Two Nexus switches operate as a single logical switch with vPC, ensuring uninterrupted operation even when cabling issues occur in other switches.
+
+* vPC provides multiple availability features and is used in large-scale data centers to build highly reliable networks.
+
+Virtual Routing and Forwarding (VRF):
+Enables creation of multiple virtual routing tables within a single physical router or switch.
+Each VRF can maintain its own routing information.
+Multiple VRFs can coexist on the same device without interfering with each other.
+Provides additional security and segmentation.
+Can be used to provide separation of traffic between different tenants or departments within an organization.
+Fabric Extender Technology (FEX):
+Extends the capabilities of a parent switch to a remote device known as a "fabric extender."
+Simplifies network design and reduces cabling requirements.
+Allows the parent switch to control the fabric extender as if it were a locally attached device.
+Allows network administrators to centrally manage and configure the fabric extender.
+Reduces the complexity of the network infrastructure.
+Overlay Transport Virtualization (OTV):
+Provides Layer 2 connectivity between geographically dispersed data centers.
+Encapsulates Layer 2 Ethernet frames within IP packets.
+Allows for the seamless migration of virtual machines between data centers.
+Provides built-in traffic engineering and load balancing capabilities.
+Ensures optimal performance between data centers.
+Network Positioning System (NPS):
+Enables network administrators to locate and track the physical location of network devices within a data center.
+Uses sensors placed throughout the data center to detect the presence of network devices and determine their location.
+Stores location information in a centralized database.
+Provides guidance on where to place network devices.
+Helps network administrators manage network devices more efficiently and respond more quickly to outages.
+Virtual Port Channels (vPC):
+Logical port channeling technology used in Cisco Nexus switches.
+Allows two Nexus switches to be combined into a single logical switch.
+Provides higher availability and scalability.
+Removes the possibility of a single point of failure in the switches.
+Allows multiple connections to a single logical device, improving availability and providing higher bandwidth.
+Cisco Data Center Network Manager (DCNM):
+Integrated solution for managing Cisco Nexus switches and other data center devices.
+Can manage networks, storage, and computing infrastructure.
+Provides an easier way to configure, monitor, and manage switches, routers, servers, and storage devices.
+Provides visualization tools to understand relationships between network components and identify problems.
+Provides automation capabilities to minimize configuration errors and handle network deployment more efficiently.
