@@ -1,0 +1,67 @@
+---
+layout: default
+title:  5. LAB.05 Configuration vPC(Virtual Port Channel) - Basic
+parent: CISCO
+has_children: true
+nav_order: 3003
+# permalink: /docs/PROJECT
+---
+# 5. LAB.05 Configuration vPC(Virtual Port Channel) - Basic
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## vPC Topology
+
+![1](/docs/NETWORK/CISCO/5.LAB-05-vPC/pics/1.png)
+
+## Overview
+
+* [Configure vPC domain](#configure-vpc-domain)
+* [Configure vPC keep-alive link](#configure-vpc-keep-alive-link)
+  * [Configure by using Mgmt init (Default)](#configure-by-using-mgmt-init-default)
+  * [Configure by using a separate interface(Cisco recommended)](#configure-by-using-a-separate-interfacecisco-recommended)
+* [Configure peer-link](#configure-peer-link)
+* Configure vPC
+  * Configure Member Port
+  * Configure Orpahn Port
+
+## Configure vPC domain  
+
+* Designate the vPC Domain Group for defining the switch group to attend vPC
+
+* Configure the domain group "10" at N9E-3, N9K-4 and configure the role priority of N9K-3 as value "100"
+
+  N9K-3#
+
+  ```sh
+  configure terminal
+  ```
+
+  N9K-3(config)
+
+  ```sh  
+  feature vpc
+  vpc domain 10
+  role priority 1000
+  ```
+  
+## Configure vPC keep-alive link
+
+## Configure by using Mgmt init (Default)
+
+## Configure by using a separate interface(Cisco recommended)
+
+## Configure peer-link
+
+### Configure Member Port
+
+### Configure Orpahn Port

@@ -2,7 +2,7 @@
 layout: default
 title:  1. NEXUS
 parent: CISCO
-has_children: true
+grand_parent: NETWORK
 nav_order: 3001
 # permalink: /docs/PROJECT
 ---

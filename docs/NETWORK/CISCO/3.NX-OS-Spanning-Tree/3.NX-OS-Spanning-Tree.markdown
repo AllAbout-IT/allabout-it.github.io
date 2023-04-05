@@ -2,7 +2,7 @@
 layout: default
 title:  3.NX-OS-Spanning-Tree
 parent: CISCO
-has_children: true
+grand_parent: NETWORK
 nav_order: 3003
 # permalink: /docs/PROJECT
 ---

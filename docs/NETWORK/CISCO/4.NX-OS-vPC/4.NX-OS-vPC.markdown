@@ -2,7 +2,7 @@
 layout: default
 title:  4. NS-OS-vPC
 parent: CISCO
-has_children: true
+grand_parent: NETWORK
 nav_order: 3003
 # permalink: /docs/PROJECT
 ---
@@ -24,6 +24,9 @@ The following can be found in more detail on cisco's home page. [Chapter: Config
 
 ## Definition
 
+![1](/docs/NETWORK/CISCO/4.NX-OS-vPC/pics/1.png)  
+Image source from [Firwall.cx](https://www.firewall.cx/)
+
 * vPC (Virtual Port Channel) is a logical port channeling technology used in Cisco Nexus switches.
 
 * It combines two Nexus switches into a single logical switch, providing high availability and scalability.
@@ -38,7 +41,13 @@ The following can be found in more detail on cisco's home page. [Chapter: Config
 
 * vPC provides multiple availability features and is used in large-scale data centers to build highly reliable networks.
 
-## vPC Peer-Keepalive Link
+<!-- ![2](/docs/NETWORK/CISCO/4.NX-OS-vPC/pics/2.png) -->
+
+<p align="center">
+  <img src="docs/NETWORK/CISCO/4.NX-OS-vPC/pics/2.png">
+</p>
+
+### vPC Peer-Keepalive Link
 
 * This link provides the physical connectivity between the two switches that are paired in a vPC.
 
@@ -53,7 +62,7 @@ One of these problems is the "split-brain" issue.
 
 * The vPC Peer-Keepalive Link continuously monitors the connectivity between the two switches and synchronizes the state information between the two switches in case of a disconnection to ensure consistent behavior.
 
-## vPC Peer Link
+### vPC Peer Link
 
 ## vPC Control-Plan
 
@@ -81,19 +90,25 @@ Can be used to provide separation of traffic between different tenants or depart
 
 ## Fabric Extender Technology (FEX)
 
-Extends the capabilities of a parent switch to a remote device known as a "fabric extender."
+* Extends the capabilities of a parent switch to a remote device known as a "fabric extender."
 Simplifies network design and reduces cabling requirements.
-Allows the parent switch to control the fabric extender as if it were a locally attached device.
-Allows network administrators to centrally manage and configure the fabric extender.
-Reduces the complexity of the network infrastructure.
+
+* Allows the parent switch to control the fabric extender as if it were a locally attached device.
+
+* Allows network administrators to centrally manage and configure the fabric extender.
+
+* Reduces the complexity of the network infrastructure.
 
 ## Overlay Transport Virtualization (OTV)
 
-Provides Layer 2 connectivity between geographically dispersed data centers.
-Encapsulates Layer 2 Ethernet frames within IP packets.
+* Provides Layer 2 connectivity between geographically dispersed data centers.
+
+* Encapsulates Layer 2 Ethernet frames within IP packets.
 Allows for the seamless migration of virtual machines between data centers.
-Provides built-in traffic engineering and load balancing capabilities.
-Ensures optimal performance between data centers.
+
+* Provides built-in traffic engineering and load balancing capabilities.
+
+* Ensures optimal performance between data centers.
 
 ## Network Positioning System (NPS)
 
