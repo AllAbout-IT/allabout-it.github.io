@@ -21,14 +21,20 @@ permalink: /docs/PROJECT/AWS-EKS/Overview
 
 ## OVERVIEW  
 
-![1](/docs/PROJECT/AWS-EKS/Overview/1.png)  
+![1](/docs/PROJECT/AWS-EKS/Overview/pics/1.png)  
 
 ## Basic resourcese in AWS
 
-![2](/docs/PROJECT/AWS-EKS/Overview/2.png)
+![2](/docs/PROJECT/AWS-EKS/Overview/pics/2.png)
 
 ## EKS and Nginx  
 
-## EFK(Elastic Search, Fluentd, Kibana) Stack
+![3](/docs/PROJECT/AWS-EKS/Overview/pics/3.png)
+
+## EFK(Elastic Search, Fluentd, Kibana) Stack  
+
+![4](/docs/PROJECT/AWS-EKS/Overview/pics/4.png)
 
 ## Cloudwatch with Slack  
+
+![5](/docs/PROJECT/AWS-EKS/Overview/pics/5.png)

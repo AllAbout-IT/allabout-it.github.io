@@ -1,0 +1,30 @@
+---
+layout: default
+title:  6. Nenux vPC Faile Scenario
+parent: CISCO
+has_children: true
+nav_order: 3006
+# permalink: /docs/PROJECT
+---
+# 6. Nenux vPC Faile Scenario
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Scenario 3 - vPC Peer-Keepalive Link up & vPC PeerLink down  
+
+* Primary Peer, Secondary Peer, these keep their role
+
+## Scenario 4 - <font color="red">vPC-Keepalive down</font> followed by <font color="red">vPC Peer-Link down</font>
+
+1. vPC peer-keepalive <font color="red">DOWN</font>
+2. vPC peer-link <font color="red">DOWN</font>
+3. <font color="blue">DUAL-ACTIVE</font> or <font color="blue">SPLIT BRAIN</font>  
