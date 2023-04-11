@@ -1,0 +1,66 @@
+---
+layout: default
+title:  1.Configuration network
+parent: LINUX
+has_children: true
+nav_order: 1000
+# permalink: /docs/PROJECT
+---
+
+# 1.Configuration network
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## CENTOS
+
+### Configuration by VI
+
+* check ip address  
+
+  ```sh
+  ip addr
+  ```
+
+* Open network device script
+
+  ```sh
+  vim /etc/sysconfig/network-scripts/ifcfg-[device name]
+  ```
+
+* Adding information for running network
+
+  ```sh
+  TYPE="Ethernet"
+  PROXY_METHOD="none"
+  BROWSER_ONLY="no"
+  BOOTPROTO="none"
+  DEFROUTE="yes"
+  IPV4_FAILURE_FATAL="no"
+  IPV6INIT="yes"
+  IPV6_AUTOCONF="yes"
+  IPV6_DEFROUTE="yes"
+  IPV6_FAILURE_FATAL="no"
+  IPV6_ADDR_GEN_MODE="stable-privacy"
+  NAME="ens33"      # Device name
+  UUID="37cab24c-7290-4156-a3b4-dd46260b7f1a"
+  DEVICE="ens33"
+  <font color="red">ONBOOT="yes"      
+  IPADDR="192.168.200.101"
+  PREFIX="24"
+  GATEWAY="192.168.200.2"
+  DNS1="8.8.8.8"</font>
+  IPV6_PRIVACY="no"
+  ```
+
+* 
+
+### Configuration by nmtui mode  

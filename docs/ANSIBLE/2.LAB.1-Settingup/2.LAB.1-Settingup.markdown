@@ -1,0 +1,39 @@
+---
+layout: default
+title:  2. LAB-1 Setting up Ansible
+parent: ANSIBLE
+has_children: true
+nav_order: 1002
+# permalink: /docs/PROJECT
+---
+
+# 1.SUMMARY
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+##
+
+## Configuration Ansible 
+
+* Installing epel-release
+
+  ```sh
+  yum install -y epel-release
+  ```
+
+* Installing ansible
+
+  ```sh
+  yum install -y ansible
+  ```
+
+## Registration nodes in ansible's hosts file

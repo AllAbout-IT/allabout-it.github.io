@@ -1,0 +1,113 @@
+---
+layout: default
+title:  5. LAB.3 Command Options
+parent: ANSIBLE
+has_children: true
+nav_order: 1003
+# permalink: /docs/PROJECT
+---
+
+# 5. LAB.3 Command Options
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Assignment-01 Ansible hosts & options
+
+### Modify the hosts file to operate nodes as httpd groups
+
+* open hosts file by using vim  
+
+  ```sh
+  vim /etc/ansible/hosts
+  ```
+
+* register node's IP on the list  
+
+  ```sh
+  httpd
+  192.168.200.101     #ansible-node01
+  192.168.200.102     #ansible-node02
+  192.168.200.103     #ansible-node03
+  ```
+
+### Ping the group applied to the hosts file  
+
+* ```sh
+  ansible httpd -m ping -k
+  ```
+
+  ![1](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/1.png)
+
+### Ping test after register node01, node02 to custonmized_list
+
+* register node01, node02 to customized_list
+
+  ```sh
+  echo "192.168.200.101" >> customized_inven.lst
+  echo "192.168.200.102" >> customized_inven.lst
+  ```
+
+* Ping test  
+
+  ```sh
+  ansible -i customized_inven.lst all -m ping -k
+  ```
+
+  ![2](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/2.png)
+
+### Test ping only node01 of the nodes registered in the customized_list file  
+
+* ```sh
+  ansible -i customized_inven.lst [node01 ip adress] -m ping -k
+  ```  
+
+  ![3](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/3.png)
+
+### Check the cause of why it is not working after ping testing by the below command
+
+* ```sh
+  ansible -i customized_inven.lst all -m ping
+  ```
+
+  ![4](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/4.png)
+
+* The reason that the ping test failed is the cause of they didn't have a public key for access. the way for success is including option '-k' in the command
+  ![5](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/5.png)
+  ![6](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/6.png)  
+* Above picture show you the processing flow that appearing Question 'SSH password' after including option '-k' in the command.
+
+## Assignment-02 Ansible hosts & options
+
+* Check the result after operating below command. And research about option '--list-hosts'.
+
+  ```sh
+  echo "[node03 ip address]" >> list-hosts.lst
+  ```
+
+  ```sh
+  ansible -i list-hosts.lst all -m ping --list-hosts
+  ```  
+
+  ![8](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/8.png)
+
+* Let's see What would happen after using option '--list-hosts' in the command through option '--help'
+
+  ```sh
+  ansible --help
+  ```
+
+  ![7](/docs/ANSIBLE/5.LAB.3-Command-Options/pics/7.png)
+
+## Assignment-03 Ansible module
+
+* Add user 'soldesk' to all nodes by using user module
+  Tip: "name=soldesk"

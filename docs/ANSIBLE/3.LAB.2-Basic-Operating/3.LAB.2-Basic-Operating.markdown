@@ -1,0 +1,31 @@
+---
+layout: default
+title:  3. LAB-2 Basic-Operating
+parent: ANSIBLE
+has_children: true
+nav_order: 1003
+# permalink: /docs/PROJECT
+---
+
+# LAB.2 Basic-Operating
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Ping test
+
+## Registration nodes in ansible's hosts list
+
+## Ping test by ansible
+
+## Assignment-01
+
+## 

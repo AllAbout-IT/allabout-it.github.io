@@ -1,0 +1,46 @@
+---
+layout: default
+title:  4. Command-Options
+parent: ANSIBLE
+has_children: true
+nav_order: 1003
+# permalink: /docs/PROJECT
+---
+
+# 4.Command-Options
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Useful Option list
+
+|--------|-------------------|---------------------|
+| -i     |  --inventory-file | 
+
+## -i
+
+* It's option for selecting that be applicated
+
+## -k
+
+* Option for asking password before working  
+
+## --list-hosts
+
+* Option for checking nodes what was applicated
+
+## -m  
+
+* Option for Using the module that you will
+
+* Default value is 'shell'
+
+* Module 'shell' can put in command on ansible command

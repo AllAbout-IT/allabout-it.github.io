@@ -1,0 +1,85 @@
+---
+layout: default
+title:  1. Summary
+parent: ANSIBLE
+has_children: true
+nav_order: 1001
+# permalink: /docs/PROJECT
+---
+
+# 1.SUMMARY
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Devops and Ansible
+
+DevOps is a methodology that integrates software development and IT operations, with continuous integration/deployment, automation, monitoring, and testing as important elements. Ansible is one of the automation tools necessary for the DevOps environment.
+
+Ansible is an open-source tool for automating IT infrastructure that supports various operating systems and can automate configuration management, deployment, provisioning, and application deployment. This provides the necessary functionality for the following aspects in a DevOps environment.
+
+### Provisioning  
+
+Ansible can be used to provision cloud servers. By codifying server configuration, new servers can be quickly created and configuration and package installation can be automated.
+
+### Deployment Automation
+
+Ansible provides the necessary functionality for deployment automation. Server configuration and application deployment are defined in code, making deployment faster. This enables continuous deployment.
+
+### Monitoring  
+
+Ansible can be used to automate server monitoring. It monitors server status and responds through event notifications.
+
+### Security
+
+Ansible can be used to automate security-related tasks, such as SSH key management, firewall configuration, and patch application.
+
+## Ansible's differentiation from other tools
+
+### Agentless
+
+Ansible operates in an agentless manner, meaning that no agent needs to be installed on the target system. This reduces management costs and strengthens security.
+
+### Simple syntax and ease of use
+
+Ansible's syntax is written in YAML format, which is easy for humans to understand. As a result, the learning curve is lower than other tools and it is easy to use.
+
+### Support for various modules
+
+Ansible supports a variety of modules, allowing for automation of various tasks such as server configuration, software deployment, patch management, and container management.
+
+### Support for multiple operating systems
+
+Ansible supports various operating systems such as Windows, Linux, and macOS, and can also operate in cloud environments.
+
+### Support for Playbooks
+
+Ansible can automate server configuration with Playbooks, which are YAML files. This enables code-based infrastructure management.
+
+### Community and support
+
+Ansible is supported by a large community and provides various documents and support. This allows users to quickly and easily receive assistance in solving problems.
+
+### Idempotency ensures consistency and stability
+
+It is a property of Ansible that guarantees the same result even if the same task is performed multiple times. This is possible because Ansible works on a command-based (idempotent) approach instead of a state-based approach. Therefore, when configuring servers or deploying software using Ansible, only the necessary changes to the already-configured state are made. This helps maintain consistency and stability in the system.
+
+### Scalability for managing large infrastructures  
+
+Scalability refers to Ansible's suitability for managing large infrastructures. Ansible adopts a master-slave architecture and can manage large infrastructures by configuring multiple master and slave nodes. Additionally, Ansible provides web-based interfaces like Ansible Tower, which allows multiple users to work concurrently.
+
+### Easy-to-learn syntax for automation
+
+Ansible is designed to automate infrastructure easily using a user-friendly syntax. Ansible's syntax is written in YAML format, which is easy for humans to understand. As a result, Ansible has a low learning curve and is easy to use compared to other automation tools.
+
+### Open-source for customizability
+
+Ansible is an open-source tool, allowing users to freely modify code or add features. This allows users to customize Ansible to fit their specific needs.
