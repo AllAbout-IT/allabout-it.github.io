@@ -1,0 +1,55 @@
+---
+layout: default
+title:  7. PLAYBOOK with Ubuntu
+parent: ANSIBLE
+has_children: true
+nav_order: 1007
+# permalink: /docs/PROJECT
+---
+
+# 7. PLAYBOOK with Ubuntu
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## What different things when you operate centOS, Ubuntu by using Ansible
+
+### 1. Package Management System
+
+* CentOS uses YUM package manager
+* Ubuntu uses APT package manager
+* Different modules should be used in playbook for package installation/removal: "yum" for CentOS and "apt" for Ubuntu
+
+### 2. Default Locations of System Resources
+
+* Default locations of configuration files, log files, and other system resources may differ
+* Example: Default location for Apache web server configuration file in
+  * CentOS
+    * /etc/httpd/conf/httpd.conf
+  * Ubuntu
+    * /etc/apache2/apache2.conf  
+
+### 3. Differences in Names of Services, Users, and Groups
+
+* Services, users, and groups may have different names between CentOS and Ubuntu
+* Example: Apache web server service is named "httpd" in CentOS and "apache2" in Ubuntu
+
+### 4. Use of Root Privileges
+
+* By default, root account is enabled in CentOS, but disabled in Ubuntu
+* To perform operations with root privileges on Ubuntu, use "become" option in Ansible playbook to elevate privileges using "sudo" command
+* In CentOS, root privileges are enabled by default, so no need to elevate privileges separately
+
+### 5. Conclusion
+
+When creating an Ansible playbook to operate CentOS and Ubuntu, take these differences into account and adjust the commands and modules accordingly.
+
+## 
