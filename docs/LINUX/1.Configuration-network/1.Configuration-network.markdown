@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  1.Configuration network
+title:  1. Configuration IPv4 Network in Linux
 parent: LINUX
 has_children: true
 nav_order: 1000
 # permalink: /docs/PROJECT
 ---
 
-# 1.Configuration network
+# 1. Configuration IPv4 Network in Linux
 
 {:no_toc }
 
