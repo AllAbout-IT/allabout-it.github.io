@@ -37,10 +37,10 @@ They use a declarative configuration management approach that allows users to de
 
 * Playbooks are one of the main features of Ansible and provide a powerful solution for system configuration and deployment automation, when used in conjunction with Ansible's other features.
 
-## YAML in ANSIBLE
+## Playbook by using YAML in ANSIBLE
 
 {: .highlight}  
-YAML: YAML Ain't Markup Language
+YAML: YAML Ain't Markup Language  
 What It Is
   YAML is a human-friendly data serialization
   language for all programming languages
@@ -72,8 +72,8 @@ YAML has built-in rules for validating data, ensuring that the written Playbook 
 One of the important features of Ansible Playbook is its support for idempotence. Idempotence means that the same task will always produce the same result, even if it is executed multiple times. This ensures safe execution of Ansible Playbook and maintains the system in a predictable state.
 
 * The case of without Idempotence
-
+![1](/docs/ANSIBLE/6.PLAYBOOK/pics/1.png)
 * The case of include Idempotence
 
-### Method to define YAML in Ansible
 
+### Method to define YAML in Ansible

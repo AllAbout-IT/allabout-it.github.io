@@ -52,4 +52,28 @@ nav_order: 1007
 
 When creating an Ansible playbook to operate CentOS and Ubuntu, take these differences into account and adjust the commands and modules accordingly.
 
-## 
+## register ubuntu nodes's IP in ansible's hosts file
+
+* open ansible's hosts file in master-server
+
+  ```sh
+  vim /etc/ansible/hosts
+  ```
+
+* Write down Ubuntu node's IP information include for root privileges in hosts file.
+
+## Ansible command options for operating ubuntu nodes
+
+### -u
+
+* 
+### -K
+
+### -e
+
+## Building NFS Server by using Ansible  
+
+{. highlight }
+For more information about deploying NFS servers in ubuntu, see the following link.
+
+### 
