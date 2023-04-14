@@ -27,19 +27,19 @@ DevOps is a methodology that integrates software development and IT operations, 
 Ansible is an open-source tool for automating IT infrastructure that supports various operating systems and can automate configuration management, deployment, provisioning, and application deployment. This provides the necessary functionality for the following aspects in a DevOps environment.
 
 ### Provisioning  
-
+{:no_toc }
 Ansible can be used to provision cloud servers. By codifying server configuration, new servers can be quickly created and configuration and package installation can be automated.
 
 ### Deployment Automation
-
+{:no_toc }
 Ansible provides the necessary functionality for deployment automation. Server configuration and application deployment are defined in code, making deployment faster. This enables continuous deployment.
 
 ### Monitoring  
-
+{:no_toc }
 Ansible can be used to automate server monitoring. It monitors server status and responds through event notifications.
 
 ### Security
-
+{:no_toc }
 Ansible can be used to automate security-related tasks, such as SSH key management, firewall configuration, and patch application.
 
 ## Ansible's differentiation from other tools

@@ -2,8 +2,8 @@
 layout: default
 title: BGP
 # has_children: true
-parent: VMware
-permalink: docs/NETWORK/BGP
+parent: NETWORK
+# permalink: docs/NETWORK/BGP
 ---
 
 # BGP
