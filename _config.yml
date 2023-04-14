@@ -17,7 +17,7 @@ title: AllAbout-IT
 description: AllAbout-IT's Portfolio Vlog
 # baseurl: "/just-the-docs" # the subpath of your site, e.g. /blog
 url: "https://allabout-it.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-repository: AllAbout-IT/allabout-it.github.io # for github-metadata
+# repository: AllAbout-IT/allabout-it.github.io # for github-metadata
 
 permalink: pretty
 
@@ -106,7 +106,7 @@ aux_links:
 aux_links_new_tab: false
 
 # Sort order for navigation links
-# nav_sort: case_insensitive # default, equivalent to nil
+# nav_sort: case_insensitive default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
