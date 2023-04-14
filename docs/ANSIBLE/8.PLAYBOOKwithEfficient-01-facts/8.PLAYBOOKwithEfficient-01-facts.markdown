@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  8. PLAYBOOK with Efficient 01-facts
+title:  08. PLAYBOOK with Efficient 01-facts
 parent: ANSIBLE
 has_children: true
 nav_order: 1008
 # permalink: /docs/PROJECT
 ---
 
-# 8. PLAYBOOK with Efficient 01-facts
+# PLAYBOOK with Efficient 01-facts
 
 {:no_toc }
 

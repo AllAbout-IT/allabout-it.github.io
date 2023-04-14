@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  2. LAB-1 Setting up Ansible
+title:  02. LAB-1 Setting up Ansible
 parent: ANSIBLE
 has_children: true
 nav_order: 1002
 # permalink: /docs/PROJECT
 ---
 
-# 1.SUMMARY
+# LAB-1 Setting
 
 {:no_toc }
 

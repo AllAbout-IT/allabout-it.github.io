@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  6.PLAYBOOK
+title:  06. PLAYBOOK
 parent: ANSIBLE
 has_children: true
 nav_order: 1006
 # permalink: /docs/PROJECT
 ---
 
-# 6.PLAYBOOK
+# PLAYBOOK
 
 {:no_toc }
 

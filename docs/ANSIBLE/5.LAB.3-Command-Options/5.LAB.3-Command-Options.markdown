@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  5. LAB.3 Command Options
+title:  05. LAB.3 Command Options
 parent: ANSIBLE
 has_children: true
 nav_order: 1003
 # permalink: /docs/PROJECT
 ---
 
-# 5. LAB.3 Command Options
+# LAB.3 Command Options
 
 {:no_toc }
 

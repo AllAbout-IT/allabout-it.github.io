@@ -1,13 +1,13 @@
 ---
 layout: default
-title:  7. PLAYBOOK with Ubuntu
+title:  07. PLAYBOOK with Ubuntu
 parent: ANSIBLE
 has_children: true
 nav_order: 1007
 # permalink: /docs/PROJECT
 ---
 
-# 7. PLAYBOOK with Ubuntu
+# PLAYBOOK with Ubuntu
 
 {:no_toc }
 
