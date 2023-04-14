@@ -1,14 +1,14 @@
 ---
 layout: default
-title:  01. Customize NetworkAdapter in VM
-parent: ANSIBLE
+title:  01. Customize Network Adapter in VMfusion
+parent: LINUX
+# grandparent: VMware
 # has_children: true
-nav_order: 1001
+nav_order: 101
 # permalink: /docs/PROJECT
 ---
 
-# SUMMARY
-
+# Customize Network Adapter in VMfusion
 {:no_toc }
 
 <details open markdown="block">  
@@ -20,3 +20,4 @@ nav_order: 1001
 {:toc}
 </details>
 
+## 
