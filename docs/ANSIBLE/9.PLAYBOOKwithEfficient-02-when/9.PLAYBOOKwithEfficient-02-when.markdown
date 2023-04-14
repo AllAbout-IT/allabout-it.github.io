@@ -2,7 +2,7 @@
 layout: default
 title:  09. PLAYBOOK with Efficient 02-when
 parent: ANSIBLE
-has_children: true
+# has_children: true
 nav_order: 1009
 # permalink: /docs/PROJECT
 ---
