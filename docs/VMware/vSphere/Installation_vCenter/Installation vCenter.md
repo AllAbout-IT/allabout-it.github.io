@@ -1,13 +1,13 @@
 ---
 layout: default
-title: LAB-1. Installation and configuration
-# nav_order: 100
+title: LAB Installation vCenter
 # has_children: true
-parent: VMware
-permalink: docs/VMware/LAB-1
+parent: vSphere
+grandparent: VMware
+# permalink: docs/VMware/Installation vCenter
 ---
 
-# LAB-1. Installation and configuration
+# LAB. Installation and configuration
 
 {: no_toc }
 
@@ -20,3 +20,5 @@ permalink: docs/VMware/LAB-1
 {:toc}
 </details>
 
+## Preparing for Working  
+## 

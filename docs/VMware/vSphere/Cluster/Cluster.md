@@ -2,8 +2,9 @@
 layout: default
 title: Cluster
 # has_children: true
-parent: VMware
-permalink: docs/VMware/Cluster
+parent: vSphere
+grandparent: VMware
+# permalink: docs/VMware/Cluster
 ---
 
 # Cluster

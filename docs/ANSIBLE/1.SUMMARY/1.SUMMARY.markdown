@@ -45,41 +45,41 @@ Ansible can be used to automate security-related tasks, such as SSH key manageme
 ## Ansible's differentiation from other tools
 
 ### Agentless
-
+{:no_toc }
 Ansible operates in an agentless manner, meaning that no agent needs to be installed on the target system. This reduces management costs and strengthens security.
 
 ### Simple syntax and ease of use
-
+{:no_toc }
 Ansible's syntax is written in YAML format, which is easy for humans to understand. As a result, the learning curve is lower than other tools and it is easy to use.
 
 ### Support for various modules
-
+{:no_toc }
 Ansible supports a variety of modules, allowing for automation of various tasks such as server configuration, software deployment, patch management, and container management.
 
 ### Support for multiple operating systems
-
+{:no_toc }
 Ansible supports various operating systems such as Windows, Linux, and macOS, and can also operate in cloud environments.
 
 ### Support for Playbooks
-
+{:no_toc }
 Ansible can automate server configuration with Playbooks, which are YAML files. This enables code-based infrastructure management.
 
 ### Community and support
-
+{:no_toc }
 Ansible is supported by a large community and provides various documents and support. This allows users to quickly and easily receive assistance in solving problems.
 
 ### Idempotency ensures consistency and stability
-
+{:no_toc }
 It is a property of Ansible that guarantees the same result even if the same task is performed multiple times. This is possible because Ansible works on a command-based (idempotent) approach instead of a state-based approach. Therefore, when configuring servers or deploying software using Ansible, only the necessary changes to the already-configured state are made. This helps maintain consistency and stability in the system.
 
 ### Scalability for managing large infrastructures  
-
+{:no_toc }
 Scalability refers to Ansible's suitability for managing large infrastructures. Ansible adopts a master-slave architecture and can manage large infrastructures by configuring multiple master and slave nodes. Additionally, Ansible provides web-based interfaces like Ansible Tower, which allows multiple users to work concurrently.
 
 ### Easy-to-learn syntax for automation
-
+{:no_toc }
 Ansible is designed to automate infrastructure easily using a user-friendly syntax. Ansible's syntax is written in YAML format, which is easy for humans to understand. As a result, Ansible has a low learning curve and is easy to use compared to other automation tools.
 
 ### Open-source for customizability
-
+{:no_toc }
 Ansible is an open-source tool, allowing users to freely modify code or add features. This allows users to customize Ansible to fit their specific needs.

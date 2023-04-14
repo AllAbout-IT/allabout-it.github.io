@@ -2,8 +2,9 @@
 layout: default
 title: Mgration in vCenter
 # has_children: true
-parent: VMware
-permalink: docs/VMware/Migration
+parent: vSphere
+grandparent: VMware
+# permalink: docs/VMware/Migration
 ---
 
 # Migration in vCenter

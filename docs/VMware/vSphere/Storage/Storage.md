@@ -2,8 +2,9 @@
 layout: default
 title: Storage in VMware
 # has_children: true
-parent: VMware
-permalink: docs/VMware/Storage
+parent: vSphere
+grandparent: VMware
+# permalink: docs/VMware/Storage
 ---
 
 # Storage in VMware

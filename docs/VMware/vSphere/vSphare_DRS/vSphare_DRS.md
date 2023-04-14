@@ -2,8 +2,9 @@
 layout: default
 title: vSphere DRS 
 # has_children: true
-parent: VMware
-permalink: docs/VMware/vSphare_DRS
+parent: vSphere
+grandparent: VMware
+# permalink: docs/VMware/vSphare_DRS
 ---
 
 # DRS Cluster

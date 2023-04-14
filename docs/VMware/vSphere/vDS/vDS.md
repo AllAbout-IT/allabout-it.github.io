@@ -2,8 +2,9 @@
 layout: default
 title: Virtualization Distribute Switch(vDS)
 # has_children: true
-parent: VMware
-permalink: docs/VMware/vDS
+parent: vSphere
+grandparent: VMware
+# permalink: docs/VMware/vDS
 ---
 
 # Virtualization Distribute Switch(vDS)

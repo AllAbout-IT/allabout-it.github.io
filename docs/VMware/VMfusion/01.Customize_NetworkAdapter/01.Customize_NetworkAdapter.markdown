@@ -1,14 +1,15 @@
 ---
 layout: default
-title: LAB Installation vCenter
+title:  01. Customize NetworkAdapter in VM
+parent: ANSIBLE
 # has_children: true
-parent: VMware
-permalink: docs/VMware/Installation vCenter
+nav_order: 1001
+# permalink: /docs/PROJECT
 ---
 
-# LAB. Installation and configuration
+# SUMMARY
 
-{: no_toc }
+{:no_toc }
 
 <details open markdown="block">  
   <summary>
@@ -19,5 +20,3 @@ permalink: docs/VMware/Installation vCenter
 {:toc}
 </details>
 
-## Preparing for Working  
-## 

@@ -3,8 +3,9 @@ layout: default
 title: Virtualization
 # nav_order: 100
 # has_children: true
-parent: VMware
-permalink: docs/VMware/Virtualization
+parent: vSphere
+grandparent: VMware
+#permalink: docs/VMware/Virtualization
 ---
 
 # Virtualization
