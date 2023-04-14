@@ -1,0 +1,23 @@
+---
+layout: default
+title:  9. PLAYBOOK with Efficient 02-when
+parent: ANSIBLE
+has_children: true
+nav_order: 1009
+# permalink: /docs/PROJECT
+---
+
+# 9. PLAYBOOK with Efficient 02-when
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## when

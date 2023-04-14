@@ -1,0 +1,93 @@
+---
+layout: default
+title:  8. PLAYBOOK with Efficient 01-facts
+parent: ANSIBLE
+has_children: true
+nav_order: 1008
+# permalink: /docs/PROJECT
+---
+
+# 8. PLAYBOOK with Efficient 01-facts
+
+{:no_toc }
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## Gather facts  
+
+Gather Facts in Ansible refers to the feature that allows Ansible to collect information about the target host's system and use this information as variables. This feature can collect various information about the target host, such as its operating system, network configuration, hardware configuration, file system configuration, and more.
+
+By default, Ansible does not collect information about the target host. Therefore, to collect information about the target host, you need to explicitly run gather facts. When gather facts is executed, the target host's information is collected and stored in a variable called ansible_facts. This variable can be used to easily utilize the target host's information in Ansible playbooks.
+
+For example, if you want to check the available disk space on the file system in an Ansible playbook, you can collect this information using the 'df' command. However, in this case, you would need to run the command on each host to collect the results. In contrast, gather facts can automatically collect the target host's file system information and provide it as a variable, allowing you to easily access file system information using variables in your playbook.
+
+Gather facts can be used with most modules by default. However, some modules may require configuration before running gather facts. Additionally, it's important to keep in mind that the target host's state can change at the time of running gather facts. Therefore, when using gather facts in a playbook, you should write it with this possibility in mind.
+
+## Check facts  
+
+The process of collecting information about the target host using Ansible's gather facts feature is as follows:
+
+* Ansible connects to the target host using protocols such as SSH or WinRM before collecting information about the target host.
+
+* The setup module is executed on the connected target host to collect information about the target host. The setup module collects various information about the target host, such as the operating system, hardware, network, and file system.
+
+* The collected information is serialized in JSON format and returned to Ansible.
+
+* The returned information is stored in the ansible_facts variable of Ansible.
+
+### example
+
+* First of all, put out ipv4 addresses each OS by using module setup and save to text file
+
+  ```sh
+  ansible all -m setup -k > facts_output.txt
+  ```
+
+* Open fact_output.txt file by VIM
+
+  ```sh
+  vim fact_output.txt
+  ```
+
+#### Find ipv4 address  
+
+* 
+
+* 
+
+### Crate facts yaml file which having custom node's information you want
+
+
+### The collected information may include the following items
+
+* ansible_distribution: Name of the operating system on the target host
+* ansible_distribution_version: Version of the operating system on the target host
+* ansible_architecture: Architecture of the target host
+* ansible_fqdn: Fully Qualified Domain Name (FQDN) of the target host
+* ansible_hostname: Hostname of the target host
+* ansible_interfaces: Network interfaces of the target host
+* ansible_memtotal_mb: Total memory capacity of the target host in MB
+* ansible_processor_count: Number of processors on the target host
+* ansible_devices: Storage device information of the target host
+* ansible_mounts: Mounted file system information of the target host
+* ansible_userspace_architecture: Architecture of the user space running on the target host
+
+By configuring specific settings for how gather facts are performed, it is possible to restrict or add information collected. For example, the gather_subset option can be used to limit the information collected. Additionally, a custom facts module can be used to collect additional information directly.
+
+## The way using 'gather facts', 'when' in the playbook
+
+<table>
+  <pre>
+    <code ="language=yaml">
+    </code>
+  </pre>
+</table>
+
+## Include_tasks

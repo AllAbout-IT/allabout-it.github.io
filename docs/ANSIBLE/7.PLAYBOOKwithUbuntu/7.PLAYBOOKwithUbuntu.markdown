@@ -71,6 +71,8 @@ When creating an Ansible playbook to operate CentOS and Ubuntu, take these diffe
 
 ### -e
 
+## Building NGINX Server by using Ansible
+
 ## Building NFS Server by using Ansible  
 
 {. highlight }
