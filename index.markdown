@@ -5,6 +5,15 @@ nav_order: 0
 # description: 
 # permalink: /
 ---
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.jqueryscript.net/css/jquerysctipttop.css">
+  <link rel="stylesheet" href="Scrolling-Vertical-Timeline-Bootstrap/timelinev.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="Scrolling-Vertical-Timeline-Bootstrap/timelinev.css"></script>
+</head>
+
 # AllAbout-ME
 
 <img src="Profile.png" alt=Profile style="float: left; margin-right: 10px;" width="160" height="128">
@@ -16,109 +25,62 @@ nav_order: 0
 
 ## Experience Timeline
 
-<ul class="timeline">
- 
-  <li>
-    <div class="timeline-badge">
-      <i class="fa fa-check"></i>
-    </div>
-    <div class="timeline-panel">
-      <div class="timeline-heading">
-        <h4 class="timeline-title">Bootcamp</h4>
-      </div>
-      <div class="timeline-body">
-        <p>Multi Cloud with Kubernetes and Docker</p>
-      </div>
-      <div class="timeline-footer">
-        <p><small class="text-muted">2022.05 ~ 2022.10/small></p>
-      </div>
-    </div>
-  </li>
-   <li>
-    <div class="timeline-badge">
-      <i class="fa fa-check"></i>
-    </div>
-    <div class="timeline-panel">
-      <div class="timeline-heading">
-        <h4 class="timeline-title">Toy Project</h4>
-      </div>
-      <div class="timeline-body">
-        <p>Architecture AWS with EKS</p>
-      </div>
-      <div class="timeline-footer">
-        <p><small class="text-muted">Event Date 2</small></p>
-      </div>
-    </div>
-  </li>
-  <!-- 이하 생략 -->
-</ul>
+<div id="timeline" class="row">
 
+  <div class="timelineCont col-12">
+    <div class="row">
+      <div class="date col-5">
+        <h2>2022</h2>
+      </div>
+      <div class="text col-7">
+        <p>Bootcamp</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="timelineCont col-12">
+    <div class="row">
+      <div class="date col-5">
+        <h2>2022</h2>
+      </div>
+      <div class="text col-7">
+        <p>E</p>
+      </div>
+    </div>
+  </div>
+  <div class="timelineCont col-12">
+    <div class="row">
+      <div class="date col-5">
+        <h2>2016</h2>
+      </div>
+      <div class="text col-7">
+        <p>Event 3</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 ## Experience
 
-# Timeline
-
-<style>
-.timeline {
-  position: relative;
-  padding: 10px 0;
-  list-style: none;
-  margin: 0;
-  border-left: 2px solid #ccc;
-}
-
-.timeline:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 10px;
-  content: '';
-  width: 2px;
-  background-color: #ccc;
-}
-
-.timeline li {
-  position: relative;
-  margin-bottom: 50px;
-  padding-left: 50px;
-}
-
-.timeline li:before {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -10px;
-  content: '';
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #ccc;
-  border: 2px solid #fff;
-}
-
-.timeline li:after {
-  position: absolute;
-  content: '';
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  top: 6px;
-  background-color: #ccc;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline li .timeline-panel {
-  position: absolute;
-  top: 0;
-  left: 75px;
-  width: 100%;
-  padding-right: 20px;
-  background: #fff;
-  border: 1px solid #d4d4d4;
-  border-radius: 0 5px 5px 5px;
-}
-
-.timeline li .timeline-panel:before {
-  position: absolute;
+<link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous">
+<link href="timelinev.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+        crossorigin="anonymous">
+</script>
+<script src="jquery.timelinev.js"></script>
+<script>
+  $('#timeline').timelinev({
+    timelineDiv: $(this),
+    containerDivs: '.timelineCont',
+    dateDiv: '.date',
+    textDiv: '.text',
+    dateHtml: 'h2',
+    textHtml: 'p',
+    dateActiveClass: '.active',
+    datesSpeed: '750'
+  });
+</script>
