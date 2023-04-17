@@ -4,7 +4,9 @@
 }
 
 #timeline div {
-  height: 100px;
+  height: 140px;
+  position: relative;
+  left: -15px;
 }
 
 #timeline div .date {
@@ -55,12 +57,12 @@
   border-radius: 100%
 }
 
-#timeline div .date h2 {
+#timeline div .year h2 {
   /* content: '';          
   width: 12px;
   height: 12px;
   background: #e5e5d1; */
-  margin: 72px 28px 0;
+  margin: 40px -8px 0;
   font-size: 40px;
   font-weight: 600;
   cursor: pointer
@@ -68,7 +70,7 @@
 
 #timeline div .date h4 {
   margin: 62px 28px 0;
-  font-size: 24px;
+  font-size: 20px;
   width: 86%;
   font-weight: 600;
   cursor: pointer
@@ -82,7 +84,7 @@
 
 #timeline div .text p {
   margin: 95px 4px 0;
-  width: 117%;
+  width: 120%;
   /* display: none */
 }
 

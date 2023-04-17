@@ -37,41 +37,59 @@ nav_order: 0
             </div>
         </div>
         <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>May ~ Oct.</h4>
+              <p>580 days</p>
+            </div>
+            <div class="text col-7">
+              <p>Bootcamp<br><strong>Multi Cloud(AWS, GCP) and K8E, Docker</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>23th Aug. ~<br>26th</h4>
+              <p>4days</p>
+            </div>
+            <div class="text col-7">
+              <p>Authorized education<br><strong>Architecting on AWS<strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>29th Aug. ~<br>1th Sep.</h4>
+              <p>4days</p>
+            </div>
+            <div class="text col-7">
+              <p>Authorized education<br><strong>Architecting with Google Computer Engine<strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>Nov. ~ </h4>
+            </div>
+            <div class="text col-7">
+              <p>Bootcamp<br><strong>MSA Cloud Environment in AWS based on IaC</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
             <div class="row">
-                <div class="date col-5">
-                  <h4>May ~ Oct.</h4>
-                  <p>580 days</p>
-                </div>
-                <div class="text col-7">
-                    <p>Bootcamp<br>Multi Cloud(AWS, GCP) and K8E, Docker</p>
+                <div class="year col-5">
+                    <h2>2023</h2>
                 </div>
             </div>
         </div>
         <div class="timelineCont col-12">
             <div class="row">
                 <div class="date col-5">
-                    <h2>1800</h2>
-                </div>
-                <div class="text col-7">
-                    <p>Donec ultrices sodales feugiat. Curabitur tempus mi leo, eu consectetur dolor dapibus et.
-                        Duis sit amet tortor quis justo efficitur imperdiet.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>1900</h2>
-                </div>
-                <div class="text col-7">
-                    <p>Vivamus dui nisl, auctor non velit eget, pulvinar porttitor neque. Donec quam nisl, rutrum a pharetra ut, facilisis quis lacus. </p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2000</h2>
+                    <h4></h4>
                 </div>
                 <div class="text col-7">
                     <p>Aliquam fermentum vestibulum orci interdum auctor. Nunc sodales risus ut elit sodales ultrices. Donec a porttitor metus, non rhoncus eros.</p>
