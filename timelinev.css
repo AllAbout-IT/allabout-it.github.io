@@ -1,59 +1,92 @@
 #timeline {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 #timeline div {
-    height: 231px;
+  height: 150px;
 }
 
 #timeline div .date {
-    border-right: 1px rgba(179, 175, 175, 0.4) solid;
-    text-align: right
+  border-right: 1px rgba(179, 175, 175, 0.4) solid;
+  text-align: right
 }
+
+#timeline div .year {
+  border-right: 1px rgba(179, 175, 175, 0.4) solid;
+  text-align: right
+}
+
+#timeline div .year:before {
+  /* content: '';
+  width: 12px;
+  height: 12px;
+  background: #e5e5d1; */
+  position: absolute;
+  left: 99.2%;
+  top: 88px;
+  border-radius: 100%;
+  cursor: pointer
+}
+
 
 #timeline div .date:before {
-    content: '';
-    width: 12px;
-    height: 12px;
-    background: #e5e5d1;
-    position: absolute;
-    left: 99.2%;
-    top: 88px;
-    border-radius: 100%;
-    cursor: pointer
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #e5e5d1;
+  position: absolute;
+  left: 99.2%;
+  top: 88px;
+  border-radius: 100%;
+  cursor: pointer
 }
 
+
+
 #timeline div.active .date::before {
-    content: '';
-    width: 20px;
-    height: 20px;
-    background: #0078FF;
-    position: absolute;
-    left: 98.7%;
-    top: 98px;
-    border-radius: 100%
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: #0078FF;
+  position: absolute;
+  left: 98.7%;
+  top: 98px;
+  border-radius: 100%
 }
 
 #timeline div .date h2 {
-    margin: 72px 28px 0;
-    font-size: 45px;
-    font-weight: 600;
-    cursor: pointer
+  /* content: '';          
+  width: 12px;
+  height: 12px;
+  background: #e5e5d1; */
+  margin: 72px 28px 0;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: pointer
+}
+
+#timeline div .date h4 {
+  margin: 62px 28px 0;
+  font-size: 24px;
+  width: 86%;
+  font-weight: 600;
+  cursor: pointer
 }
 
 #timeline div.active .date h2 {
-    font-size: 65px;
-    color: #0078FF;
+  font-size: 65px;
+  color: #0078FF;
 }
 
+
 #timeline div .text p {
-    margin: 85px 50px 0;
-    width: 50%;
-    display: none
+  margin: 95px 4px 0;
+  width: 117%;
+  /* display: none */
 }
 
 
 #timeline div.active .text p {
-    display: inherit
+  display: inherit
 }

@@ -11,9 +11,9 @@ nav_order: 0
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- <title>Scrolling Timeline Plugin Demo</title> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/darkly/bootstrap.min.css">
-    <link href="timelinev.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.1/darkly/bootstrap.min.css">
+  <link href="timelinev.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
 </head>
 
 # AllAbout-ME
@@ -31,22 +31,19 @@ nav_order: 0
     <div id="timeline" class="row ">
         <div class="timelineCont col-12">
             <div class="row">
-                <div class="date col-5">
-                    <h2></h2>
-                </div>
-                <div class="text col-7">
-                    <p></p>
-                </div>
+              <div class="year col-5">
+                  <h2>2022</h2>
+              </div>
             </div>
         </div>
         <div class="timelineCont col-12">
             <div class="row">
                 <div class="date col-5">
-                    <h2>1700</h2>
+                  <h4>May ~ Oct.</h4>
+                  <p>580 days</p>
                 </div>
                 <div class="text col-7">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat tellus sit amet lorem aliquet, nec vestibulum diam sodales.
-                        Nunc id dolor eget quam lacinia mattis viverra vel erat. </p>
+                    <p>Bootcamp<br>Multi Cloud(AWS, GCP) and K8E, Docker</p>
                 </div>
             </div>
         </div>
@@ -101,27 +98,27 @@ nav_order: 0
                 </div>
             </div>
         </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2300</h2>
-                </div>
-                <div class="text col-7">
-                    <p> Duis gravida maximus eros, non congue mi tempus eu. Aenean placerat lacus id tortor pretium, a blandit elit ullamcorper.</p>
-                </div>
+        <div class="timelineCont col-12 ">
+          <div class="row">
+            <div class="date col-5">
+              <h2>2300</h2>
             </div>
+            <div class="text col-7">
+              <p> Pellentesque rutrum augue erat, id vehicula libero ultrices ut. Sed molestie urna tortor, congue consectetur augue pellentesque vitae.</p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12 ">
+          <div class="row">
+            <div class="date col-5 ">
+              <h2>2400</h2>
+            </div>
+            <div class="text col-7">
+              <p> Pellentesque rutrum augue erat, id vehicula libero ultrices ut. Sed molestie urna tortor, congue consectetur augue pellentesque vitae.</p>
+            </div>
+          </div>
         </div>
         <div class="timelineCont col-12 active">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2400</h2>
-                </div>
-                <div class="text col-7">
-                    <p> Pellentesque rutrum augue erat, id vehicula libero ultrices ut. Sed molestie urna tortor, congue consectetur augue pellentesque vitae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
             <div class="row">
                 <div class="date col-5">
                     <h2>2500</h2>
@@ -179,3 +176,9 @@ nav_order: 0
   })();
 
 </script>
+
+<!-- <script type='text/javascript'>
+          $(function(){
+              $().timelinev();
+          });
+        </script> -->

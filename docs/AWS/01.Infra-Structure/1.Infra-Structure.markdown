@@ -1,0 +1,32 @@
+---
+layout: default
+title: 1. AWS Infra Structure
+parent: AWS
+nav_order: 101
+# permalink: /docs/AWS/
+---
+# AWS Infra Structure
+
+## REGION
+
+{: .highlight }  
+It is based on [original document](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_Region.html)] form AWS
+
+![1](/docs/AWS/01.Infra-Structure/pics/1.png)
+Image resource from [Here](https://aws.amazon.com/blogs/networking-and-content-delivery/introduction-to-network-transformation-on-aws-part-1/)
+
+A region refers to the physical location where AWS services run. It is a collection of data centers located close geographically.
+
+Each region has a unique name and code and is physically separated. A region consists of multiple availability zones, which are independent data centers that can exist within a single region.
+
+The choice of region is important for service performance and availability, and users should choose an appropriate region based on their location, intended use of the service, and other considerations. Additionally, some AWS services may only be available in certain regions, and pricing and features may vary by region, so users should consider these factors when selecting a region.
+
+## Availability Zone
+
+![2](/docs/AWS/01.Infra-Structure/pics/2.png)
+
+An Availability Zone (AZ) refers to an independent data center located within a region. Each AZ has unique power and network connectivity and is geographically separated to ensure availability in the event of natural disasters or infrastructure failures.
+
+Because multiple AZs exist within a single region, high availability and disaster recovery capabilities can be ensured by replicating servers or resources across multiple AZs within the same region. Additionally, AZs have separate network connections with different providers, providing high performance and security through physical separation.
+
+Region and Availability Zone are different concepts in AWS. A region is a physical location where AWS services are provided and includes multiple Availability Zones. An Availability Zone is a physically independent data center, and multiple AZs exist within a single region. Therefore, AWS users can ensure high availability and disaster recovery capabilities by choosing an appropriate region and multiple Availability Zones that meet their business requirements.
