@@ -54,7 +54,7 @@ nav_order: 0
               <p>4days</p>
             </div>
             <div class="text col-7">
-              <p>Authorized education<br><strong>Architecting on AWS<strong></p>
+              <p>Authorized education<br><strong>Architecting on AWS</strong></p>
             </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ nav_order: 0
               <p>4days</p>
             </div>
             <div class="text col-7">
-              <p>Authorized education<br><strong>Architecting with Google Computer Engine<strong></p>
+              <p>Authorized education<br><strong>Architecting with Google Computer Engine</strong></p>
             </div>
           </div>
         </div>
@@ -85,56 +85,6 @@ nav_order: 0
                     <h2>2023</h2>
                 </div>
             </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h4></h4>
-                </div>
-                <div class="text col-7">
-                    <p>Aliquam fermentum vestibulum orci interdum auctor. Nunc sodales risus ut elit sodales ultrices. Donec a porttitor metus, non rhoncus eros.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2100</h2>
-                </div>
-                <div class="text col-7">
-                    <p>Aenean eget dui tempor, rutrum ligula sit amet, vulputate magna. Ut quis eros feugiat, ullamcorper odio et, pellentesque leo. </p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2200</h2>
-                </div>
-                <div class="text col-7">
-                    <p>Mauris cursus nulla ipsum, et dignissim nisl pellentesque et. Nullam maximus, arcu vel suscipit tristique, diam eros elementum mauris, at pulvinar lectus tellus congue dolor. </p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12 ">
-          <div class="row">
-            <div class="date col-5">
-              <h2>2300</h2>
-            </div>
-            <div class="text col-7">
-              <p> Pellentesque rutrum augue erat, id vehicula libero ultrices ut. Sed molestie urna tortor, congue consectetur augue pellentesque vitae.</p>
-            </div>
-          </div>
-        </div>
-        <div class="timelineCont col-12 ">
-          <div class="row">
-            <div class="date col-5 ">
-              <h2>2400</h2>
-            </div>
-            <div class="text col-7">
-              <p> Pellentesque rutrum augue erat, id vehicula libero ultrices ut. Sed molestie urna tortor, congue consectetur augue pellentesque vitae.</p>
-            </div>
-          </div>
         </div>
         <div class="timelineCont col-12 active">
             <div class="row">
