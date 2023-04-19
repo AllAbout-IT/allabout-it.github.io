@@ -5393,7 +5393,7 @@ input[type="button"].btn-block {
   margin-left: 0;
   line-height: 1.25;
   color: #fff;
-  background-color: #00bc8c;
+  /* background-color: #00bc8c; */
   border: 0 solid transparent
 }
 
@@ -5401,7 +5401,7 @@ input[type="button"].btn-block {
   z-index: 2;
   color: #fff;
   text-decoration: none;
-  background-color: #00efb2;
+  /* background-color: #00efb2; */
   border-color: transparent
 }
 
@@ -5430,7 +5430,7 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #00efb2;
+  /* background-color: #00efb2; */
   border-color: transparent
 }
 
@@ -5438,7 +5438,7 @@ input[type="button"].btn-block {
   color: #fff;
   pointer-events: none;
   cursor: auto;
-  background-color: #007053;
+  /* background-color: #007053; */
   border-color: transparent
 }
 
@@ -5527,14 +5527,14 @@ input[type="button"].btn-block {
 
 .badge-success {
   color: #fff;
-  background-color: #00bc8c
+  /* background-color: #00bc8c */
 }
 
 .badge-success[href]:hover,
 .badge-success[href]:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #008966
+  /* background-color: #008966 */
 }
 
 .badge-info {
