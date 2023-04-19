@@ -1,9 +1,21 @@
 {
   "editor.tabSize": 2,
-  "markdown.preview.breaks": true,
-  "markdown.preview.frontMatterRendering": "render",
-  "markdown.preview.scrollEditorWithPreview": true,
-  "markdown.preview.scrollPreviewWithEditor": true,
-  "markdown.preview.tabSize": 2,
-  "markdown.preview.wordWrap": "on"
+
+  "markdown.styles": [
+    "_sass/base.scss",
+    "_sass/buttons.scss",
+    "_sass/code.scss",
+    "_sass/content.scss",
+    "_sass/labels.scss",
+    "_sass/layout.scss",
+    "_sass/modules.scss",
+    "_sass/navigation.scss",
+    "_sass/print.scss",
+    "_sass/search.scss",
+    "_sass/skiptomain.scss",
+    "_sass/tables.scss",
+    "_sass/typography.scss",
+    "_sass/vendor/normalize.scss/normalize.scss",
+    "_sass/vendor/OneDarkJekyll/syntax.scss"
+  ]
 }

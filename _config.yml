@@ -98,21 +98,21 @@ mermaid:
 heading_anchors: true
 
 # Aux links for the upper right navigation
-aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+# aux_links:
+#   "Just the Docs on GitHub":
+#     - "//github.com/just-the-docs/just-the-docs"
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: false
+# aux_links_new_tab: false
 
 # Sort order for navigation links
 # nav_sort: case_insensitive default, equivalent to nil
 nav_sort: case_sensitive # Capital letters sorted before lowercase
 
 # External navigation links
-nav_external_links:
-  - title: AllAbout-IT
-    url: https://github.com/AllAbout-IT/allabout-it.github.io
+# nav_external_links:
+#   - title: AllAbout-IT
+#     url: https://github.com/AllAbout-IT/allabout-it.github.io
 
 # Footer content
 # appears at the bottom of every page's main content
@@ -135,7 +135,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # gh_edit_repository: "https://github.com/AllAbout-IT/allabout-it.github.io/actions" # the github URL for your repo
 # gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
-gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
+# gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
 
 # Color scheme currently only supports "dark", "light"/nil (default), or a custom scheme that you define
 color_scheme: dark
