@@ -70,6 +70,16 @@ nav_order: 0
           </div>
         </div>
         <div class="timelineCont col-12">
+            <div class="row">
+                <div class="date col-5">
+                    <h4></h4>
+                </div>
+                <div class="text col-7">
+                    <p> Toy Project<br></p>
+                </div>
+            </div>
+        </div>
+        <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
               <h4>Nov. ~ </h4>
@@ -83,16 +93,6 @@ nav_order: 0
             <div class="row">
                 <div class="year col-5">
                     <h2>2023</h2>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12 active">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2500</h2>
-                </div>
-                <div class="text col-7">
-                    <p> Pellentesque libero elit, hendrerit sit amet lacinia eget, fermentum vitae risus. </p>
                 </div>
             </div>
         </div>
