@@ -1,3 +1,9 @@
 {
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "markdown.preview.breaks": true,
+  "markdown.preview.frontMatterRendering": "render",
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.preview.scrollPreviewWithEditor": true,
+  "markdown.preview.tabSize": 2,
+  "markdown.preview.wordWrap": "on"
 }
