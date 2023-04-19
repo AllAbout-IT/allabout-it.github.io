@@ -10,7 +10,8 @@
   li {
     &::before {
       display: none !important;
-      
     }
+
+    // padding-left: 30px; // autotap-space
   }
 }
