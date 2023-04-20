@@ -5,3 +5,4 @@ parent: AWS
 nav_order: 101
 # permalink: /docs/AWS/
 ---
+# LAB-01 Basic Deployment and Operating
