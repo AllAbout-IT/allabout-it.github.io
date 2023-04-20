@@ -1,0 +1,24 @@
+---
+layout: default
+title: 17. LAB-08 CloudFront
+parent: AWS
+nav_order: 118
+# permalink: /docs/AWS/
+---
+# LAB-08 CloudFront
+
+## Goal Topology
+
+![1](/docs/AWS/17.LAB08CloudFront/pics/1.png)
+
+## Preparing before work
+
+![2](/docs/AWS/17.LAB08CloudFront/pics/2.png)
+
+| Resource     | TagName        | Information           |
+|:-------------|:---------------|:----------------------|
+| VPC          | VG-VPG         | IP CIDR: 10.0.0.0/16  |
+| Public Subnet| VG-Public-SN-1 | IP CIDR: 10.0.0.0/24,  AZ: vg-east-1 |
+| Public Routing Table  | VG-1GW | Connet: VG-Public-SN-1   |
+| Public EC2 Instance | VG-EC2  | Connect: VG-Public-SN, IP Allocation: Active, HTTP Configuration | 
+| Security Group | WEB-VG | Protocol: SSH, HTTP, Target: 0.0.0.0/0 |
