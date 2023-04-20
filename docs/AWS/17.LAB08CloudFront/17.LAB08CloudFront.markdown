@@ -40,7 +40,7 @@ Parameters:
     ConstraintDescription: must be the name of an existing EC2 KeyPair.
 
 Resources:
-  VgVPC:
+  VgVPC:                         # VPC
     Type: AWS::EC2::VPC
     Properties:
      CidrBlock: 10.0.0.0/16
@@ -49,20 +49,20 @@ Resources:
         - Key: Name
           Value: VG-VPC
 
-  VgIGW:
+  VgIGW:                         # Internet Gateway
     Type: AWS::EC2::InternetGateway
     Properties:
       Tags:
         - Key: Name
           Value: VG-IGW
 
-  VgIGWAttachment:
+  VgIGWAttachment:               # Attach Internet gateway to VPC
     Type: AWS::EC2::VPCGatewayAttachment
     Properties:
       InternetGatewayId: !Ref VgIGW
       VpcId: !Ref VgVPC
 
-  VgPublicRT:
+  VgPublicRT:                   # Route Table
     Type: AWS::EC2::RouteTable
     Properties:
       VpcId: !Ref VgVPC
@@ -70,7 +70,7 @@ Resources:
         - Key: Name
           Value: VG-Public-RT
 
-  VgDefaultPublicRoute:
+  VgDefaultPublicRoute:        # Edit Route
     Type: AWS::EC2::Route
     DependsOn: VgIGWAttachment
     Properties:
@@ -78,7 +78,7 @@ Resources:
       DestinationCidrBlock: 0.0.0.0/0
       GatewayId: !Ref VgIGW
 
-  VgPublicSN1:
+  VgPublicSN1:                  # Subnet
     Type: AWS::EC2::Subnet
     Properties:
       VpcId: !Ref VgVPC
@@ -88,13 +88,13 @@ Resources:
         - Key: Name
           Value: VG-Public-SN-1
 
-  VgPublicSNRouteTableAssociation:
+  VgPublicSNRouteTableAssociation:    # Subnet associate to route table
     Type: AWS::EC2::SubnetRouteTableAssociation
     Properties:
       RouteTableId: !Ref VgPublicRT
       SubnetId: !Ref VgPublicSN1
 
-  WEBVG:
+  WEBVG:                              # Security Group
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Enable HTTP access via port 80 and SSH access via port 22
@@ -112,7 +112,7 @@ Resources:
         ToPort: '22'
         CidrIp: 0.0.0.0/0
 
-  VgEC2:
+  VgEC2:                               # EC2 instance
     Type: AWS::EC2::Instance
     Properties:
       InstanceType: t2.micro
@@ -145,14 +145,14 @@ Resources:
             systemctl start nginx
             systemctl enable nginx
             
-  PublicDNS:
+  PublicDNS:                       # Route53
     Type: AWS::Route53::HostedZone
     Properties:
       Name: allabout-it.cloud
       HostedZoneConfig:
         Comment: Public hosted zone For allbout-it.cloud
 
-  PrimaryRecordSet:
+  PrimaryRecordSet:               # Route53 Record set
     Type: AWS::Route53::RecordSet
     Properties:
       Name: allabout-it.cloud
@@ -213,3 +213,5 @@ Resources:
 ![18](/docs/AWS/17.LAB08CloudFront/pics/18.png)
 
 * Check Security group at VG-EC2 Instance's Security tap.  
+![19](/docs/AWS/17.LAB08CloudFront/pics/19.png)
+
