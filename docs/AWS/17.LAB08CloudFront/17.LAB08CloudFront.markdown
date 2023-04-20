@@ -15,12 +15,201 @@ nav_order: 118
 
 ![2](/docs/AWS/17.LAB08CloudFront/pics/2.png)
 
-| Resource     | TagName{: style="width: 200px;"} | Information |
+| Resource     | TagName {: style="width: 200px;"} | Information           |
 |:-------------|:---------------|:----------------------|
 | VPC          | VG-VPG         | IP CIDR: 10.0.0.0/16  |
 | Public Subnet| VG-Public-SN-1 | IP CIDR: 10.0.0.0/24,  AZ: vg-east-1 |
 | Public Routing Table  | VG-1GW | Connet: VG-Public-SN-1   |
-| Public EC2 Instance | VG-EC2  | Connect: VG-Public-SN, IP Allocation: Active, HTTP Configuration | 
+| Public EC2 Instance | VG-EC2  | Connect: VG-Public-SN, IP Allocation: Active, HTTP Configuration |
 | Security Group | WEB-VG | Protocol: SSH, HTTP, Target: 0.0.0.0/0 |
 
 ## Creating Cloudformation yaml script  
+
+```yaml
+Parameters:
+  LatestAmiId:
+    Description: (DO NOT CHANGE)
+    Type: 'AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>'
+    Default: '/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2'
+    AllowedValues:
+      - /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+      
+  KeyName:
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instances. Linked to AWS Parameter
+    Type: AWS::EC2::KeyPair::KeyName
+    ConstraintDescription: must be the name of an existing EC2 KeyPair.
+
+Resources:
+  VgVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+     CidrBlock: 10.0.0.0/16
+     EnableDnsHostnames: true
+     Tags:
+        - Key: Name
+          Value: VG-VPC
+
+  VgIGW:
+    Type: AWS::EC2::InternetGateway
+    Properties:
+      Tags:
+        - Key: Name
+          Value: VG-IGW
+
+  VgIGWAttachment:
+    Type: AWS::EC2::VPCGatewayAttachment
+    Properties:
+      InternetGatewayId: !Ref VgIGW
+      VpcId: !Ref VgVPC
+
+  VgPublicRT:
+    Type: AWS::EC2::RouteTable
+    Properties:
+      VpcId: !Ref VgVPC
+      Tags:
+        - Key: Name
+          Value: VG-Public-RT
+
+  VgDefaultPublicRoute:
+    Type: AWS::EC2::Route
+    DependsOn: VgIGWAttachment
+    Properties:
+      RouteTableId: !Ref VgPublicRT
+      DestinationCidrBlock: 0.0.0.0/0
+      GatewayId: !Ref VgIGW
+
+  VgPublicSN1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref VgVPC
+      AvailabilityZone: !Select [ 0, !GetAZs '' ]
+      CidrBlock: 10.0.0.0/24
+      Tags:
+        - Key: Name
+          Value: VG-Public-SN-1
+
+  VgPublicSNRouteTableAssociation:
+    Type: AWS::EC2::SubnetRouteTableAssociation
+    Properties:
+      RouteTableId: !Ref VgPublicRT
+      SubnetId: !Ref VgPublicSN1
+
+  WEBVG:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Enable HTTP access via port 80 and SSH access via port 22
+      VpcId: !Ref VgVPC
+      Tags:
+        - Key: Name
+          Value: WEBVG
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: '80'
+        ToPort: '80'
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: '22'
+        ToPort: '22'
+        CidrIp: 0.0.0.0/0
+
+  VgEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: !Ref LatestAmiId
+      KeyName: !Ref KeyName
+      Tags:
+        - Key: Name
+          Value: VG-EC2
+      NetworkInterfaces:
+        - DeviceIndex: 0
+          SubnetId: !Ref VgPublicSN1
+          GroupSet:
+          - !Ref WEBVG
+          AssociatePublicIpAddress: true
+      UserData:
+        Fn::Base64:
+          !Sub |
+            #!/bin/bash
+            (
+            echo "CN@12c"
+            echo "CN@12c"
+            ) | passwd --stdin root
+            sed -i "s/^PasswordAuthentication no/PasswordAuthentication yes/g" /etc/ssh/sshd_config
+            sed -i "s/^#PermitRootLogin yes/PermitRootLogin yes/g" /etc/ssh/sshd_config
+            service sshd restart
+            wget https://cloudneta.github.io/test.jpg
+            wget -P /usr/share/nginx/html/ https://cloudneta.github.io/test.jpg
+            amazon-linux-extras install -y nginx1.12
+            echo "<head><link rel='icon' href='data:;base64,iVBORw0KGgo='></head><h1>CloudNet@ CloudFront Test!!</h1><img src='test.jpg'>" > /usr/share/nginx/html/index.html
+            systemctl start nginx
+            systemctl enable nginx
+            
+  PublicDNS:
+    Type: AWS::Route53::HostedZone
+    Properties:
+      Name: allabout-it.cloud
+      HostedZoneConfig:
+        Comment: Public hosted zone For allbout-it.cloud
+
+  PrimaryRecordSet:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      Name: allabout-it.cloud
+      Type: A
+      TTL: 30
+      HostedZoneId: !Ref PublicDNS
+      ResourceRecords:
+        - !GetAtt VgEC2.PublicIp
+
+```  
+
+* Change region to N.Virginia(us-east-1) on Console.
+![3](/docs/AWS/17.LAB08CloudFront/pics/3.png)
+
+* CloudFront > Stacks > Create stack
+![4](/docs/AWS/17.LAB08CloudFront/pics/4.png)
+
+* Select 'Template is ready' in the Prepare template section.
+![5](/docs/AWS/17.LAB08CloudFront/pics/5.png)
+
+* Select 'Upload a template file' in the Specify template and click Box 'Choose file' after done.
+![6](/docs/AWS/17.LAB08CloudFront/pics/6.png)
+
+* Select made yaml file just before in Finder window and then click 'open' button.
+![7](/docs/AWS/17.LAB08CloudFront/pics/7.png)
+
+* Click 'Next
+![8](/docs/AWS/17.LAB08CloudFront/pics/8.png)
+
+* Put in stack name into Stack name's blank box
+![9](/docs/AWS/17.LAB08CloudFront/pics/9.png)
+
+* Select the Key for connecting to Instance through SSH and click 'Next' after done.
+![10](/docs/AWS/17.LAB08CloudFront/pics/10.png)
+
+* And click 'Next' again without other select at step 3 'Configure stack options' page.
+![11](/docs/AWS/17.LAB08CloudFront/pics/11.png)
+
+* And click 'Submit' after checking all information you just did.
+![12](/docs/AWS/17.LAB08CloudFront/pics/12.png)
+
+## Check Resources status
+
+* VPC > Your VPCs
+![13](/docs/AWS/17.LAB08CloudFront/pics/13.png)
+
+* VPC > Subnets
+![14](/docs/AWS/17.LAB08CloudFront/pics/14.png)
+
+* VPC > Route tables
+![15](/docs/AWS/17.LAB08CloudFront/pics/15.png)
+![16](/docs/AWS/17.LAB08CloudFront/pics/16.png)
+
+* VPC > Internet gateways
+![17](/docs/AWS/17.LAB08CloudFront/pics/17.png)
+
+* EC2 > Instances
+![18](/docs/AWS/17.LAB08CloudFront/pics/18.png)
+
+* Check Security group at VG-EC2 Instance's Security tap.  
