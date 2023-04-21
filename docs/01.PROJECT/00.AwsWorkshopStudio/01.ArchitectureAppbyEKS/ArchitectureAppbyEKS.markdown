@@ -1,10 +1,10 @@
 ---
 layout: default
 title:  Architecture Application by AWS EKS
-grand_parent: 01.PROJECT
+grand_parent: PROJECT
 parent: AWS Workshop Studio
 has_children: true
-nav_order: 100
+nav_order: 1000
 # permalink: /docs/01.PROJECT
 ---
 # Architecture application by AWS EKS  
