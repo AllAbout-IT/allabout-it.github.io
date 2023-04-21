@@ -8,3 +8,18 @@
 | ok           | good `zoute` drop | yumm  |
 
 ## Code
+
+## inside navi
+
+<details open markdown="block">  
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC  
+{:toc}
+</details>
+
+## no navi table
+
+{ :no_toc }
