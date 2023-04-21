@@ -1,0 +1,79 @@
+---
+layout: default
+title: 18. S3
+parent: AWS
+nav_order: 118
+# permalink: /docs/AWS/
+---
+# S3
+
+## Definition  
+
+Amazon S3 is a distributed object storage service provided by Amazon Web Services (AWS) that offers high scalability, reliability, and security, along with a user-friendly API for data storage and retrieval. S3 provides easy access to data from anywhere on the internet, ensuring data integrity and consistency.
+
+## Function  
+
+* **Storage Class**  
+AWS S3 provides various storage classes, each with different attributes, prices, and performance levels depending on the purpose of data storage. The storage classes of S3 include S3 Standard, S3 Intelligent-Tiering, S3 Standard-Infrequent Access, S3 One Zone-Infrequent Access, S3 Glacier, and S3 Glacier Deep Archive.
+
+* **Storage Management**  
+AWS S3 offers storage management, allowing users to configure storage classes and manage data lifecycles to save costs. This feature automatically moves data to a lower-cost storage class.
+
+* **Access Management**  
+AWS S3 provides access management, allowing users or AWS resources to be granted access to data. These access permissions can be managed through AWS Identity and Access Management (IAM).
+
+* **Data Processing**  
+AWS S3 provides various data processing capabilities. Users can efficiently process large amounts of data using S3 Select, receive data change notifications using AWS Lambda, or process large amounts of data using Amazon S3 Batch Operations.
+
+* **Storage Logging and Monitoring**  
+AWS S3 offers storage logging and monitoring features. S3 Server Access Logging captures logs of all requests made to S3, while Amazon CloudWatch monitors storage usage and access patterns.
+
+* **Analytics and Insights**  
+AWS S3 provides analytics and insights capabilities. Amazon S3 Inventory collects metadata on objects in S3 buckets, while Amazon S3 Analytics analyzes data usage and costs.
+
+## working operation
+
+3.1 버켓(Bucket)
+
+Amazon S3의 핵심 기능 중 하나인 버켓은 S3에서 데이터를 저장하기 위한 가장 상위 레벨의 개념입니다. 버켓 이름은 글로벌하게 고유해야하며, 모든 오브젝트는 반드시 특정 버켓에 저장됩니다. 버켓은 버켓 정책이라는 AWS Identity and Access Management(IAM) 정책을 사용하여 외부 사용자에 대한 엑세스를 제어할 수 있습니다.
+
+3.2 오브젝트(Object)
+
+Amazon S3에 저장되는 모든 데이터는 오브젝트라는 개념으로 관리됩니다. 오브젝트는 데이터와 메타데이터를 포함하며, 고유한 식별자인 오브젝트 키(Object Key)를 사용하여 버켓 내에서 고유하게 식별됩니다. 오브젝트 키는 S3에서 사용하는 파일 경로와 유사한 형식으로 작성됩니다.
+
+3.3 S3 비저닝(S3 Versioning)
+
+S3 버저닝 기능을 사용하면 데이터에 대한 버전을 저장할 수 있습니다. 기본적으로 S3는 데이터의 가장 최신 버전만 저장하지만, 버저닝 기능을 사용하면 이전 버전의 데이터도 보관할 수 있습니다. 이 기능은 데이터의 무결성과 복원력을 보장하는 데에 유용합니다.
+
+3.4 버전 ID(Version ID)
+
+S3 버저닝 기능을 사용하면 동일한 오브젝트에 대한 여러 버전이 생성될 수 있습니다. 이러한 각 버전은 고유한 식별자인 버전 ID를 가지며, 이를 사용하여 특정 버전의 오브젝트를 식별할 수 있습니다.
+
+3.5 버켓 정책(Bucket Policy)
+
+S3 버켓 정책은 IAM 정책과 유사하게 JSON 형식으로 작성되며, 버켓 자체에 대한 엑세스를 제어합니다. 버켓 정책을 사용하여 특정 AWS 계정, IAM 사용자, 로그인한 사용자 등에게 버켓 또는 오브젝트에 대한 권한을 부여할 수 있습니다.
+
+3.6 S3 액세스 포인트(S3 Access Points)
+
+S3 액세스 포인트는 S3 버킷에 대한 경로를 제공하는 개념입니다. 각 액세스 포인트는 버킷 내의 특정 위치에 대한 액세스 권한을 정의하며, 이를 사용하여 데이터에 대한 액세스 권한을 더욱 세밀하게 제어할 수 있습니다.
+
+3.7 엑세스 컨트롤
+
+ACLs(Access Control Lists): 객체 수준에서 액세스 권한을 부여하거나 거부하는 데 사용되는 방법입니다. ACLs는 객체의 고유 소유자 또는 일부 그룹 또는 사용자에게 액세스 권한을 부여합니다.
+
+Bucket policies: 버킷 정책은 버킷 수준에서 수행되며, 버킷에 대한 모든 요청을 제어하는 데 사용됩니다. 버킷 정책은 ACLs보다 더 강력합니다. 버킷 정책은 Amazon S3 리소스에 대한 액세스를 제어하기 위해 JSON 구문으로 작성됩니다.
+
+S3 Access Points: S3 액세스 포인트를 사용하면 객체의 액세스를 고유한 액세스 포인트로 분리하여 다른 사용자 또는 애플리케이션에 대한 액세스 권한을 조정할 수 있습니다. S3 액세스 포인트를 사용하면 버킷과 객체에 대한 권한을 쉽게 분리하고 권한을 더 정밀하게 제어할 수 있습니다.
+
+3.8 리전
+Amazon S3는 전 세계에 여러 지역에 분산되어 있는 서버에 데이터를 저장하고, 이를 리전이라고 합니다. Amazon S3는 현재 전 세계에 24개의 리전이 운영되고 있으며, 이는 물리적으로 분리되어 있습니다. 이러한 리전을 통해 사용자는 데이터에 가장 가까운 리전을 선택하여 더욱 빠르게 데이터에 접근할 수 있습니다.
+
+각 리전은 AWS Identity and Access Management(IAM)을 통해 엄격한 보안을 유지합니다. 또한, Amazon S3는 지리적 분산, 복제, 데이터 무결성, 지연 시간 감소, 고가용성 및 내구성을 위한 다양한 기술을 사용하여 데이터를 안전하게 저장합니다.
+
+데이터 일관성 모델
+AWS S3는 분산 스토리지 시스템으로, 데이터 일관성을 보장하기 위한 다양한 방법을 제공합니다. AWS S3는 여러 지리적 위치에 데이터를 저장하므로 데이터 일관성을 보장하기 위해서는 모든 지역 간의 데이터 복제와 일관성 유지가 중요합니다. 이를 위해 S3는 다양한 일관성 모델을 제공하며, 이는 데이터를 업로드할 때 선택할 수 있는 스토리지 클래스와 관련이 있습니다.
+
+S3는 일관성 모델로 "이벤트ual Consistency"를 지원합니다. 이 모델에서는 동시에 두 개 이상의 클라이언트가 동일한 오브젝트를 수정할 때, S3가 모든 클라이언트가 읽을 수 있는 최신 버전의 오브젝트를 유지하도록 보장합니다.
+
+관련 서비스
+AWS S3는 다른 AWS 서비스와의 통합을 통해 다양한 기능을 제공합니다. 예를 들어, S3를 사용하여 데이터를 수집하고 분석할 수 있는 Amazon S3 Select, S3 Inventory, Amazon S3 Analytics 및 Amazon S3 Batch Operations과 같은 서비스가 있습니다. 또한, S3와 함께 Amazon CloudFront와 Amazon Elastic MapReduce(EMR)와 같은 다른 AWS 서비스를 사용하여 더욱 강력한 데이터 분석 및 처리 환경을 구성할 수 있습니다.

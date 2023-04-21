@@ -1,10 +1,10 @@
 ---
 layout: default
-title: 1.Overview
-parent: 2.Architecture AWS with EKS
-grand_parent: PROJECT
+title: 01.Overview
+parent: 02.Architecture AWS with EKS
+grand_parent: 01.PROJECT
 nav_order: 2001
-# permalink: /docs/PROJECT/AWS-EKS/Overview
+# permalink: /docs/01.PROJECT/01.AWS-EKS/Overview
 ---
 # Architecture AWS with EKS
 
@@ -21,11 +21,11 @@ nav_order: 2001
 
 ## OVERVIEW  
 
-![1](/docs/PROJECT/AWS-EKS/Overview/pics/1.png)  
+![1](/docs/01.PROJECT/01.AWS-EKS/01.Overview/pics/1.png)  
 
 ## Basic resources in AWS
 
-![2](/docs/PROJECT/AWS-EKS/1.Overview/pics/2.png)
+![2](/docs/01.PROJECT/01.AWS-EKS/01.Overview/pics/2.png)
 
 Engineers usually connect to AWS using an IAM user account issued by IAM, rather than a root account. Moreover, it is recommended to use MFA when logging in for added security.
 
@@ -37,12 +37,12 @@ Engineers typically access the Bastion Host using SSH key encryption. And use it
 
 ## EKS and Nginx  
 
-![3](/docs/PROJECT/AWS-EKS/1.Overview/pics/3.png)
+![3](/docs/01.PROJECT/01.AWS-EKS/01.Overview/pics/3.png)
 
 ## EFK(Elastic Search, Fluentd, Kibana) Stack  
 
-![4](/docs/PROJECT/AWS-EKS/1.Overview/pics/4.png)
+![4](/docs/01.PROJECT/01.AWS-EKS/01.Overview/pics/4.png)
 
 ## Cloudwatch with Slack  
 
-![5](/docs/PROJECT/AWS-EKS/1.Overview/pics/5.png)
+![5](/docs/01.PROJECT/01.AWS-EKS/01.Overview/pics/5.png)
