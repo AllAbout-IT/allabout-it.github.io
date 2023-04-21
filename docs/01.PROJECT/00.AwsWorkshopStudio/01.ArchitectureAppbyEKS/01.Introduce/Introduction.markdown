@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Introduction
+grand_grand_parent: PROJECT
 grand_parent: AWS Workshop Studio
 parent: Architecture Application by AWS EKS
 # has_children: true
