@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 02.Building VPC, EC2 in AWS
+title: Building VPC, EC2 in AWS
 parent: 02.Architecture AWS with Terraform for Automating
-grand_parent: 01.PROJECT
+grand_parent: PROJECT
 # nav_order: 2002
 # permalink: /docs/01.PROJECT/02.Devops/Building-VPC-EC2
 ---

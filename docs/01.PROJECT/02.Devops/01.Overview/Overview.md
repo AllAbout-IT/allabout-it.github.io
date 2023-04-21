@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 01.Overview
+title: Overview
 parent: 02.Architecture AWS with Terraform for Automating
-grand_parent: 01.PROJECT
+grand_parent: PROJECT
 # nav_order: 2001
 # permalink: /docs/01.PROJECT/02.Devops/01.Overview
 ---
