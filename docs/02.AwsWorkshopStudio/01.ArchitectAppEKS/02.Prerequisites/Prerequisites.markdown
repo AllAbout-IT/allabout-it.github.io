@@ -3,7 +3,7 @@ layout: default
 title: Prerequisites
 parent: 01.Architecture Application by AWS EKS
 grand_parent: AWS Workshop Studio
-# great_grand_parent: PROJECT
+great_grand_parent: PROJECT
 # has_children: true
 nav_order: 1002
 # permalink: /docs/01.PROJECT
