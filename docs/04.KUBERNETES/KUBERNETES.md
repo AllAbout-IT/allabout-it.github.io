@@ -1,8 +1,8 @@
 ---
 layout: default
 title: KUBERNETES
-nav_order: 10
+nav_order: 4
 has_children: true
-#permalink: docs/DOCKER
+permalink: docs/04.KUBERNETES
 ---
-
+# KUBERNETES

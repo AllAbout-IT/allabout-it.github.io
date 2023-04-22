@@ -1,7 +1,7 @@
 ---
 layout: default
 title: LINUX
-# nav_order: 3
+nav_order: 7
 has_children: true
-permalink: docs/LINUX
+permalink: docs/07.LINUX
 ---

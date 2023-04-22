@@ -1,7 +1,7 @@
 ---
 layout: default
 title: WINDOWS
-nav_order: 14
+nav_order: 8
 has_children: true
-# permalink: docs/WINDOWS
+permalink: docs/08.WINDOWS
 ---

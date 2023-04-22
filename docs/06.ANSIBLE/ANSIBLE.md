@@ -1,8 +1,8 @@
 ---
 layout: default
 title: ANSIBLE
-nav_order: 11
+nav_order: 6
 has_children: true
-#permalink: docs/D
+permalink: docs/06.ANSIBLE
 ---
 # ANSIBLE

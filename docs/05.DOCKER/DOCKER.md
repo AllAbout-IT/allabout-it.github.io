@@ -1,7 +1,7 @@
 ---
 layout: default
 title: DOCKER
-nav_order: 8
+nav_order: 5
 has_children: true
-#permalink: docs/DOCKER
+permalink: docs/05.DOCKER
 ---
