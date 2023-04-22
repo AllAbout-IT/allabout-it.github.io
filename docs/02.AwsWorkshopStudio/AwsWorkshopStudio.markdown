@@ -1,6 +1,6 @@
 ---
 layout: default
-title:  AWS Workshop Studio
+title: AWS Workshop Studio
 # parent: PROJECT
 has_children: true
 # has_grand_children: true
