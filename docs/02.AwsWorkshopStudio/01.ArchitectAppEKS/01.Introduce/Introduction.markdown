@@ -5,7 +5,7 @@ parent: 01.Architecture Application by AWS EKS
 grand_parent: AWS Workshop Studio
 great_grand_parent: PROJECT
 # has_children: true
-nav_order: 1001
+nav_order: 10010
 # permalink: /docs/01.PROJECT
 ---
 # Introduction
