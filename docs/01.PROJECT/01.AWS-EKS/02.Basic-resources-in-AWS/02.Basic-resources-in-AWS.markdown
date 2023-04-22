@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 02. Basic resources in AWS
-parent: 02.Architecture AWS with EKS
-grand_parent: 01.PROJECT
+title: Basic resources in AWS
+parent: 01.Architecture AWS with EKS
+grand_parent: PROJECT
 nav_order: 2002
 # permalink: /docs/01.PROJECT/01.AWS-EKS/Overview
 ---

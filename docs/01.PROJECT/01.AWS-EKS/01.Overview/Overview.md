@@ -1,7 +1,7 @@
 ---
 layout: default
-title: 01.Overview
-parent: 02.Architecture AWS with EKS
+title: Overview
+parent: 01.Architecture AWS with EKS
 grand_parent: 01.PROJECT
 nav_order: 2001
 # permalink: /docs/01.PROJECT/01.AWS-EKS/Overview
