@@ -10,7 +10,7 @@ parent: WINDOWS
 ## Change computer name via Settings  
 
 1. Open Settings
-\- Press the 'windows key' then click the Setting icon  
+Press the 'windows key' then click the Setting icon  
 ![1-1](/docs/WINDOWS/How_to_change_your_computers_name/1-1.png)  
 
 2. Click the 'System' icon  

@@ -1,8 +1,8 @@
 ---
 layout: default
 title: VMware
-nav_order: 5
+nav_order: 10
 has_children: true
-permalink: docs/VMware
+# permalink: docs/VMware
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: GCP
-nav_order: 7
+nav_order: 11
 has_children: true
-permalink: docs/GCP
+# permalink: docs/GCP
 ---
