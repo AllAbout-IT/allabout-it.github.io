@@ -3,7 +3,7 @@ layout: default
 title: Introduction
 parent: Architecture Application by AWS EKS
 grand_parent: AWS Workshop Studio
-great_grand_parent: PROJECT
+# great_grand_parent: PROJECT
 # has_children: true
 nav_order: 1
 # permalink: /docs/01.PROJECT
