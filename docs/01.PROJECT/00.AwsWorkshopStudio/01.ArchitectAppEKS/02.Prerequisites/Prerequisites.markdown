@@ -27,4 +27,12 @@ nav_order: 2
 * Select 'Attach policies directly' at Permissions options and write 'administrator' in the search box below Permissions policies. After then check the blank checkbox next to 'AdministratorAccess' on the list.
 ![4](/docs/01.PROJECT/00.AwsWorkshopStudio/01.ArchitectAppEKS/02.Prerequisites/pics/4.png)
 
+* Click Next after done.
+![5](/docs/01.PROJECT/00.AwsWorkshopStudio/01.ArchitectAppEKS/02.Prerequisites/pics/5.png)
+
+* Click 'Create user' after checking the review information.
+![6](/docs/01.PROJECT/00.AwsWorkshopStudio/01.ArchitectAppEKS/02.Prerequisites/pics/6.png)
+
+* 
+
 ## Start with AWS EventEngin  
