@@ -3,7 +3,7 @@ layout: default
 title: AWS Workshop Studio
 parent: PROJECT
 has_children: true
-# has_grand_children: true
+has_grand_children: true
 nav_order: 20
 # permalink: docs/02.AwsWorkshopStudio
 ---
