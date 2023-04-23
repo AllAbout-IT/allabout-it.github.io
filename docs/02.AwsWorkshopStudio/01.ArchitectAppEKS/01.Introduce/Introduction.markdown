@@ -14,7 +14,7 @@ This article is a document from [AWS Workshop studio](https://catalog.us-east-1.
 
 ## Base topology
 
-![1](/docs/01.PROJECT/00.AwsWorkshopStudio/01.ArchitectAppEKS/01.Introduce/pics/1.png)
+![1](/docs/02.AwsWorkshopStudio/01.ArchitectAppEKS/01.Introduce/pics/1.png)
 
 ## Goals
 
