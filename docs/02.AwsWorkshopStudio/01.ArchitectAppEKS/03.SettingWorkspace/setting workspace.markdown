@@ -9,7 +9,7 @@ nav_order: 1003
 # permalink: /docs/01.PROJECT
 ---
 # Setting Workspace
-{ :no_toc }
+{: .no_toc }
 
 <details open markdown="block">  
   <summary>

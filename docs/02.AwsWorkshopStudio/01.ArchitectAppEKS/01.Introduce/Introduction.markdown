@@ -9,6 +9,7 @@ nav_order: 1001
 # permalink: /docs/01.PROJECT
 ---
 # Introduction
+{: .no_toc}
 
 This article is a document from [AWS Workshop studio](https://catalog.us-east-1.prod.workshops.aws/workshops/9c0aa9ab-90a9-44a6-abe1-8dff360ae428/en-US/10-intro) that has been practiced and monitored.
 

@@ -10,7 +10,7 @@
 ---
 
 # Prerequisites
-
+{: .no_toc}
 ## Start with AWS Account  
 
 ### Create AWS accout  

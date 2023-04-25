@@ -9,7 +9,7 @@ nav_order: 1004
 # permalink: /docs/01.PROJECT
 ---
 # Container Image
-{ :no_toc }
+{: .no_toc }
 
 <details open markdown="block">  
   <summary>
@@ -94,7 +94,7 @@ This part is an independent lab for those who want to learn more about container
   curl http://localhost:8080
   ```  
 
-  ![5](/\docs/02.AwsWorkshopStudio/01.ArchitectAppEKS/04.ContainerImage/pics/5.png)
+  ![5](/docs/02.AwsWorkshopStudio/01.ArchitectAppEKS/04.ContainerImage/pics/5.png)
 
   ```sh
   docker ps
@@ -204,7 +204,7 @@ For the tasks below, your personal account information will be included. Click o
 
 * Elastic Container Registry > Repositories > [Repository name] > View push commands
   ![25](/docs/02.AwsWorkshopStudio/01.ArchitectAppEKS/04.ContainerImage/pics/25.png)
-
+  ![31](/docs/02.AwsWorkshopStudio/01.ArchitectAppEKS/04.ContainerImage/pics/31.png)
 * To push the container image to the repository, bring the authentication token and pass the authentication to the **docker login** command. At this point, specify the user name as AWS and specify the Amazon ECR registry URI that you want to authenticate with.
 
   ```sh
