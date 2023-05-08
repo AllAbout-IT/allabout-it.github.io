@@ -19,7 +19,8 @@ nav_order: 0
 
 <img src="Profile.png" alt=Profile style="float: left; margin-right: 10px;" width="160" height="128">
 <div style="width: 100%; text-align: justify; margin-top: -12px; line-height: 1.4em">    
-  <span style="font-size: 2em; font-weight: bold; line-height: 0.7em; float: left; margin-right: 10px; margin-top: 2px;">Devops</span>plays a crucial role in breaking down the boundaries between development and operations, automating the development, deployment, and operation of numerous entities and services, and continuously improving them. This process is similar to creating and presenting music. For instance, a composer creates dozens or hundreds of sounds to make a song on a score, while a conductor ensures that these sounds produce beautiful music from the performers. The music production process, from composition to recording, mixing, and mastering, is also similar, as it involves systematic execution and continuous improvement, leading to the creation of highly polished works.
+  <span style="font-size: 2em; font-weight: bold; line-height: 0.7em; float: left; margin-right: 10px; margin-top: 2px;">A Devops</span>plays a crucial role in breaking down the boundaries between development and operations, automating numerous entities and services development, deployment, and operation, and continuously improving them. This process is similar to creating and presenting music. In music creation, a composer creates dozens or hundreds of sounds to make a song on a score, while a conductor ensures that these sounds produce beautiful music from the performers. The music production process, from composition to recording, mixing, and mastering, is also similar, as it involves systematic execution and continuous improvement, leading to the creation of highly polished works.
+
 </div><br>
 <div style="width: 100%; text-align: justify;line-height: 1.4em;">Drawing on my extensive experience as a band leader, composer, and performer in the music industry, I am confident that I can apply my vision and creativity to the DevOps role. Both music production and DevOps involve complex elements that require creative problem-solving. Collaboration and coordination are also essential for success in both fields. The knowledge and experience I have acquired from my music career can be applied to achieve high levels of performance in DevOps. Therefore, I am committed to achieving results through passion and hard work in the DevOps field.
 </div>
@@ -53,7 +54,7 @@ nav_order: 0
               <p>4days</p>
             </div>
             <div class="text col-7">
-              <p>Authorized education<br><strong>Architecting on AWS</strong></p>
+              <p>Certifications<br><strong>Architecting on AWS</strong></p>
             </div>
           </div>
         </div>
@@ -64,9 +65,19 @@ nav_order: 0
               <p>4days</p>
             </div>
             <div class="text col-7">
-              <p>Authorized education<br><strong>Architecting with Google Computer Engine</strong></p>
+              <p>Certifications<br><strong>Architecting with Google Computer Engine</strong></p>
             </div>
           </div>
+        </div>
+        <div class="timelineCont col-12">
+            <div class="row">
+                <div class="date col-5">
+                    <h4>29th Aug.<br>2023</h4>
+                </div>
+                <div class="text col-7">
+                    <p> AWS License <br><strong>SAA - Solution Architect Associate</strong></p>
+                </div>
+            </div>
         </div>
         <div class="timelineCont col-12">
             <div class="row">
@@ -74,54 +85,68 @@ nav_order: 0
                     <h4></h4>
                 </div>
                 <div class="text col-7">
-                    <p> Toy Project<br></p>
+                    <p> Final Team Project<br><strong>Multi cloud architecture for social media services
+</strong></p>
                 </div>
             </div>
         </div>
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4>Nov. ~ </h4>
+              <h4>27th Nov. ~ <br> Present</h4>
             </div>
             <div class="text col-7">
-              <p>Bootcamp<br><strong>MSA Cloud Environment in AWS based on IaC</strong></p>
+              <p>Personal Project<br><strong>Building EKS service based on the AWS console
+</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>27th Nov. ~ <br> Present</h4>
+            </div>
+            <div class="text col-7">
+              <p>Bootcamp<br><strong>Building AWS microservice cloud environment based on IAC</strong></p>
             </div>
           </div>
         </div>
         <div class="timelineCont col-12">
             <div class="row">
                 <div class="year col-5">
-                    <h2>2023</h2>
+                    <br><br><br><h2>2023</h2>
+                </div>
+            </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>Jan. ~ <br> May.</h4>
+            </div>
+            <div class="text col-7">
+              <p>Personal Project<br><strong>Building automation EKS based on Terraform and GitLab</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4><br> Present</h4>
+            </div>
+            <div class="text col-7">
+              <p>Certifications<br><strong>AZ-104 Microsoft Azure Adminitrator</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+            <div class="row">
+                <div class="text col-7">
                 </div>
             </div>
         </div>
         <div class="timelineCont col-12">
             <div class="row">
-                <div class="date col-5">
-                    <h2>2600</h2>
-                </div>
                 <div class="text col-7">
-                    <p> Aenean aliquet venenatis orci id pharetra. Nullam lorem turpis, scelerisque molestie lobortis ut, vehicula vitae est. Aliquam erat volutpat. Praesent faucibus vehicula pretium.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2>2700</h2>
-                </div>
-                <div class="text col-7">
-                    <p> Sed ultrices odio ex, sed volutpat mauris volutpat ac. Donec tincidunt felis magna, in ornare nisl auctor vitae. Curabitur luctus sed erat ut venenatis.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="date col-5">
-                    <h2></h2>
-                </div>
-                <div class="text col-7">
-                    <p></p>
                 </div>
             </div>
         </div>
