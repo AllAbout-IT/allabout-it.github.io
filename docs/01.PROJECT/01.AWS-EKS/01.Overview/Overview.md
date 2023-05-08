@@ -2,13 +2,13 @@
 layout: default
 title: Overview
 parent: 01.Architecture AWS with EKS
-grand_parent: 01.PROJECT
+grand_parent: PROJECT
 nav_order: 2001
 # permalink: /docs/01.PROJECT/01.AWS-EKS/Overview
 ---
 # Architecture AWS with EKS
 
-{ :no_toc }
+{. :no_toc }
 
 <details open markdown="block">  
   <summary>
