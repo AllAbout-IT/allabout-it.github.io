@@ -158,22 +158,6 @@ nav_order: 0
             </div>
           </div>
         </div>
-        <!-- <div class="timelineCont col-12">
-          <div class="row">
-            <div class="date col-5">
-              <h4></h4>
-            </div>
-            <div class="text col-7">
-              <p><br><strong></strong></p>
-            </div>
-          </div>
-        </div> -->
-        <div class="timelineCont col-12">
-            <div class="row">
-                <div class="text col-7">
-                </div>
-            </div>
-        </div>
         <div class="timelineCont col-12">
             <div class="row">
                 <div class="text col-7">
