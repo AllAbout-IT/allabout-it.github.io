@@ -101,7 +101,7 @@ nav_order: 0
         </div>
         <div class="timelineCont col-12">
           <div class="row">
-            <div class="date col-5">
+            <div class="date col-5">˝
               <h4>27th Nov. ~<br> 19th Jun. 2023</h4><h7>(960 hours)</h7>
             </div>
             <div class="text col-7">
