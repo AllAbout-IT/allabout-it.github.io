@@ -40,7 +40,7 @@ nav_order: 0
           <div class="row">
             <div class="date col-5">
               <h4>18th May. ~<br>21th Oct.</h4>
-              <p>(580 hours)</p>
+              <h7>(580 hours)</h7>
             </div>
             <div class="text col-7">
               <p>Bootcamp<br><strong>Multi Cloud(AWS, GCP) and K8E, Docker</strong></p>
@@ -51,7 +51,7 @@ nav_order: 0
           <div class="row">
             <div class="date col-5">
               <h4>23th Aug. ~<br>26th</h4>
-              <p>(4 days)</p>
+              <h7>(4 days)</h7>
             </div>
             <div class="text col-7">
               <p>Certifications<br><strong>Architecting on AWS</strong></p>
@@ -62,7 +62,7 @@ nav_order: 0
           <div class="row">
             <div class="date col-5">
               <h4>29th Aug. ~<br>1th Sep.</h4>
-              <p>(4 days)</p>
+              <h7>(4 days)</h7>
             </div>
             <div class="text col-7">
               <p>Certifications<br><strong>Architecting with Google Computer Engine</strong></p>
@@ -85,8 +85,7 @@ nav_order: 0
                     <h4></h4>
                 </div>
                 <div class="text col-7">
-                    <p> Final Team Project<br><strong>Multi cloud architecture for social media services
-</strong></p>
+                    <p> Final Team Project<br><strong>Multi cloud architecture for social media services</strong></p>
                 </div>
             </div>
         </div>
@@ -96,15 +95,14 @@ nav_order: 0
               <h4>8th Nov. ~ <br>28th Feb. 2023</h4>
             </div>
             <div class="text col-7">
-              <p>Personal Project<br><strong>Building EKS service based on the AWS console
-</strong></p>
+              <p>Personal Project<br><strong>Building EKS service based on the AWS console</strong></p>
             </div>
           </div>
         </div>
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4>27th Nov. ~<br> 19th Jun. 2023</h4><p>(960 hours)<p>
+              <h4>27th Nov. ~<br> 19th Jun. 2023</h4><h7>(960 hours)</h7>
             </div>
             <div class="text col-7">
               <p>Bootcamp<br><strong>Building AWS microservice cloud environment based on IAC</strong></p>
