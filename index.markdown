@@ -39,8 +39,8 @@ nav_order: 0
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4>May ~ Oct.</h4>
-              <p>580 days</p>
+              <h4>18th May. ~<br>21th Oct.</h4>
+              <p>(580 hours)</p>
             </div>
             <div class="text col-7">
               <p>Bootcamp<br><strong>Multi Cloud(AWS, GCP) and K8E, Docker</strong></p>
@@ -51,7 +51,7 @@ nav_order: 0
           <div class="row">
             <div class="date col-5">
               <h4>23th Aug. ~<br>26th</h4>
-              <p>4days</p>
+              <p>(4 days)</p>
             </div>
             <div class="text col-7">
               <p>Certifications<br><strong>Architecting on AWS</strong></p>
@@ -62,7 +62,7 @@ nav_order: 0
           <div class="row">
             <div class="date col-5">
               <h4>29th Aug. ~<br>1th Sep.</h4>
-              <p>4days</p>
+              <p>(4 days)</p>
             </div>
             <div class="text col-7">
               <p>Certifications<br><strong>Architecting with Google Computer Engine</strong></p>
@@ -93,7 +93,7 @@ nav_order: 0
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4>27th Nov. ~ <br> Present</h4>
+              <h4>8th Nov. ~ <br>28th Feb. 2023</h4>
             </div>
             <div class="text col-7">
               <p>Personal Project<br><strong>Building EKS service based on the AWS console
@@ -104,7 +104,7 @@ nav_order: 0
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4>27th Nov. ~ <br> Present</h4>
+              <h4>27th Nov. ~<br> 19th Jun. 2023</h4><p>(960 hours)<p>
             </div>
             <div class="text col-7">
               <p>Bootcamp<br><strong>Building AWS microservice cloud environment based on IAC</strong></p>
@@ -121,7 +121,7 @@ nav_order: 0
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4>Jan. ~ <br> May.</h4>
+              <h4>7th Jan. ~<br>18th Feb.</h4>
             </div>
             <div class="text col-7">
               <p>Personal Project<br><strong>Building automation EKS based on Terraform and GitLab</strong></p>
@@ -131,13 +131,43 @@ nav_order: 0
         <div class="timelineCont col-12">
           <div class="row">
             <div class="date col-5">
-              <h4><br> Present</h4>
+              <h4><br> 24th Apr. ~<br>28th  </h4>
             </div>
             <div class="text col-7">
-              <p>Certifications<br><strong>AZ-104 Microsoft Azure Adminitrator</strong></p>
+              <p>Certifications<br><strong>AZ-104 Microsoft Azure Administrator</strong></p>
             </div>
           </div>
         </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>9th May. ~<br>19th Jun.</h4>
+            </div>
+            <div class="text col-7">
+              <p>Bootcamp Team Project<br><strong>The Netflix early business model environment architecture and research, based on AWS</strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4>21th Jun.</h4>
+            </div>
+            <div class="text col-7">
+              <p>Award<br><strong>Excellence Project Prize(1st prize)</strong></p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="timelineCont col-12">
+          <div class="row">
+            <div class="date col-5">
+              <h4></h4>
+            </div>
+            <div class="text col-7">
+              <p><br><strong></strong></p>
+            </div>
+          </div>
+        </div> -->
         <div class="timelineCont col-12">
             <div class="row">
                 <div class="text col-7">
@@ -152,7 +182,8 @@ nav_order: 0
         </div>
     </div>
 
-## Experience
+## Experience Overview
+###
 
 <script type="text/javascript">
 
