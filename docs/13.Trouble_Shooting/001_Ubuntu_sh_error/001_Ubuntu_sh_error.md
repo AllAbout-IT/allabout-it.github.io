@@ -26,8 +26,7 @@ nav_order: 1301
 {:toc}
 </details>
 
-이 에러는 Linux에서 bash스크립트를 만들고 sh 명령어로 실행했을때 나타나는 error이다.
-증상은 bash 스크립트 작성시에 사용되는 기호(예: (), {}등)이 에러의 원인이 되나. chmod +x로 시스템이 파일을 실행할 권리를 주고 파일을 호출할때에는 실행이 됩니다.
+이 에러는 Linux에서 bash스크립트를 만들고 sh 명령어로 실행했을때 나타나는 error입니다. 증상은 bash 스크립트 작성시에 사용되는 기호(예: (), {}등)이 에러의 원인이 되나. chmod +x로 시스템이 파일을 실행할 권리를 주고 파일을 호출할때에는 실행이 됩니다.
 
 ```sh
 #!/bin/bash
@@ -55,16 +54,16 @@ sudo dpkg-reconfigure dash
 
 ![2](/docs/13.Trouble_Shooting/001_Ubuntu_sh_error/pic/2.png)
 
-The system shell is the default command interpreter for shell scripts.
-
+{: .hightlight }
+The system shell is the default command interpreter for shell scripts.<br>
 시스템 셸은 셸 스크립트의 기본 명령 인터프리터입니다.
 
-Using 'dash' as the system shell will improve the system's overall performance. It does not alter the shell presented to interactive users.
-
+{: .hightlight }
+Using 'dash' as the system shell will improve the system's overall performance. It does not alter the shell presented to interactive users.<br>
 'dash'를 시스템 셸로 사용하면 시스템의 전반적인 성능이 향상됩니다. 대화형 사용자에게 제공되는 셸을 변경하지 않습니다.
 
-Use dash as the default system shell?
-
+{: .hightlight }
+Use dash as the default system shell?<br>
 '대시'를 기본 시스템 셸로 사용하시겠습니까?
 
 위 와 같은 메세지를 통해서 Ubuntu에서는 시스템 쉘이 'dash'로 사용되고 있다는 것을 알수 있다. 
