@@ -2,15 +2,10 @@
 layout: default
 title:  Ubuntu bash operating error
 parent: Trouble Shooting
--
 # grandparent: VMware
-
-# has_children: true
-
+has_children: true
 nav_order: 1301
-
 # permalink: /docs/PROJECT
-
 ---
 
 # Ubuntu bash operating error
@@ -54,15 +49,15 @@ sudo dpkg-reconfigure dash
 
 ![2](/docs/13.Trouble_Shooting/001_Ubuntu_sh_error/pic/2.png)
 
-{: .hightlight }
+{: .note }
 The system shell is the default command interpreter for shell scripts.<br>
 시스템 셸은 셸 스크립트의 기본 명령 인터프리터입니다.
 
-{: .hightlight }
+{: .note }
 Using 'dash' as the system shell will improve the system's overall performance. It does not alter the shell presented to interactive users.<br>
 'dash'를 시스템 셸로 사용하면 시스템의 전반적인 성능이 향상됩니다. 대화형 사용자에게 제공되는 셸을 변경하지 않습니다.
 
-{: .hightlight }
+{: .note }
 Use dash as the default system shell?<br>
 '대시'를 기본 시스템 셸로 사용하시겠습니까?
 
