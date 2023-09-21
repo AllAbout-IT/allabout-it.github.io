@@ -40,7 +40,7 @@ nav_order: 0
           <div class="row">
             <div class="date col-5">
               <h4>18th May. ~<br>21th Oct.</h4>
-              <h7>(580 hours)</h7>
+              <h5>(580 hours)</h5>
             </div>
             <div class="text col-7">
               <p>Bootcamp<br><strong>Multi Cloud(AWS, GCP) and K8E, Docker</strong></p>

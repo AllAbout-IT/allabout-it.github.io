@@ -21,8 +21,8 @@
 
 #timeline div .year:before {
   /* content: '';
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background: #e5e5d1; */
   position: absolute;
   left: 99.2%;
@@ -34,8 +34,8 @@
 
 #timeline div .date:before {
   content: '';
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   background: #e5e5d1;
   position: absolute;
   left: 99.2%;

@@ -35,6 +35,7 @@
   --danger: #E74C3C;
   --light: #303030;
   --dark: #303030;
+  --black: #000000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -397,10 +398,10 @@ h6,
 .h4,
 .h5,
 .h6 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
   font-family: inherit;
-  font-weight: 500;
-  line-height: 1.2;
+  font-weight: 5;
+  line-height: 0;
   color: inherit
 }
 
@@ -426,12 +427,12 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.171875rem
+  font-size: 1rem
 }
 
 h6,
 .h6 {
-  font-size: 0.9375rem
+  font-size: 0.4rem
 }
 
 .lead {
