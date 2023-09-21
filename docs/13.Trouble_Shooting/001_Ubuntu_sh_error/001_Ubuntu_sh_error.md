@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  Ubuntu bash operating error
-parent: Trouble_Shooting
+parent: Trouble Shooting
 -
 # grandparent: VMware
 
